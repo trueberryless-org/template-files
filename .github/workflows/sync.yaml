@@ -59,7 +59,7 @@ jobs:
         id: read-repos
         run: |
           echo "Loading repositories from repos.json..."
-          echo "REPOS=$(cat repos.json)" >> $GITHUB_ENV
+          echo "REPOS=$(cat /repos.json)" >> $GITHUB_ENV
 
       # Step 4: Sync workflows to target repositories
       - name: Update workflows in target repositories
