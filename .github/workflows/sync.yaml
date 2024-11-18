@@ -81,35 +81,35 @@ jobs:
 
             # Sync specified workflow files
             for file in $files; do
-            src_file="workflow-files/$file"
-            dest_file=".github/workflows/$file"
+              src_file="../workflow-files/$file"
+              dest_file=".github/workflows/$file"
 
-            if [ -f "$src_file" ]; then
-              echo "Updating file $file..."
-              mkdir -p "$(dirname "$dest_file")"
-              cp "$src_file" "$dest_file"
-            else
-              echo "Warning: File $file not found in /workflow-files."
-            fi
+              if [ -f "$src_file" ]; then
+                echo "Updating file $file..."
+                mkdir -p "$(dirname "$dest_file")"
+                cp "$src_file" "$dest_file"
+              else
+                echo "Warning: File $file not found in /workflow-files."
+              fi
             done
 
             # Commit and push changes if any
             echo "Checking for changes..."
             git add .github/workflows/
             if git diff --cached --quiet; then
-            echo "No changes detected for $repo_name."
+              echo "No changes detected for $repo_name."
             else
-            echo "Committing and pushing changes for $repo_name..."
-            git commit -m "Update GitHub workflow files"
-            git push --force origin "$branch_name"
+              echo "Committing and pushing changes for $repo_name..."
+              git commit -m "Update GitHub workflow files"
+              git push --force origin "$branch_name"
 
-            # Create a pull request
-            echo "Creating pull request for $repo_name..."
-            gh pr create \
-              --base main \
-              --head "$branch_name" \
-              --title "Sync workflow files" \
-              --body "This PR syncs the specified GitHub workflow files from the central repository."
+              # Create a pull request
+              echo "Creating pull request for $repo_name..."
+              gh pr create \
+                --base main \
+                --head "$branch_name" \
+                --title "Sync workflow files" \
+                --body "This PR syncs the specified GitHub workflow files from the central repository."
             fi
 
             # Cleanup
