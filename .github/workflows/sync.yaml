@@ -54,22 +54,14 @@ jobs:
       - name: Install jq
         run: sudo apt-get install -y jq
 
-      # Step 3: Read repository list from JSON
-      - name: Read repository list
-        id: read-repos
-        run: |
-          echo "Loading repositories from repos.json..."
-          echo "REPOS=$(cat /repos.json)" >> $GITHUB_ENV
-
       # Step 4: Sync workflows to target repositories
       - name: Update workflows in target repositories
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
-          REPOS: ${{ env.REPOS }}
         run: |
           echo "Starting workflow sync..."
 
-          repos=$(echo "$REPOS" | jq -c '.repositories[]')
+          repos=$(jq -c '.repositories[]' repos.json)
 
           for repo_config in $repos; do
             repo_name=$(echo "$repo_config" | jq -r '.name')
