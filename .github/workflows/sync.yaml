@@ -81,7 +81,7 @@ jobs:
 
             # Sync specified workflow files
             for file in $files; do
-            src_file="/workflow-files/$file"
+            src_file="workflow-files/$file"
             dest_file=".github/workflows/$file"
 
             if [ -f "$src_file" ]; then
