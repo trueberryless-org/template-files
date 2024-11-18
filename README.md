@@ -10,6 +10,7 @@ Provide single point of truth for workflow files.
 │   └-─ README.md
 ├── .github/
 │   ├── workflows/
+│   │   ├── release.yaml # Create changeset if desired
 │   │   └-─ sync.yaml # Create PRs on target repos when triggered by changeset
 ├── worflow-files/ # Actual files which get synced to target repos
 │   ├── deployment.yaml
