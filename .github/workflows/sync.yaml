@@ -1,0 +1,127 @@
+name: Update Workflow Files Across Repos
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  changesets:
+    name: Changesets
+    runs-on: ubuntu-latest
+    outputs:
+      hasChangesets: ${{ steps.changesets.outputs.hasChangesets }}
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Install Dependencies
+        run: pnpm i
+
+      - name: Create Release Pull Request
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          commit: "[ci] release"
+          title: "[ci] release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+
+  sync-workflows:
+    runs-on: ubuntu-latest
+    needs: changesets
+    if: (needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
+    steps:
+      # Step 1: Checkout current repository
+      - name: Checkout current repository
+        uses: actions/checkout@v3
+
+      # Step 2: Install jq for JSON parsing
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      # Step 3: Read repository list from JSON
+      - name: Read repository list
+        id: read-repos
+        run: |
+          echo "Loading repositories from repos.json..."
+          echo "REPOS=$(cat repos.json)" >> $GITHUB_ENV
+
+      # Step 4: Sync workflows to target repositories
+      - name: Update workflows in target repositories
+        env:
+          GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          REPOS: ${{ env.REPOS }}
+        run: |
+          echo "Starting workflow sync..."
+
+          repos=$(echo "$REPOS" | jq -c '.repositories[]')
+
+          for repo_config in $repos; do
+            repo_name=$(echo "$repo_config" | jq -r '.name')
+            files=$(echo "$repo_config" | jq -r '.needs[]')
+
+            echo "Processing repository: $repo_name"
+            
+            # Clone the target repository
+            echo "Cloning repository $repo_name..."
+            git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/${repo_name}.git" target-repo
+            cd target-repo
+            
+            # Create or switch to the branch
+            branch_name="update-workflows-$(date +%Y%m%d)"
+            echo "Creating branch $branch_name..."
+            git checkout -b "$branch_name" || git checkout "$branch_name"
+
+            # Sync specified workflow files
+            for file in $files; do
+            src_file="/workflow-files/$file"
+            dest_file=".github/workflows/$file"
+
+            if [ -f "$src_file" ]; then
+              echo "Updating file $file..."
+              mkdir -p "$(dirname "$dest_file")"
+              cp "$src_file" "$dest_file"
+            else
+              echo "Warning: File $file not found in /workflow-files."
+            fi
+            done
+
+            # Commit and push changes if any
+            echo "Checking for changes..."
+            git add .github/workflows/
+            if git diff --cached --quiet; then
+            echo "No changes detected for $repo_name."
+            else
+            echo "Committing and pushing changes for $repo_name..."
+            git commit -m "Update GitHub workflow files"
+            git push --force origin "$branch_name"
+
+            # Create a pull request
+            echo "Creating pull request for $repo_name..."
+            gh pr create \
+              --base main \
+              --head "$branch_name" \
+              --title "Sync workflow files" \
+              --body "This PR syncs the specified GitHub workflow files from the central repository."
+            fi
+
+            # Cleanup
+            cd ..
+            echo "Cleaning up repository clone for $repo_name..."
+            rm -rf target-repo
+          done
