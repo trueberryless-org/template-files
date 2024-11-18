@@ -1,8 +1,8 @@
 {
-    "repositories": [
-        {
-            "name": "trueberryless-org/starlight-view-modes",
-            "needs": ["deployment.yaml", "publish.yaml", "release.yaml", "welcome-bot.yaml"]
-        }
-    ]
+  "repositories": [
+    {
+      "name": "trueberryless-org/starlight-view-modes",
+      "needs": ["deployment.yaml", "publish.yaml", "release.yaml", "welcome-bot.yaml"]
+    }
+  ]
 }
