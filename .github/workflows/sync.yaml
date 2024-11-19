@@ -44,7 +44,15 @@ jobs:
   sync-workflows:
     runs-on: ubuntu-latest
     needs: changesets
-    if: (needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
+    if: >
+      (
+        needs.changesets.outputs.hasChangesets == 'false' && 
+        (
+          contains(github.event.head_commit.message, 'deploy') || 
+          contains(github.event.head_commit.message, '[ci] release')
+        )
+      ) || 
+      github.event_name == 'workflow_dispatch'
     steps:
       # Step 1: Checkout current repository
       - name: Checkout current repository
@@ -99,7 +107,8 @@ jobs:
 
               # Merge global defaults with file-specific props
               file_props=$(echo "$file_config" | jq -c '.props // {}')
-              merged_props=$(jq -c --argjson defaults "$global_defaults" --argjson fileProps "$file_props" '.defaults * .fileProps' <<<"{\"defaults\": $global_defaults, \"fileProps\": $file_props}")
+              merged_props=$(jq -c --argjson defaults "$global_defaults" --argjson fileProps "$file_props" \
+                '.defaults * .fileProps' <<<"{\"defaults\": $global_defaults, \"fileProps\": $file_props}")
 
               # Handle dynamic content replacement
               temp_file=$(mktemp)
