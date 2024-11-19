@@ -2,8 +2,7 @@ name: Release
 
 on:
   push:
-    branches:
-      - <%= branchName %>
+    branches: [<%= branchName %>]
 
 jobs:
   release:
