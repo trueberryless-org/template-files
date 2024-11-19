@@ -16,6 +16,15 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "workflow-files/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-view-modes",
+            "documentationFolder": "docs"
+          }
         }
       ]
     }
