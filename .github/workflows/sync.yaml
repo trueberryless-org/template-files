@@ -57,7 +57,7 @@ jobs:
       # Step 4: Sync workflows to target repositories
       - name: Update workflows in target repositories
         env:
-          GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Starting workflow sync..."
 
