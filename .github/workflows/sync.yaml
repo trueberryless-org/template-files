@@ -146,7 +146,7 @@ jobs:
               latest_commit_hash=$(git rev-parse HEAD)
               latest_commit_url="https://github.com/$GITHUB_REPOSITORY/commit/$latest_commit_hash"
               latest_commit_message=$(git log -1 --pretty=%s)
-              latest_commit_entry="- [$(git rev-parse --short HEAD)]($latest_commit_url) $latest_commit_message"
+              latest_commit_entry="- $latest_commit_message - ([$(git rev-parse --short HEAD)]($latest_commit_url))"
 
               cd target-repo
 
