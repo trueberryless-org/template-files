@@ -57,12 +57,12 @@ jobs:
       # Step 4: Sync workflows to target repositories
       - name: Update workflows in target repositories
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
           echo "Starting workflow sync..."
 
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "trueberryless"
+          git config --global user.email "trueberryless+github@gmail.com"
 
           repos=$(jq -c '.repositories[]' repos.json)
 
