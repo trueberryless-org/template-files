@@ -61,8 +61,8 @@ jobs:
         run: |
           echo "Starting workflow sync..."
 
-          git config --global user.name "trueberryless"
-          git config --global user.email "trueberryless+github@gmail.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
           repos=$(jq -c '.repositories[]' repos.json)
 
