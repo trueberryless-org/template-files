@@ -44,7 +44,15 @@ jobs:
   sync-workflows:
     runs-on: ubuntu-latest
     needs: changesets
-    if: (needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
+    if: >
+      (
+        needs.changesets.outputs.hasChangesets == 'false' && 
+        (
+          contains(github.event.head_commit.message, 'deploy') || 
+          contains(github.event.head_commit.message, '[ci] release')
+        )
+      ) || 
+      github.event_name == 'workflow_dispatch'
     steps:
       # Step 1: Checkout current repository
       - name: Checkout current repository

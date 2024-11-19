@@ -84,8 +84,15 @@ jobs:
 
   deployment:
     needs: [changes, changesets, image-tag]
-    # Only run if there is no changeset (i.e. a release), there are changes to the <%= documentationFolder %> and the commit message contains '[ci] release' or 'deploy' (workflow_dispatch supported)
-    if: (needs.changes.outputs.<%= documentationFolder %> == 'true' && needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
+    if: >
+      (
+        needs.changesets.outputs.hasChangesets == 'false' && 
+        (
+          contains(github.event.head_commit.message, 'deploy') || 
+          contains(github.event.head_commit.message, '[ci] release')
+        )
+      ) || 
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
