@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: <%= repositoryName %>
-          image: "trueberryless/<%= repositoryName %>:0.1.9"
+          image: "trueberryless/<%= repositoryName %>"
           imagePullPolicy: Always
