@@ -151,7 +151,7 @@ jobs:
                   --base main \
                   --head "$branch_name" \
                   --title "Sync workflow files" \
-                  --body "This PR syncs the specified GitHub workflow files from the central repository."
+                  --body "This PR syncs the specified GitHub workflow files from the [central repository](https://github.com/trueberryless-org/template-files)."
               fi
             fi
 
