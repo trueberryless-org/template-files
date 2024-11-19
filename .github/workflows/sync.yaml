@@ -73,7 +73,6 @@ jobs:
           echo "Starting workflow sync..."
 
           repos=$(jq -c '.repositories[]' repos.json)
-          global_defaults=$(jq -c '.defaults // {}' repos.json)
 
           for repo_config in $repos; do
             repo_name=$(echo "$repo_config" | jq -r '.name')
@@ -106,25 +105,26 @@ jobs:
               # Prepare the destination directory
               mkdir -p "$(dirname "$dest_file")"
 
-              # Merge global defaults with file-specific props
-              file_props=$(echo "$file_config" | jq -c '.props // {}')
-              merged_props=$(jq -c --argjson defaults "$global_defaults" --argjson fileProps "$file_props" \
-                '.defaults * .fileProps' <<<"{\"defaults\": $global_defaults, \"fileProps\": $file_props}")
-
-              # Handle dynamic content replacement
-              temp_file=$(mktemp)
-              cp "../$src_file" "$temp_file"
-
-              # Replace placeholders with their respective values
-              for key in $(echo "$merged_props" | jq -r 'keys[]'); do
-                value=$(echo "$merged_props" | jq -r --arg key "$key" '.[$key]')
-                placeholder="<%= $key %>"
-                echo "Replacing $placeholder with $value in $src_file..."
-                sed -i "s|$placeholder|$value|g" "$temp_file"
-              done
-
-              # Move the processed file to the target location
-              mv "$temp_file" "$dest_file"
+              # Handle dynamic content replacement if "props" is specified
+              props=$(echo "$file_config" | jq -c '.props // empty')
+              
+              if [ -n "$props" ]; then
+                echo "Applying dynamic replacements for $src_file..."
+                temp_file=$(mktemp)
+                cp "../$src_file" "$temp_file"
+                # Replace placeholders with their respective values from props
+                for key in $(echo "$props" | jq -r 'keys[]'); do
+                  value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+                  placeholder="<%= $key %>"
+                  echo "Replacing $placeholder with $value in $src_file..."
+                  sed -i "s|$placeholder|$value|g" "$temp_file"
+                done
+                # Move the processed file to the target location
+                mv "$temp_file" "$dest_file"
+              else
+                # If no props, copy the file directly
+                cp "../$src_file" "$dest_file"
+              fi
             done
 
             # Commit and push changes if any

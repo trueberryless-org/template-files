@@ -22,11 +22,5 @@
         }
       ]
     }
-  ],
-  "defaults": {
-    "baseBranch": "main",
-    "organisation": "trueberryless-org",
-    "commitMessage": "[ci] release",
-    "prTitle": "[ci] release"
-  }
+  ]
 }
