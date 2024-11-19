@@ -78,7 +78,7 @@ jobs:
             cd target-repo
             
             # Create or switch to the branch
-            branch_name="update-workflows-$(date +%Y%m%d)"
+            branch_name="update-workflows"
             echo "Creating branch $branch_name..."
             git checkout -b "$branch_name" || git checkout "$branch_name"
 
@@ -106,13 +106,21 @@ jobs:
               git commit -m "Update GitHub workflow files"
               git push --force origin "$branch_name"
 
-              # Create a pull request
-              echo "Creating pull request for $repo_name..."
-              gh pr create \
-                --base main \
-                --head "$branch_name" \
-                --title "Sync workflow files" \
-                --body "This PR syncs the specified GitHub workflow files from the central repository."
+              # Check for existing pull request
+              echo "Checking for an open PR for branch $branch_name..."
+              existing_pr=$(gh pr list --base main --head "$branch_name" --json number --jq '.[0].number')
+
+              if [ -n "$existing_pr" ]; then
+                echo "Found existing PR #$existing_pr. Updating it..."
+                gh pr comment "$existing_pr" --body "The branch has been updated with the latest changes."
+              else
+                echo "No existing PR found. Creating a new one..."
+                gh pr create \
+                  --base main \
+                  --head "$branch_name" \
+                  --title "Sync workflow files" \
+                  --body "This PR syncs the specified GitHub workflow files from the central repository."
+              fi
             fi
 
             # Cleanup
