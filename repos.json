@@ -25,6 +25,15 @@
             "repositoryName": "starlight-view-modes",
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "workflow-files/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-view-modes",
+            "packageName": "starlight-view-modes"
+          }
         }
       ]
     }

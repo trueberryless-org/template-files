@@ -13,7 +13,7 @@ concurrency:
 env:
   REGISTRY: docker.io
   IMAGE_OWNER: trueberryless
-  IMAGE_NAME: starlight-cooler-credit
+  IMAGE_NAME: <%= repositoryName %>
   NODE_VERSION: 20
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
     name: Filter
     runs-on: ubuntu-latest
     outputs:
-      starlight-cooler-credit: ${{ steps.filter.outputs.starlight-cooler-credit }}
+      <%= packageName %>: ${{ steps.filter.outputs.<%= packageName %> }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -30,8 +30,8 @@ jobs:
         id: filter
         with:
           filters: |
-            starlight-cooler-credit:
-              - 'packages/starlight-cooler-credit/**'
+            <%= packageName %>:
+              - 'packages/<%= packageName %>/**'
 
   changesets:
     name: Changesets
@@ -44,8 +44,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v3
@@ -81,13 +79,13 @@ jobs:
       - name: Read version from package.json
         id: get_version
         run: |
-          VERSION=$(jq -r '.version' packages/starlight-cooler-credit/package.json)
+          VERSION=$(jq -r '.version' packages/<%= packageName %>/package.json)
           echo "IMAGE_TAG=$VERSION" >> $GITHUB_ENV
 
   publish:
     needs: [changes, changesets, image-tag]
-    # Only run if there is no changeset (i.e. a release), there are changes to the packages/starlight-cooler-credit and the commit message contains '[ci] release' or 'deploy' (workflow_dispatch supported)
-    if: (needs.changes.outputs.starlight-cooler-credit == 'true' && needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
+    # Only run if there is no changeset (i.e. a release), there are changes to the packages/<%= packageName %> and the commit message contains '[ci] release' or 'deploy' (workflow_dispatch supported)
+    if: (needs.changes.outputs.<%= packageName %> == 'true' && needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -109,7 +107,7 @@ jobs:
         run: pnpm i
 
       - run: |
-          cd packages/starlight-cooler-credit
+          cd packages/<%= packageName %>
           npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -127,7 +125,7 @@ jobs:
       - id: extract-changelog
         uses: sean0x42/markdown-extract@v2.1.0
         with:
-          file: packages/starlight-cooler-credit/CHANGELOG.md
+          file: packages/<%= packageName %>/CHANGELOG.md
           pattern: ${{ needs.image-tag.outputs.IMAGE_TAG }}
 
       - uses: ncipollo/release-action@v1
