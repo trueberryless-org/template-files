@@ -115,6 +115,7 @@ jobs:
 
               # Move the processed file to the target location
               mv "$temp_file" "$dest_file"
+            done
 
             # Commit and push changes if any
             echo "Checking for changes..."
