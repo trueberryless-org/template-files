@@ -1,5 +1,5 @@
 {
-  "name": "workflow-files",
+  "name": "template-files",
   "version": "0.0.2",
   "license": "MIT",
   "description": "Provide single point of truth for workflow files",

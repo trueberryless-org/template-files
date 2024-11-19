@@ -1,4 +1,4 @@
-# `workflow-files`
+# `template-files`
 
 Provide single point of truth for workflow files.
 
@@ -11,12 +11,23 @@ Provide single point of truth for workflow files.
 ├── .github/
 │   ├── workflows/
 │   │   ├── release.yaml # Create changeset if desired
-│   │   └-─ sync.yaml # Create PRs on target repos when triggered by changeset
-├── worflow-files/ # Actual files which get synced to target repos
-│   ├── deployment.yaml
-│   ├── publish.yaml
-│   ├── release.yaml
-│   └-─ welcome-bot.yaml
+│   └-─ └-─ sync.yaml # Create PRs on target repos when triggered by changeset
+├── template-files/ # Actual files which get synced to target repos
+│   ├── .changeset/
+│   │   ├── config.json
+│   │   └-─ README.md
+│   ├── .github/
+│   │   ├── workflows/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── publish.yaml
+│   │   │   ├── release.yaml
+│   │   └-─ └-─ welcome-bot.yaml
+│   ├── manifest/
+│   │   ├── certificate.yaml
+│   │   ├── deployment.yaml
+│   │   ├── ingress.yaml
+│   │   ├── namespace.yaml
+│   └-─ └-─ service.yaml
 ├── .gitignore
 ├── LICENCE
 ├── package.json

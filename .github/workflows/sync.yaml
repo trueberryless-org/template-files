@@ -96,9 +96,9 @@ jobs:
               
               echo "Processing file: $src_file"
 
-              # Check if the file exists in the workflow-files directory
+              # Check if the file exists in the template-files directory
               if [ ! -f "../$src_file" ]; then
-                echo "Warning: File $src_file not found in /workflow-files."
+                echo "Warning: File $src_file not found in /template-files."
                 continue
               fi
 
