@@ -2,7 +2,7 @@ name: WelcomeBot
 
 on:
   pull_request_target:
-    branches: [<%= baseBranch %>]
+    branches: [main]
     types: [opened]
 
 permissions:

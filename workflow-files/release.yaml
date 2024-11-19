@@ -2,12 +2,13 @@ name: Release
 
 on:
   push:
-    branches: [<%= baseBranch %>]
+    branches:
+      - <%= branchName %>
 
 jobs:
   release:
     name: Release
-    if: ${{ github.repository_owner == '<%= organisation %>' }}
+    if: ${{ github.repository_owner == 'trueberryless-org' }}
     permissions:
       contents: write
       pull-requests: write
@@ -34,7 +35,7 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm run version
-          commit: "<%= commitMessage %>"
-          title: "<%= prTitle %>"
+          commit: "[ci] release"
+          title: "[ci] release"
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}

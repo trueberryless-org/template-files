@@ -5,19 +5,13 @@
       "files": [
         {
           "path": "workflow-files/welcome-bot.yaml",
-          "targetPath": ".github/workflows/welcome-bot.yaml",
-          "props": {
-            "baseBranch": "main"
-          }
+          "targetPath": ".github/workflows/welcome-bot.yaml"
         },
         {
           "path": "workflow-files/release.yaml",
           "targetPath": ".github/workflows/release.yaml",
           "props": {
-            "baseBranch": "main",
-            "organisation": "trueberryless-org",
-            "commitMessage": "[ci] release",
-            "prTitle": "[ci] release"
+            "branchName": "main"
           }
         }
       ]
