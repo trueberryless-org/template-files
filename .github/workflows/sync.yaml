@@ -67,10 +67,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
-          echo "Starting workflow sync..."
-
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          echo "Starting workflow sync..."
 
           repos=$(jq -c '.repositories[]' repos.json)
           global_defaults=$(jq -c '.defaults' repos.json)
