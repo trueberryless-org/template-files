@@ -27,7 +27,8 @@ Provide single point of truth for workflow files.
 │   │   ├── deployment.yaml
 │   │   ├── ingress.yaml
 │   │   ├── namespace.yaml
-│   └-─ └-─ service.yaml
+│   ├── └-─ service.yaml
+│   └-─ Dockerfile
 ├── .gitignore
 ├── LICENCE
 ├── package.json

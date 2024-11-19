@@ -85,6 +85,13 @@
           "props": {
             "repositoryName": "starlight-view-modes"
           }
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
         }
       ]
     }
