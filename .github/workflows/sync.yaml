@@ -140,11 +140,15 @@ jobs:
               echo "Committing and pushing changes for $repo_name..."
               git commit -m "Update GitHub workflow files"
               git push --force origin "$branch_name"
+
+              cd ..
               
               latest_commit_hash=$(git rev-parse HEAD)
-              latest_commit_url="https://github.com/$repo_name/commit/$latest_commit_hash"
+              latest_commit_url="https://github.com/$GITHUB_REPOSITORY/commit/$latest_commit_hash"
               latest_commit_message=$(git log -1 --pretty=%s)
               latest_commit_entry="- [$latest_commit_hash]($latest_commit_url) $latest_commit_message"
+
+              cd target-repo
 
               # Check for existing pull request
               echo "Checking for an open PR for branch $branch_name..."
