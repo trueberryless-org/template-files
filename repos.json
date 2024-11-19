@@ -4,21 +4,21 @@
       "name": "trueberryless-org/starlight-view-modes",
       "files": [
         {
-          "path": "workflow-files/welcome-bot.yaml",
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
             "branchName": "main"
           }
         },
         {
-          "path": "workflow-files/release.yaml",
+          "path": "template-files/.github/workflows/release.yaml",
           "targetPath": ".github/workflows/release.yaml",
           "props": {
             "branchName": "main"
           }
         },
         {
-          "path": "workflow-files/deployment.yaml",
+          "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
             "branchName": "main",
@@ -27,7 +27,7 @@
           }
         },
         {
-          "path": "workflow-files/publish.yaml",
+          "path": "template-files/.github/workflows/publish.yaml",
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
