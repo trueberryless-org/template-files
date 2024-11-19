@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <%= repositoryName %>
+  namespace: <%= repositoryName %>
+  labels:
+    app: <%= repositoryName %>
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: <%= repositoryName %>
+  template:
+    metadata:
+      labels:
+        app: <%= repositoryName %>
+    spec:
+      containers:
+        - name: <%= repositoryName %>
+          image: "trueberryless/<%= repositoryName %>:0.1.9"
+          imagePullPolicy: Always

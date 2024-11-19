@@ -34,6 +34,57 @@
             "repositoryName": "starlight-view-modes",
             "packageName": "starlight-view-modes"
           }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes",
+            "subdomainName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes",
+            "subdomainName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-view-modes"
+          }
         }
       ]
     }
