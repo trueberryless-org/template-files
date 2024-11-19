@@ -153,7 +153,7 @@ jobs:
               if [ -n "$existing_pr" ]; then
                 echo "Found existing PR #$existing_pr. Updating it..."
                 current_body=$(gh pr view "$existing_pr" --json body --jq '.body')
-                updated_body="$current_body\n$latest_commit_entry"
+                updated_body=$(printf "%s\n%s" "$current_body" "$latest_commit_entry")
                 gh pr edit "$existing_pr" --body "$updated_body"
                 gh pr comment "$existing_pr" --body "The branch has been updated with the [latest changes]($latest_commit_url)."
               else
