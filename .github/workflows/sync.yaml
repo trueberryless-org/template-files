@@ -73,7 +73,7 @@ jobs:
           echo "Starting workflow sync..."
 
           repos=$(jq -c '.repositories[]' repos.json)
-          global_defaults=$(jq -c '.defaults' repos.json)
+          global_defaults=$(jq -c '.defaults // {}' repos.json)
 
           for repo_config in $repos; do
             repo_name=$(echo "$repo_config" | jq -r '.name')
