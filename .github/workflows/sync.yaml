@@ -140,6 +140,11 @@ jobs:
               echo "Committing and pushing changes for $repo_name..."
               git commit -m "Update GitHub workflow files"
               git push --force origin "$branch_name"
+              
+              latest_commit_hash=$(git rev-parse HEAD)
+              latest_commit_url="https://github.com/$repo_name/commit/$latest_commit_hash"
+              latest_commit_message=$(git log -1 --pretty=%s)
+              latest_commit_entry="- [$latest_commit_hash]($latest_commit_url) $latest_commit_message"
 
               # Check for existing pull request
               echo "Checking for an open PR for branch $branch_name..."
@@ -147,14 +152,17 @@ jobs:
 
               if [ -n "$existing_pr" ]; then
                 echo "Found existing PR #$existing_pr. Updating it..."
-                gh pr comment "$existing_pr" --body "The branch has been updated with the latest changes."
+                current_body=$(gh pr view "$existing_pr" --json body --jq '.body')
+                updated_body="$current_body\n$latest_commit_entry"
+                gh pr edit "$existing_pr" --body "$updated_body"
+                gh pr comment "$existing_pr" --body "The branch has been updated with the [latest changes]($latest_commit_url)."
               else
                 echo "No existing PR found. Creating a new one..."
                 gh pr create \
                   --base main \
                   --head "$branch_name" \
                   --title "Sync workflow files" \
-                  --body "This PR syncs the specified GitHub workflow files from the [central repository](https://github.com/trueberryless-org/template-files)."
+                  --body "This PR syncs the specified GitHub workflow files from the [central repository](https://github.com/trueberryless-org/template-files).\n\n### Changes:\n$latest_commit_entry"
               fi
             fi
 

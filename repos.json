@@ -92,6 +92,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json",
+          "targetPath": "package.json",
+          "special": true
         }
       ]
     }
