@@ -56,7 +56,7 @@ jobs:
     steps:
       # Step 1: Checkout current repository
       - name: Checkout current repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Step 2: Install jq for JSON parsing
       - name: Install jq
@@ -73,6 +73,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
           repos=$(jq -c '.repositories[]' repos.json)
+          global_defaults=$(jq -c '.defaults' repos.json)
 
           for repo_config in $repos; do
             repo_name=$(echo "$repo_config" | jq -r '.name')
