@@ -44,15 +44,7 @@ jobs:
   sync-workflows:
     runs-on: ubuntu-latest
     needs: changesets
-    if: >
-      (
-        needs.changesets.outputs.hasChangesets == 'false' && 
-        (
-          contains(github.event.head_commit.message, 'deploy') || 
-          contains(github.event.head_commit.message, '[ci] release')
-        )
-      ) || 
-      github.event_name == 'workflow_dispatch'
+    if: (needs.changesets.outputs.hasChangesets == 'false' && (contains(github.event.head_commit.message, 'deploy') || contains(github.event.head_commit.message, '[ci] release'))) || github.event_name == 'workflow_dispatch'
     steps:
       # Step 1: Checkout current repository
       - name: Checkout current repository
@@ -67,10 +59,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
+          echo "Starting workflow sync..."
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          echo "Starting workflow sync..."
 
           repos=$(jq -c '.repositories[]' repos.json)
 
@@ -107,11 +99,11 @@ jobs:
 
               # Handle dynamic content replacement if "props" is specified
               props=$(echo "$file_config" | jq -c '.props // empty')
-              
               if [ -n "$props" ]; then
                 echo "Applying dynamic replacements for $src_file..."
                 temp_file=$(mktemp)
                 cp "../$src_file" "$temp_file"
+
                 # Replace placeholders with their respective values from props
                 for key in $(echo "$props" | jq -r 'keys[]'); do
                   value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
@@ -119,6 +111,7 @@ jobs:
                   echo "Replacing $placeholder with $value in $src_file..."
                   sed -i "s|$placeholder|$value|g" "$temp_file"
                 done
+
                 # Move the processed file to the target location
                 mv "$temp_file" "$dest_file"
               else
