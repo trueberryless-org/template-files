@@ -2,7 +2,19 @@
   "repositories": [
     {
       "name": "trueberryless-org/starlight-view-modes",
-      "needs": ["release.yaml", "welcome-bot.yaml"]
+      "files": [
+        {
+          "path": "workflow-files/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml"
+        },
+        {
+          "path": "workflow-files/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        }
+      ]
     }
   ]
 }

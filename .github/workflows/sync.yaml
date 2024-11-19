@@ -68,7 +68,6 @@ jobs:
 
           for repo_config in $repos; do
             repo_name=$(echo "$repo_config" | jq -r '.name')
-            files=$(echo "$repo_config" | jq -r '.needs[]')
 
             echo "Processing repository: $repo_name"
             
@@ -83,16 +82,41 @@ jobs:
             git checkout -b "$branch_name" || git checkout "$branch_name"
 
             # Sync specified workflow files
-            for file in $files; do
-              src_file="../workflow-files/$file"
-              dest_file=".github/workflows/$file"
+            for file_config in $(jq -c '.files[]' <<<"$repo_config"); do
+              src_file=$(echo "$file_config" | jq -r '.path')
+              dest_file=$(echo "$file_config" | jq -r '.targetPath')
+              
+              echo "Processing file: $src_file"
 
-              if [ -f "$src_file" ]; then
-                echo "Updating file $file..."
-                mkdir -p "$(dirname "$dest_file")"
-                cp "$src_file" "$dest_file"
+              # Check if the file exists in the workflow-files directory
+              if [ ! -f "../$src_file" ]; then
+                echo "Warning: File $src_file not found in /workflow-files."
+                continue
+              fi
+
+              # Prepare the destination directory
+              mkdir -p "$(dirname "$dest_file")"
+
+              # Handle dynamic content replacement if "props" is specified
+              props=$(echo "$file_config" | jq -c '.props // empty')
+              if [ -n "$props" ]; then
+                echo "Applying dynamic replacements for $src_file..."
+                temp_file=$(mktemp)
+                cp "../$src_file" "$temp_file"
+
+                # Replace placeholders with their respective values from props
+                for key in $(echo "$props" | jq -r 'keys[]'); do
+                  value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+                  placeholder="<%= $key %>"
+                  echo "Replacing $placeholder with $value in $src_file..."
+                  sed -i "s|$placeholder|$value|g" "$temp_file"
+                done
+
+                # Move the processed file to the target location
+                mv "$temp_file" "$dest_file"
               else
-                echo "Warning: File $file not found in /workflow-files."
+                # If no props, copy the file directly
+                cp "../$src_file" "$dest_file"
               fi
             done
 
