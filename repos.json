@@ -5,7 +5,10 @@
       "files": [
         {
           "path": "workflow-files/welcome-bot.yaml",
-          "targetPath": ".github/workflows/welcome-bot.yaml"
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
         },
         {
           "path": "workflow-files/release.yaml",
