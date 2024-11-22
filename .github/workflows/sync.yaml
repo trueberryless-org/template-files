@@ -116,7 +116,7 @@ jobs:
           git checkout -b "$branch_name" || git checkout "$branch_name"
 
           # Sync specified workflow files
-          for file_config in $(echo "$files" | jq -c '.'); do
+          for file_config in $(echo "$files" | jq -c '.[]'); do
             src_file=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
             
