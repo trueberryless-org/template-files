@@ -53,6 +53,9 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
 
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
       - name: Read Repositories from JSON
         id: set-matrix
         run: |
