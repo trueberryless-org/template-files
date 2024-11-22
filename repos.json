@@ -97,6 +97,13 @@
           "path": "template-files/package.json",
           "targetPath": "package.json",
           "special": true
+        },
+        {
+          "path": "template-files/LICENCE",
+          "targetPath": "LICENCE",
+          "props": {
+            "year": "2023"
+          }
         }
       ]
     }
