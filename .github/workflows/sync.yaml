@@ -60,12 +60,14 @@ jobs:
         id: set-matrix
         run: |
           repos=$(jq -c '.repositories[] | {name: .name, files: .files}' repos.json | jq -s .)
-          echo "${repos}"
           {
             echo "REPO_MATRIX<<EOF"
             echo ${repos}
             echo EOF
           } >> $GITHUB_ENV
+
+      - name: Print Matrix
+        run: echo "${{ env.REPO_MATRIX }}"
 
   sync-workflows:
     runs-on: ubuntu-latest
