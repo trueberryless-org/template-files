@@ -60,16 +60,12 @@ jobs:
         id: set-matrix
         run: |
           repos=$(jq -c '.repositories[] | {name: .name, files: .files}' repos.json | jq -s .)
+          echo "${repos}"
           {
             echo "REPO_MATRIX<<EOF"
             echo ${repos}
             echo EOF
           } >> $GITHUB_ENV
-
-      - name: Debug Matrix Output
-        run: |
-          echo "Matrix from jq:"
-          echo "${{ env.REPO_MATRIX }}"
 
   sync-workflows:
     runs-on: ubuntu-latest
@@ -217,11 +213,12 @@ jobs:
               gh pr comment "$existing_pr" --body "The branch has been updated with the [latest changes]($latest_commit_url)."
             else
               echo "No existing PR found. Creating a new one..."
+              description=$(printf "%s\n\n%s\n%s" "This PR syncs the specified GitHub workflow files from the [central repository](https://github.com/trueberryless-org/template-files)." "### Changes:" "$latest_commit_entry")
               gh pr create \
                 --base main \
                 --head "$branch_name" \
                 --title "Sync workflow files" \
-                --body "This PR syncs the specified GitHub workflow files from the [central repository](https://github.com/trueberryless-org/template-files).\n\n### Changes:\n$latest_commit_entry"
+                --body "$description"
             fi
           fi
 
