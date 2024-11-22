@@ -1,6 +1,6 @@
 {
   "name": "template-files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "Provide single point of truth for workflow files",
   "scripts": {

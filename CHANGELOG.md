@@ -1,5 +1,11 @@
 # template-files
 
+## 0.0.3
+
+### Patch Changes
+
+- [`c57b8d3`](https://github.com/trueberryless-org/template-files/commit/c57b8d34c0222683b095ac32c2b565ce6c46e7a1) Thanks [@trueberryless](https://github.com/trueberryless)! - Update publish and deployment actions so they skip release and discord notification if tag already exists
+
 ## 0.0.2
 
 ### Patch Changes
