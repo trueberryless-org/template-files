@@ -99,8 +99,8 @@
           "special": true
         },
         {
-          "path": "template-files/LICENCE",
-          "targetPath": "LICENCE",
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
           "props": {
             "year": "2023"
           }
