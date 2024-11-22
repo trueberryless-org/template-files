@@ -105,8 +105,7 @@
           "targetPath": "README.md",
           "processing": "append_or_update_section",
           "props": {
-            "sectionTitle": "## License",
-            "sectionContent": "Licensed under the MIT License, Copyright © trueberryless-org.\n\nSee [LICENSE](/LICENSE) for more information."
+            "sectionTitle": "## License"
           }
         }
       ]

@@ -132,15 +132,22 @@ jobs:
               "append_or_update_section")
                 # Extract dynamic properties
                 section_title=$(echo "$file_config" | jq -r '.props.sectionTitle // empty')
-                section_content=$(echo "$file_config" | jq -r '.props.sectionContent // empty')
 
-                if [ -n "$section_title" ] && [ -n "$section_content" ]; then
+                if [ -n "$section_title" ]; then
                   echo "Processing section: $section_title"
 
-                  # Check if the section already exists
+                  # Extract section content from the template file
+                  section_content=$(awk "/^$section_title/,/^## /" "../$src_file" | sed '/^## /d')
+                  
+                  if [ -z "$section_content" ]; then
+                    echo "Error: Section $section_title not found in template file $src_file."
+                    exit 1
+                  fi
+
+                  # Check if the destination file already contains the section
                   if grep -q "^$section_title" "$dest_file"; then
                     echo "Section $section_title found. Updating it..."
-                    # Use sed to replace the section (from $section_title to the next heading or EOF)
+                    # Replace the section from the title to the next heading or EOF
                     sed -i "/^$section_title/,/^## /{/^## /!d; /^$section_title/a\\
           $section_content
           }" "$dest_file"
@@ -150,7 +157,7 @@ jobs:
                     printf "\n%s\n%s\n" "$section_title" "$section_content" >> "$dest_file"
                   fi
                 else
-                  echo "Skipping dynamic section processing: Missing sectionTitle or sectionContent."
+                  echo "Skipping section processing: Missing sectionTitle."
                 fi
                 ;;
               "replace_with_placeholders")
