@@ -94,15 +94,19 @@
           }
         },
         {
-          "path": "template-files/package.json",
-          "targetPath": "package.json",
-          "special": true
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "processing": "append_or_update_section",
+          "props": {
+            "sectionTitle": "## License",
+            "sectionContent": "Licensed under the MIT License, Copyright © trueberryless-org.\n\nSee [LICENSE](/LICENSE) for more information."
           }
         }
       ]

@@ -119,8 +119,9 @@ jobs:
           for file_config in $(echo "$files" | jq -c '.[]'); do
             src_file=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
+            processing=$(echo "$file_config" | jq -r '.processing // "replace_with_placeholders"')
             
-            echo "Processing file: $src_file"
+            echo "Processing file: $src_file as $processing"
 
             # Check if the file exists in the template-files directory
             if [ ! -f "../$src_file" ]; then
@@ -128,30 +129,61 @@ jobs:
               continue
             fi
 
-            # Prepare the destination directory
-            mkdir -p "$(dirname "$dest_file")"
+            case $processing in
+              "replace")
+                cp "../$src_file" "$dest_file"
+                ;;
+              "append_or_update_section")
+                # Extract dynamic properties
+                section_title=$(echo "$file_config" | jq -r '.props.sectionTitle // empty')
+                section_content=$(echo "$file_config" | jq -r '.props.sectionContent // empty')
 
-            # Handle dynamic content replacement if "props" is specified
-            props=$(echo "$file_config" | jq -c '.props // empty')
-            if [ -n "$props" ]; then
-              echo "Applying dynamic replacements for $src_file..."
-              temp_file=$(mktemp)
-              cp "../$src_file" "$temp_file"
+                if [ -n "$section_title" ] && [ -n "$section_content" ]; then
+                  echo "Processing section: $section_title"
 
-              # Replace placeholders with their respective values from props
-              for key in $(echo "$props" | jq -r 'keys[]'); do
-                value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
-                placeholder="<%= $key %>"
-                echo "Replacing $placeholder with $value in $src_file..."
-                sed -i "s|$placeholder|$value|g" "$temp_file"
-              done
+                  # Check if the section already exists
+                  if grep -q "^$section_title" "$dest_file"; then
+                    echo "Section $section_title found. Updating it..."
+                    # Use sed to replace the section (from $section_title to the next heading or EOF)
+                    sed -i "/^$section_title/,/^## /{/^## /!d; /^$section_title/a\\
+          $section_content
+          }" "$dest_file"
+                  else
+                    echo "Section $section_title not found. Appending it..."
+                    # Append the section at the end of the file
+                    printf "\n%s\n%s\n" "$section_title" "$section_content" >> "$dest_file"
+                  fi
+                else
+                  echo "Skipping dynamic section processing: Missing sectionTitle or sectionContent."
+                fi
+                ;;
+              "replace_with_placeholders")
+                # Prepare the destination directory
+                mkdir -p "$(dirname "$dest_file")"
 
-              # Move the processed file to the target location
-              mv "$temp_file" "$dest_file"
-            else
-              # If no props, copy the file directly
-              cp "../$src_file" "$dest_file"
-            fi
+                # Handle dynamic content replacement if "props" is specified
+                props=$(echo "$file_config" | jq -c '.props // empty')
+                if [ -n "$props" ]; then
+                  echo "Applying dynamic replacements for $src_file..."
+                  temp_file=$(mktemp)
+                  cp "../$src_file" "$temp_file"
+
+                  # Replace placeholders with their respective values from props
+                  for key in $(echo "$props" | jq -r 'keys[]'); do
+                    value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+                    placeholder="<%= $key %>"
+                    echo "Replacing $placeholder with $value in $src_file..."
+                    sed -i "s|$placeholder|$value|g" "$temp_file"
+                  done
+
+                  # Move the processed file to the target location
+                  mv "$temp_file" "$dest_file"
+                else
+                  # If no props, copy the file directly
+                  cp "../$src_file" "$dest_file"
+                fi
+                ;;
+            esac            
           done
 
           # Commit and push changes if any
