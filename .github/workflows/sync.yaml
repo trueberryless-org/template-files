@@ -88,10 +88,19 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
         with:
-          node-version: "18"
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, prettier]
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
 
       - name: Install jq
         run: sudo apt-get install -y jq
@@ -200,8 +209,8 @@ jobs:
             echo "No changes detected for $repo_name."
           else
             # Run Prettier before committing (TODO)
-            # echo "Formatting code with Prettier..."
-            # pnpm prettier --write .
+            echo "Formatting code with Prettier..."
+            pnpm prettier --write .
 
             echo "Committing and pushing changes for $repo_name..."
             git commit -m "Update GitHub workflow files"
