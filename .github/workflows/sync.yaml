@@ -132,7 +132,8 @@ jobs:
                 echo "Special handling for README.md"
 
                 # Read the License section from the source file
-                license_content=$(cat "../$src_file" | grep -A 100 "## License" | tail -n +2)  # Get License section content
+                license_content=$(cat "../$src_file" | grep -A 100 "## License" | tail -n +2)
+                license_content=$(echo "$license_content" | sed 's/[&/\]/\\&/g')
 
                 # Combine existing README.md with the License section
                 if [ -f "$dest_file" ]; then
