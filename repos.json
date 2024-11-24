@@ -154,6 +154,13 @@
           "special": true
         },
         {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-view-modes/README.md",
           "special": true
