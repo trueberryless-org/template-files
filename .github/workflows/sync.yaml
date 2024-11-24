@@ -301,6 +301,8 @@ jobs:
           pr_url="https://github.com/${repo_name}/pull/$(gh pr list --repo "$repo_name" --base main --head "$branch_name" --json number --jq '.[0].number')"
           changed_files="${{ env.CHANGED_FILES }}"
 
+          mkdir -p "summary"
+
           if [ "$changed_files" -gt 0 ]; then
             echo "| $repo_name | [PR Link]($pr_url) | $changed_files |" >> summary/summary_table.txt
           else
