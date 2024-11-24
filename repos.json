@@ -265,7 +265,7 @@
           "special": "package.json",
           "props": {
             "name": "blog-monorepo",
-            "description": "Some cool blog posts about deployment and such technical stuff."
+            "description": "Test"
           }
         },
         {
