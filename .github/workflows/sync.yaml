@@ -139,23 +139,30 @@ jobs:
                 fi
 
                 # Combine existing README.md with the License section
-                cat "../$src_file" > temp_readme.md
-                echo -e "$license_section" >> temp_readme.md
+                if [ -f "$dest_file" ]; then
+                  # Append the License section to the existing README.md
+                  cat "$dest_file" > temp_readme.md
+                  echo -e "\n$license_section" >> temp_readme.md
 
-                # Deduplicate and ensure the license section is at the end
-                awk '!seen[$0]++' temp_readme.md > "$dest_file"
-                rm temp_readme.md
+                  # Deduplicate and ensure the License section is at the end
+                  awk '!seen[$0]++' temp_readme.md > "$dest_file"
+                  rm temp_readme.md
+                else
+                  # If no existing README.md, copy the template and add the License section
+                  cp "../$src_file" "$dest_file"
+                  echo -e "\n$license_section" >> "$dest_file"
+                fi
               elif [[ "$dest_file" == "package.json" ]]; then
                 echo "Special handling for package.json"
 
-                # Merge dynamically extracted values from template package.json
-                jq -n \
-                  --argfile template "../$src_file" \
+                # Deep merge devDependencies and scripts while ensuring packageManager exists
+                jq --argfile template "../$src_file" \
                   --argfile current "$dest_file" \
-                  '($current + $template) |
-                  .scripts.version //= "pnpm changeset version && pnpm i --no-frozen-lockfile" |
-                  .packageManager //= $template.packageManager |
-                  .devDependencies += $template.devDependencies' > temp_package.json
+                  '{
+                      packageManager: $current.packageManager // $template.packageManager,
+                      scripts: ($current.scripts + $template.scripts),
+                      devDependencies: ($current.devDependencies + $template.devDependencies)
+                    } + $current + $template' > temp_package.json
 
                 mv temp_package.json "$dest_file"
               fi
