@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.3
+
+### Patch Changes
+
+- [`2e83bc8`](https://github.com/trueberryless-org/template-files/commit/2e83bc8b07581ef18b5bd859fd79e05577f960fa) Thanks [@trueberryless](https://github.com/trueberryless)! - Try stupid things from the internet
+
 ## 0.1.2
 
 ### Patch Changes
