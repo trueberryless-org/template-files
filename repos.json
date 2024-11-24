@@ -102,7 +102,7 @@
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "README.md",
+          "targetPath": "packages/starlight-view-modes/README.md",
           "special": true
         },
         {

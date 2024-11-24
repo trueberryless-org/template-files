@@ -208,6 +208,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected for $repo_name."
           else
+            # Run Prettier before committing (TODO)
+            # echo "Formatting code with Prettier..."
+            # pnpm prettier --write .
+
             echo "Committing and pushing changes for $repo_name..."
             git commit -m "Update GitHub workflow files"
             git push --force origin "$branch_name"
