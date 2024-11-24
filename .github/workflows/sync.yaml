@@ -242,6 +242,14 @@ jobs:
           # Commit and push changes if any
           echo "Checking for changes..."
           git add .
+
+          # Count the number of staged files
+          changed_count=$(git diff --cached --name-only | wc -l)
+          echo "Number of changed files: $changed_count"
+
+          # Save the count to a GitHub environment variable for later steps
+          echo "CHANGED_FILES=$changed_count" >> $GITHUB_ENV
+
           if git diff --cached --quiet; then
             echo "No changes detected for $repo_name."
           else
@@ -283,6 +291,37 @@ jobs:
           cd ..
           echo "Cleaning up repository clone for $repo_name..."
           rm -rf target-repo
+
+      - name: Append summary for repository
+        if: success()
+        run: |
+          repo_name="${{ matrix.repo.name }}"
+          pr_url="https://github.com/${repo_name}/pull/$(gh pr view --json number --jq '.number')"
+          changed_files="${{ env.CHANGED_FILES }}"
+
+          if [ "$changed_files" -gt 0 ]; then
+            echo "| $repo_name | [PR Link]($pr_url) | $changed_files |" >> summary_table.txt
+          else
+            echo "| $repo_name | No PR | $changed_files |" >> summary_table.txt
+          fi
+
+  summarize:
+    name: Summarize Matrix Results
+    runs-on: ubuntu-latest
+    needs: sync
+    steps:
+      - name: Create Markdown Table
+        run: |
+          echo "### Summary of PRs and Changed Files" > $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Repository | PR Link | Files Changed |" >> $GITHUB_STEP_SUMMARY
+          echo "|------------|---------|---------------|" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f summary_table.txt ]; then
+            cat summary_table.txt >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| No data collected | - | - |" >> $GITHUB_STEP_SUMMARY
+          fi
 
   image-tag:
     name: Image Tag
