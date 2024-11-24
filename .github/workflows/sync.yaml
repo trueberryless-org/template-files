@@ -131,20 +131,25 @@ jobs:
 
             # Detect if src_file is a URL or relative path
             if [[ "$src_file_raw" =~ ^https?:// ]]; then
-              echo "$src_file_raw is a URL. Using it directly."
-              src_file="$src_file_raw"
+              echo "$src_file is a URL. Downloading it..."
+              temp_file=$(mktemp)
+              if ! curl -sSL "$src_file_raw" -o "$temp_file"; then
+                echo "Error: Failed to download $src_file. Skipping..."
+                continue
+              fi
+              src_file="$temp_file"
             else
               echo "$src_file_raw is a relative path. Prefixing with '../'."
               src_file="../$src_file_raw"
+
+              # Check if the file exists (only for local files)
+              if [ ! -f "$src_file" ]; then
+                echo "Warning: File $src_file not found in /template-files."
+                continue
+              fi
             fi
             
-            echo "Processing file: $src_file -> $dest_file"
-
-            # Check if the file exists (only for local files)
-            if [[ ! "$src_file" =~ ^https?:// ]] && [ ! -f "$src_file" ]; then
-              echo "Warning: File $src_file not found in /template-files."
-              continue
-            fi
+            echo "Processing file: $src_file -> $dest_file"            
 
             if [ "$special" == "true" ]; then
               if [[ "$dest_file" == *README.md ]]; then
@@ -192,6 +197,11 @@ jobs:
                 # If no props, copy the file directly
                 cp "$src_file" "$dest_file"
               fi
+            fi
+
+            if [[ "$src_file_raw" =~ ^https?:// ]]; then
+              echo "Cleaning up temporary file..."
+              rm -f "$src_file"
             fi
           done
 
