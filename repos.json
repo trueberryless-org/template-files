@@ -256,8 +256,7 @@
         },
         {
           "path": "template-files/package.json/changeset.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
+          "targetPath": "package.json"
         },
         {
           "path": "template-files/package.json/definition.package.json",

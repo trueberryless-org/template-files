@@ -151,11 +151,6 @@ jobs:
               fi
             fi
 
-            echo "Content of $src_file:"
-            cat "$src_file"
-            echo "Content of $dest_file:"
-            cat "$dest_file"
-
             if [ "$special" == "README.md" ]; then
               echo "Special handling for README.md"
 
