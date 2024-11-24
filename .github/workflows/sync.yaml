@@ -131,18 +131,25 @@ jobs:
               if [[ "$dest_file" == *README.md ]]; then
                 echo "Special handling for README.md"
 
-                # Read the License section from the source file
-                license_content=$(cat "../$src_file" | grep -A 100 "## License" | tail -n +2)
-                license_content=$(echo "$license_content" | sed 's/[&/\]/\\&/g')
-
                 # Combine existing README.md with the License section
                 if [ -f "$dest_file" ]; then
-                  # Replace the License section in the destination file
-                  sed -i "/## License/,/## /c\\
-                  ## License\\n\\
-                  $license_content" "$dest_file"
+                  # Create a temporary file to store the combined content
+                  echo "Combining existing README.md with the License section..."
+
+                  # Read the contents of the first file
+                  dest_content=$(cat "$dest_file")
+
+                  # Read the contents of the second file, focusing on the License section
+                  src_license=$(awk '/## License/,EOF' "../$src_file" | tail -n +2)
+
+                  # Combine content, replace the License section from file1 with the new License content from file2
+                  combination=$(echo "$dest_content" | sed "/## License/ {n; s/.*/$src_license/}")
+
+                  # Output the combined content to a new file
+                  echo "$combination" > "$dest_file"
                 else
                   # If no existing README.md, copy the template and add the License section
+                  echo "No existing README.md found. Creating a new one..."
                   cp "../$src_file" "$dest_file"
                 fi
               elif [[ "$dest_file" == "package.json" ]]; then
