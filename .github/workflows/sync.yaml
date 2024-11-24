@@ -73,6 +73,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [changesets, prepare-matrix]
     strategy:
+      fail-fast: false
       matrix:
         repo: ${{ fromJson(needs.prepare-matrix.outputs.repo-matrix) }}
     if: >
@@ -92,8 +93,8 @@ jobs:
         name: Install pnpm
         with:
           run_install: |
-            - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - recursive: false
+              args: [--frozen-lockfile]
             - args: [--global, prettier]
 
       - name: Install Node.js
