@@ -131,26 +131,18 @@ jobs:
               if [[ "$dest_file" == *README.md ]]; then
                 echo "Special handling for README.md"
 
-                # Extract the License section dynamically from the template README.md
-                license_section=$(awk '/## License/,0' "../$src_file")
-                if [ -z "$license_section" ]; then
-                  echo "Error: License section not found in template README.md"
-                  continue
-                fi
+                # Read the License section from the source file
+                license_content=$(cat "../$src_file" | grep -A 100 "## License" | tail -n +2)  # Get License section content
 
                 # Combine existing README.md with the License section
                 if [ -f "$dest_file" ]; then
-                  # Append the License section to the existing README.md
-                  cat "$dest_file" > temp_readme.md
-                  echo -e "\n$license_section" >> temp_readme.md
-
-                  # Deduplicate and ensure the License section is at the end
-                  awk '!seen[$0]++' temp_readme.md > "$dest_file"
-                  rm temp_readme.md
+                  # Replace the License section in the destination file
+                  sed -i "/## License/,/## /c\\
+                  ## License\\n\\
+                  $license_content" "$dest_file"
                 else
                   # If no existing README.md, copy the template and add the License section
                   cp "../$src_file" "$dest_file"
-                  echo -e "\n$license_section" >> "$dest_file"
                 fi
               elif [[ "$dest_file" == "package.json" ]]; then
                 echo "Special handling for package.json"
