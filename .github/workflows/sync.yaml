@@ -155,15 +155,29 @@ jobs:
               elif [[ "$dest_file" == "package.json" ]]; then
                 echo "Special handling for package.json"
 
-                # Deep merge devDependencies and scripts while ensuring packageManager exists
+                # Iterate over each key in src_file and merge or update values in dest_file
                 jq --argfile template "../$src_file" \
                   --argfile current "$dest_file" \
-                  '{
-                      packageManager: $current.packageManager // $template.packageManager,
-                      scripts: ($current.scripts + $template.scripts),
-                      devDependencies: ($current.devDependencies + $template.devDependencies)
-                    } + $current + $template' > temp_package.json
+                  '
+                  # For each key in the template, check if it exists in the current (dest_file)
+                  # If it exists and the value is different, update it. If not, add it.
+                  reduce (keys_unsorted($template) | .[]) as $key (
+                    $current;
+                    if has($key) then
+                      # If the key exists, check if the value is different, then update it
+                      if ($current[$key] != $template[$key]) then
+                        .[$key] = $template[$key]
+                      else
+                        .  # Keep the existing value if it matches
+                      end
+                    else
+                      # If the key doesn't exist, add it
+                      .[$key] = $template[$key]
+                    end
+                  )
+                  ' > temp_package.json
 
+                # Move the processed JSON back to the destination file
                 mv temp_package.json "$dest_file"
               fi
             else
