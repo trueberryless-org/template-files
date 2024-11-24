@@ -302,9 +302,9 @@ jobs:
           changed_files="${{ env.CHANGED_FILES }}"
 
           if [ "$changed_files" -gt 0 ]; then
-            echo "| $repo_name | [PR Link]($pr_url) | $changed_files |" >> summary_table.txt
+            echo "| $repo_name | [PR Link]($pr_url) | $changed_files |" >> summary/summary_table.txt
           else
-            echo "| $repo_name | No PR | $changed_files |" >> summary_table.txt
+            echo "| $repo_name | No PR | $changed_files |" >> summary/summary_table.txt
           fi
 
       - name: Replace "/" with "-" in repo name for artifact upload
@@ -341,7 +341,7 @@ jobs:
           echo "|------------|---------|---------------|" >> final_summary.md
 
           # Loop over the downloaded summary artifacts and append their content
-          for artifact in $(find . -name "summary_table.txt"); do
+          for artifact in $(find . -name "summary/summary_table.txt"); do
             cat "$artifact" >> final_summary.md
             echo "\n" >> final_summary.md
           done
