@@ -203,7 +203,12 @@ jobs:
                 else
                   # If the destination file does not exist, just copy the source file
                   echo "Destination file $dest_file does not exist. Copying $src_file to $dest_file..."
+                  if [ ! -f "$src_file" ]; then
+                    echo "Error: Source file $src_file does not exist."
+                    exit 1
+                  fi
                   cp "$src_file" "$dest_file"
+                  exit 1
                 fi
               fi
             else
