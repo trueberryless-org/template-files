@@ -264,7 +264,7 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "name": "blog",
+            "name": "blog-monorepo",
             "description": "Some cool blog posts about deployment and such technical stuff."
           }
         },
