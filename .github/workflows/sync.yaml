@@ -117,7 +117,7 @@ jobs:
           for file_config in $(echo "$files" | jq -c '.[]'); do
             src_file=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
-            processing=$(echo "$file_config" | jq -r '.processing // "replace_with_placeholders"')
+            special=$(echo "$file_config" | jq -r '.special // empty')
             
             echo "Processing file: $src_file as $processing"
 
@@ -127,69 +127,73 @@ jobs:
               continue
             fi
 
-            case $processing in
-              "replace")
+            if [ "$special" == "true" ]; then
+              if [[ "$dest_file" == "README.md" ]]; then
+                echo "Special handling for README.md"
+
+                # Extract the License section dynamically from the template README.md
+                license_section=$(awk '/## License/,0' "../$src_file")
+                if [ -z "$license_section" ]; then
+                  echo "Error: License section not found in template README.md"
+                  continue
+                fi
+
+                # Combine existing README.md with the License section
+                cat "../$src_file" > temp_readme.md
+                echo -e "$license_section" >> temp_readme.md
+
+                # Deduplicate and ensure the license section is at the end
+                awk '!seen[$0]++' temp_readme.md > "$dest_file"
+                rm temp_readme.md
+              elif [[ "$dest_file" == "package.json" ]]; then
+                echo "Special handling for package.json"
+
+                # Merge dynamically extracted values from template package.json
+                jq -n \
+                  --argfile template "../$src_file" \
+                  --argfile current "$dest_file" \
+                  '($current + $template) |
+                  .scripts.version //= "pnpm changeset version && pnpm i --no-frozen-lockfile" |
+                  .packageManager //= $template.packageManager |
+                  .devDependencies += $template.devDependencies' > temp_package.json
+
+                mv temp_package.json "$dest_file"
+              fi
+            else
+              # Prepare the destination directory
+              mkdir -p "$(dirname "$dest_file")"
+
+              # Handle dynamic content replacement if "props" is specified
+              props=$(echo "$file_config" | jq -c '.props // empty')
+              if [ -n "$props" ]; then
+                echo "Applying dynamic replacements for $src_file..."
+                temp_file=$(mktemp)
+                cp "../$src_file" "$temp_file"
+
+                # Replace placeholders with their respective values from props
+                for key in $(echo "$props" | jq -r 'keys[]'); do
+                  value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+                  placeholder="<%= $key %>"
+                  echo "Replacing $placeholder with $value in $src_file..."
+                  sed -i "s|$placeholder|$value|g" "$temp_file"
+                done
+
+                # Move the processed file to the target location
+                mv "$temp_file" "$dest_file"
+              else
+                # If no props, copy the file directly
                 cp "../$src_file" "$dest_file"
-                ;;
-              "append_or_update_section")
-                # Extract dynamic properties
-                section_title=$(echo "$file_config" | jq -r '.props.sectionTitle // empty')
-
-                if [ -n "$section_title" ]; then
-                  echo "Processing section: $section_title"
-
-                  # Extract section content from the template file
-                  section_content=$(awk "/^$section_title/,/^## /" "../$src_file" | sed '/^## /d')
-                  
-                  if [ -z "$section_content" ]; then
-                    echo "Error: Section $section_title not found in template file $src_file."
-                    exit 1
-                  fi
-
-                  # Check if the destination file already contains the section
-                  if grep -q "^$section_title" "$dest_file"; then
-                    echo "Section $section_title found. Updating it..."
-                    # Replace the section from the title to the next heading or EOF
-                    sed -i "/^$section_title/,/^## /{/^## /!d; /^$section_title/a\\
-          $section_content
-          }" "$dest_file"
-                  else
-                    echo "Section $section_title not found. Appending it..."
-                    # Append the section at the end of the file
-                    printf "\n%s\n%s\n" "$section_title" "$section_content" >> "$dest_file"
-                  fi
-                else
-                  echo "Skipping section processing: Missing sectionTitle."
-                fi
-                ;;
-              "replace_with_placeholders")
-                # Prepare the destination directory
-                mkdir -p "$(dirname "$dest_file")"
-
-                # Handle dynamic content replacement if "props" is specified
-                props=$(echo "$file_config" | jq -c '.props // empty')
-                if [ -n "$props" ]; then
-                  echo "Applying dynamic replacements for $src_file..."
-                  temp_file=$(mktemp)
-                  cp "../$src_file" "$temp_file"
-
-                  # Replace placeholders with their respective values from props
-                  for key in $(echo "$props" | jq -r 'keys[]'); do
-                    value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
-                    placeholder="<%= $key %>"
-                    echo "Replacing $placeholder with $value in $src_file..."
-                    sed -i "s|$placeholder|$value|g" "$temp_file"
-                  done
-
-                  # Move the processed file to the target location
-                  mv "$temp_file" "$dest_file"
-                else
-                  # If no props, copy the file directly
-                  cp "../$src_file" "$dest_file"
-                fi
-                ;;
-            esac            
+              fi
+            fi
           done
+
+          # Post-processing: Run pnpm install only if package.json was modified
+          if git diff --name-only --cached | grep -q "package.json"; then
+            echo "package.json was modified. Running pnpm install..."
+            pnpm install
+          else
+            echo "No changes to package.json detected. Skipping pnpm install."
+          fi
 
           # Commit and push changes if any
           echo "Checking for changes..."

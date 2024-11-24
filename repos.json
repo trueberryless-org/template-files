@@ -103,10 +103,12 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "processing": "append_or_update_section",
-          "props": {
-            "sectionTitle": "## License"
-          }
+          "special": true
+        },
+        {
+          "path": "template-files/package.json",
+          "targetPath": "package.json",
+          "special": true
         }
       ]
     }
