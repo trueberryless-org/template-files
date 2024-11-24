@@ -413,7 +413,7 @@ jobs:
           body: >
             ${{ steps.extract-changelog.outputs.markdown }}
 
-            ${{ env.SYNC_SUMMARY }}
+            "${{ env.SYNC_SUMMARY }}"
           skipIfReleaseExists: true
 
       - name: Check if release was created
@@ -436,4 +436,4 @@ jobs:
 
             ${{ steps.extract-changelog.outputs.markdown }}
 
-            ${{ env.SYNC_SUMMARY }}
+            "${{ env.SYNC_SUMMARY }}"
