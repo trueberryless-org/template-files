@@ -1,6 +1,6 @@
 # `template-files`
 
-Provide single point of truth for workflow files.
+Provide single point of truth for template files.
 
 ## Project structure
 

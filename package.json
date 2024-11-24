@@ -2,7 +2,7 @@
   "name": "template-files",
   "version": "0.0.3",
   "license": "MIT",
-  "description": "Provide single point of truth for workflow files",
+  "description": "Provide single point of truth for template files",
   "scripts": {
     "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },

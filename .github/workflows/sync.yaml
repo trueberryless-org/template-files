@@ -1,4 +1,4 @@
-name: Update Workflow Files Across Repos
+name: Update Template Files Across Repos
 
 on:
   push:
@@ -69,7 +69,7 @@ jobs:
       - name: Print Matrix
         run: echo "${{ env.REPO_MATRIX }}"
 
-  sync-workflows:
+  sync:
     runs-on: ubuntu-latest
     needs: [changesets, prepare-matrix]
     strategy:
@@ -89,19 +89,10 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          run_install: |
-            - recursive: false
-              args: [--frozen-lockfile]
-            - args: [--global, prettier]
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
 
       - name: Install jq
         run: sudo apt-get install -y jq
@@ -110,7 +101,7 @@ jobs:
         run: |
           npm install -g markdown-replace-section
 
-      - name: Update workflows in target repository
+      - name: Update template files in target repository
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
@@ -128,11 +119,11 @@ jobs:
           cd target-repo
 
           # Create or switch to the branch
-          branch_name="update-workflows"
+          branch_name="update-template-files"
           echo "Creating branch $branch_name..."
           git checkout -b "$branch_name" || git checkout "$branch_name"
 
-          # Sync specified workflow files
+          # Sync specified template files
           for file_config in $(echo "$files" | jq -c '.[]'); do
             src_file=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
@@ -201,12 +192,8 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected for $repo_name."
           else
-            # Run Prettier before committing (TODO)
-            echo "Formatting code with Prettier..."
-            pnpm prettier --write .
-
             echo "Committing and pushing changes for $repo_name..."
-            git commit -m "Update GitHub workflow files"
+            git commit -m "Update GitHub template files"
             git push --force origin "$branch_name"
 
             cd ..
@@ -230,11 +217,11 @@ jobs:
               gh pr comment "$existing_pr" --body "The branch has been updated with the [latest changes]($latest_commit_url)."
             else
               echo "No existing PR found. Creating a new one..."
-              description=$(printf "%s\n\n%s\n%s" "This PR syncs the specified GitHub workflow files from the [central repository](https://github.com/trueberryless-org/template-files)." "### Changes:" "$latest_commit_entry")
+              description=$(printf "%s\n\n%s\n%s" "This PR syncs the specified GitHub template files from the [central repository](https://github.com/trueberryless-org/template-files)." "### Changes:" "$latest_commit_entry")
               gh pr create \
                 --base main \
                 --head "$branch_name" \
-                --title "Sync workflow files" \
+                --title "[ci] sync template files" \
                 --body "$description"
             fi
           fi
@@ -261,7 +248,7 @@ jobs:
 
   release:
     name: Release
-    needs: [sync-workflows, image-tag]
+    needs: [sync, image-tag]
     runs-on: ubuntu-latest
     permissions:
       contents: write
