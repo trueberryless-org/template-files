@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.0
+
+### Minor Changes
+
+- [`b0e9fbd`](https://github.com/trueberryless-org/template-files/commit/b0e9fbd40b0c8f67cf7a38ea31a9867b9092596b) Thanks [@trueberryless](https://github.com/trueberryless)! - Finish basic sync GitHub Action and many small improvements
+
 ## 0.0.3
 
 ### Patch Changes

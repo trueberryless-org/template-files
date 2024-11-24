@@ -1,6 +1,6 @@
 {
   "name": "template-files",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "Provide single point of truth for template files",
   "scripts": {
