@@ -18,6 +18,16 @@
           }
         },
         {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "https://raw.githubusercontent.com/github/gitignore/95c8bf079cf5600d967696c7f253e352ae77d83d/Node.gitignore",
           "targetPath": ".gitignore"
         },
@@ -33,14 +43,9 @@
           }
         },
         {
-          "path": "template-files/package.json",
-          "targetPath": "package.json",
-          "special": true
-        },
-        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": true
+          "special": "README.md"
         }
       ]
     },
@@ -149,9 +154,14 @@
           }
         },
         {
-          "path": "template-files/package.json",
+          "path": "template-files/package.json/changeset.package.json",
           "targetPath": "package.json",
-          "special": true
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -163,7 +173,123 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-view-modes/README.md",
-          "special": true
+          "special": "README.md"
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/blog",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "blog"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "blog"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "blog",
+            "documentationFolder": "starlight"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "blog",
+            "subdomainName": "blog"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "blog"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "blog",
+            "subdomainName": "blog"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "blog"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "blog"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "name": "blog",
+            "description": "Some cool blog posts about deployment and such technical stuff."
+          }
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "starlight"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
         }
       ]
     }

@@ -151,25 +151,49 @@ jobs:
             
             echo "Processing file: $src_file -> $dest_file"            
 
-            if [ "$special" == "true" ]; then
-              if [[ "$dest_file" == *README.md ]]; then
-                echo "Special handling for README.md"
+            if [ "$special" == "README.md" ]; then
+              echo "Special handling for README.md"
 
-                # Combine existing README.md with the License section
-                if [ -f "$dest_file" ]; then
-                  # Create a temporary file to store the combined content
-                  echo "Combining existing README.md with the License section..."
-                  awk '/## License/,EOF' "$src_file" | tail -n +2 > license_content.md
-                  markdown-replace-section "$dest_file" "License" "$dest_file" < license_content.md
-                  rm -f license_content.md
-                else
-                  # If no existing README.md, copy the template and add the License section
-                  echo "No existing README.md found. Creating a new one..."
-                  cp "$src_file" "$dest_file"
-                fi
-              elif [[ "$dest_file" == "package.json" ]]; then
-                echo "Special handling for package.json"
+              # Combine existing README.md with the License section
+              if [ -f "$dest_file" ]; then
+                # Create a temporary file to store the combined content
+                echo "Combining existing README.md with the License section..."
+                awk '/## License/,EOF' "$src_file" | tail -n +2 > license_content.md
+                markdown-replace-section "$dest_file" "License" "$dest_file" < license_content.md
+                rm -f license_content.md
+              else
+                # If no existing README.md, copy the template and add the License section
+                echo "No existing README.md found. Creating a new one..."
+                cp "$src_file" "$dest_file"
+              fi
+            elif [[ "$special" == "package.json" ]]; then
+              echo "Special handling for package.json"
+
+              # Prepare the destination directory
+              mkdir -p "$(dirname "$dest_file")"
+
+              # Handle dynamic content replacement if "props" is specified
+              props=$(echo "$file_config" | jq -c '.props // empty')
+              if [ -n "$props" ]; then
+                echo "Applying dynamic replacements for $src_file..."
                 temp_file=$(mktemp)
+                cp "$src_file" "$temp_file"
+
+                # Replace placeholders with their respective values from props
+                for key in $(echo "$props" | jq -r 'keys[]'); do
+                  value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+                  placeholder="<%= $key %>"
+                  echo "Replacing $placeholder with $value in $src_file..."
+                  sed -i "s|$placeholder|$value|g" "$temp_file"
+                done
+
+                jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$temp_file" > "$temp_file_2"
+
+                # Move the processed file to the target location
+                mv "$temp_file_2" "$dest_file"
+                rm -f "$temp_file"
+              else
+                temp_file=$(mktemp)              
                 jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$src_file" > "$temp_file"
                 mv "$temp_file" "$dest_file"
               fi

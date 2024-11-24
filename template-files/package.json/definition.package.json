@@ -1,0 +1,14 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/<%= name %>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/trueberryless-org/<%= name %>"
+}
