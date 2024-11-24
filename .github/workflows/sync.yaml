@@ -141,10 +141,10 @@ jobs:
 
                   # Read the contents of the second file, focusing on the License section
                   src_license=$(awk '/## License/,EOF' "../$src_file" | tail -n +2)
-                  escaped_src_license=$(echo "$src_license" | sed 's/[&/\]/\\&/g')
+                  escaped_src_license=$(echo "$src_license" | perl -MHTML::Entities -pe 'encode_entities($_, "\x00-\xFF")')
 
                   # Combine content, replace the License section from file1 with the new License content from file2
-                  combination=$(echo "$dest_content" | sed "/## License/ {n; s/.*/$escaped_src_license/}")
+                  combination=$(echo "$dest_content" | perl -pe "s/(## License\n)(.*)/\1$escaped_src_license/")
 
                   # Output the combined content to a new file
                   echo "$combination" > "$dest_file"
