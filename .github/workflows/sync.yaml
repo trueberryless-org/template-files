@@ -128,6 +128,8 @@ jobs:
             src_file_raw=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
             special=$(echo "$file_config" | jq -r '.special // empty')
+            
+            echo "Processing file: $src_file_raw -> $dest_file"  
 
             # Detect if src_file is a URL or relative path
             if [[ "$src_file_raw" =~ ^https?:// ]]; then
@@ -148,8 +150,11 @@ jobs:
                 continue
               fi
             fi
-            
-            echo "Processing file: $src_file -> $dest_file"            
+
+            echo "Content of $src_file:"
+            cat "$src_file"
+            echo "Content of $dest_file:"
+            cat "$dest_file"
 
             if [ "$special" == "README.md" ]; then
               echo "Special handling for README.md"
@@ -196,6 +201,7 @@ jobs:
               else
                 if [ -f "$dest_file" ]; then
                   # If the destination file exists, merge it with the source file
+                  echo "Destination file $dest_file exists. Merging $src_file into $dest_file..."
                   temp_file=$(mktemp)
                   jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$src_file" > "$temp_file"
                   mv "$temp_file" "$dest_file"
