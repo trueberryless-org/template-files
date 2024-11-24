@@ -400,7 +400,7 @@ jobs:
       - name: Save summary into Github environment variable
         run: |
           cat final_summary.md
-          SYNC_SUMMARY=$(cat final_summary.md) >> $GITHUB_ENV
+          echo "SYNC_SUMMARY=$(cat final_summary.md)" >> $GITHUB_ENV
 
       - uses: ncipollo/release-action@v1
         id: create_release
