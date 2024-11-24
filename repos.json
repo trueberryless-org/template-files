@@ -9,12 +9,7 @@
           "props": {
             "branchName": "main"
           }
-        }
-      ]
-    },
-    {
-      "name": "trueberryless-org/starlight-view-modes",
-      "files": [
+        },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
@@ -23,10 +18,47 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
+          "path": "https://github.com/github/gitignore/blob/95c8bf079cf5600d967696c7f253e352ae77d83d/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
           "props": {
-            "branchName": "main"
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/package.json",
+          "targetPath": "package.json",
+          "special": true
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": true
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/starlight-view-modes",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-view-modes"
           }
         },
         {
@@ -48,22 +80,30 @@
           }
         },
         {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
           "props": {
-            "repositoryName": "starlight-view-modes"
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes",
+            "subdomainName": "starlight-view-modes"
           }
         },
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "props": {
-            "repositoryName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
@@ -77,26 +117,22 @@
           }
         },
         {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-view-modes",
-            "subdomainName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
         },
         {
-          "path": "template-files/.changeset/README.md",
-          "targetPath": ".changeset/README.md",
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
         },
         {
           "path": "template-files/Dockerfile",
@@ -113,13 +149,13 @@
           }
         },
         {
-          "path": "template-files/README.md",
-          "targetPath": "packages/starlight-view-modes/README.md",
+          "path": "template-files/package.json",
+          "targetPath": "package.json",
           "special": true
         },
         {
-          "path": "template-files/package.json",
-          "targetPath": "package.json",
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-view-modes/README.md",
           "special": true
         }
       ]

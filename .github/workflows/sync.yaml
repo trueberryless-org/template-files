@@ -125,14 +125,23 @@ jobs:
 
           # Sync specified template files
           for file_config in $(echo "$files" | jq -c '.[]'); do
-            src_file=$(echo "$file_config" | jq -r '.path')
+            src_file_raw=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
             special=$(echo "$file_config" | jq -r '.special // empty')
             
-            echo "Processing file: $src_file"
+            echo "Processing file: $src_file_raw -> $dest_file"
 
-            # Check if the file exists in the template-files directory
-            if [ ! -f "../$src_file" ]; then
+            # Detect if src_file is a URL or relative path
+            if [[ "$src_file_raw" =~ ^https?:// ]]; then
+              echo "$src_file_raw is a URL. Using it directly."
+              src_path="$src_file_raw"
+            else
+              echo "$src_file_raw is a relative path. Prefixing with '../'."
+              src_path="../$src_file_raw"
+            fi
+
+            # Check if the file exists (only for local files)
+            if [[ ! "$src_path" =~ ^https?:// ]] && [ ! -f "$src_path" ]; then
               echo "Warning: File $src_file not found in /template-files."
               continue
             fi
@@ -145,17 +154,17 @@ jobs:
                 if [ -f "$dest_file" ]; then
                   # Create a temporary file to store the combined content
                   echo "Combining existing README.md with the License section..."
-                  awk '/## License/,EOF' "../$src_file" | tail -n +2 > license_content.md
+                  awk '/## License/,EOF' "$src_file" | tail -n +2 > license_content.md
                   markdown-replace-section "$dest_file" "License" "$dest_file" < license_content.md
                 else
                   # If no existing README.md, copy the template and add the License section
                   echo "No existing README.md found. Creating a new one..."
-                  cp "../$src_file" "$dest_file"
+                  cp "$src_file" "$dest_file"
                 fi
               elif [[ "$dest_file" == "package.json" ]]; then
                 echo "Special handling for package.json"
                 temp_file=$(mktemp)
-                jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "../$src_file" > "$temp_file"
+                jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$src_file" > "$temp_file"
                 mv "$temp_file" "$dest_file"
               fi
             else
@@ -167,7 +176,7 @@ jobs:
               if [ -n "$props" ]; then
                 echo "Applying dynamic replacements for $src_file..."
                 temp_file=$(mktemp)
-                cp "../$src_file" "$temp_file"
+                cp "$src_file" "$temp_file"
 
                 # Replace placeholders with their respective values from props
                 for key in $(echo "$props" | jq -r 'keys[]'); do
@@ -181,7 +190,7 @@ jobs:
                 mv "$temp_file" "$dest_file"
               else
                 # If no props, copy the file directly
-                cp "../$src_file" "$dest_file"
+                cp "$src_file" "$dest_file"
               fi
             fi
           done
