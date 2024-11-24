@@ -323,7 +323,7 @@ jobs:
           path: summary/summary_table.txt
 
   summarize:
-    name: Synchronization
+    name: Synchronization Report
     runs-on: ubuntu-latest
     needs: sync
     steps:
@@ -343,7 +343,7 @@ jobs:
           echo "|------------|---------|---------------|" >> final_summary.md
 
           # Loop over the downloaded summary artifacts and append their content
-          for artifact in $(find . -name "summary/summary_table.txt"); do
+          for artifact in $(find . -name "summary_table.txt"); do
             cat "$artifact" >> final_summary.md
             echo "\n" >> final_summary.md
           done
@@ -356,15 +356,10 @@ jobs:
 
       - name: Display summary in the GitHub Actions summary
         run: |
-          echo "### Summary of PRs and Changed Files" > $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Repository | PR Link | Files Changed |" >> $GITHUB_STEP_SUMMARY
-          echo "|------------|---------|---------------|" >> $GITHUB_STEP_SUMMARY
-
           if [ -f final_summary.md ]; then
             cat final_summary.md >> $GITHUB_STEP_SUMMARY
           else
-            echo "| No data collected | - | - |" >> $GITHUB_STEP_SUMMARY
+            echo "No data collected" >> $GITHUB_STEP_SUMMARY
           fi
 
   image-tag:
