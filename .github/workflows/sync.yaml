@@ -294,6 +294,8 @@ jobs:
 
       - name: Append summary for repository
         if: success()
+        env:
+          GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
           repo_name="${{ matrix.repo.name }}"
           pr_url="https://github.com/${repo_name}/pull/$(gh pr view --json number --jq '.number')"
