@@ -155,7 +155,7 @@ jobs:
               elif [[ "$dest_file" == "package.json" ]]; then
                 echo "Special handling for package.json"
                 temp_file=$(mktemp)
-                jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$src_file" > "$temp_file"
+                jq -s 'reduce .[] as $item ({}; . * $item)' "../$src_file" "$dest_file" > "$temp_file"
                 mv "$temp_file" "$dest_file"
               fi
             else
