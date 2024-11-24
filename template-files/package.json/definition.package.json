@@ -1,6 +1,5 @@
 {
   "name": "<%= name %>",
-  "description": "<%= description %>",
   "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
   "license": "MIT",
   "repository": {

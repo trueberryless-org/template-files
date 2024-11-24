@@ -125,7 +125,6 @@ jobs:
 
           # Sync specified template files
           for file_config in $(echo "$files" | jq -c '.[]'); do
-            echo "Processing file config: $file_config"
             src_file_raw=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
             special=$(echo "$file_config" | jq -r '.special // empty')
@@ -151,8 +150,6 @@ jobs:
                 continue
               fi
             fi
-
-            cat "$src_file"
 
             if [ "$special" == "README.md" ]; then
               echo "Special handling for README.md"
