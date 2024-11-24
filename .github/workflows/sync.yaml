@@ -187,15 +187,23 @@ jobs:
                   sed -i "s|$placeholder|$value|g" "$temp_file"
                 done
 
+                temp_file_2=$(mktemp)
                 jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$temp_file" > "$temp_file_2"
 
                 # Move the processed file to the target location
                 mv "$temp_file_2" "$dest_file"
                 rm -f "$temp_file"
               else
-                temp_file=$(mktemp)              
-                jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$src_file" > "$temp_file"
-                mv "$temp_file" "$dest_file"
+                if [ -f "$dest_file" ]; then
+                  # If the destination file exists, merge it with the source file
+                  temp_file=$(mktemp)
+                  jq -s 'reduce .[] as $item ({}; . * $item)' "$dest_file" "$src_file" > "$temp_file"
+                  mv "$temp_file" "$dest_file"
+                else
+                  # If the destination file does not exist, just copy the source file
+                  echo "Destination file $dest_file does not exist. Copying $src_file to $dest_file..."
+                  cp "$src_file" "$dest_file"
+                fi
               fi
             else
               # Prepare the destination directory
