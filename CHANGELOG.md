@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.2
+
+### Patch Changes
+
+- [`9d6cf28`](https://github.com/trueberryless-org/template-files/commit/9d6cf281cd199b89e0351533d0ff897bb154b502) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix GitHub Action environmental variable saving issue
+
 ## 0.1.1
 
 ### Patch Changes
