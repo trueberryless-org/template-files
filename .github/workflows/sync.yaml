@@ -307,14 +307,21 @@ jobs:
             echo "| $repo_name | No PR | $changed_files |" >> summary_table.txt
           fi
 
+      - name: Replace "/" with "-" in repo name for artifact upload
+        run: |
+          repo_name="${{ matrix.repo.name }}"
+          sanitized_repo_name="${repo_name//\//-}"
+          echo "Sanitized repo name: $sanitized_repo_name"
+          echo "SANITIZED_REPO_NAME=$sanitized_repo_name" >> $GITHUB_ENV
+
       - name: Upload summary as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: summary-table-${{ matrix.repo.name }}
+          name: summary-table-${{ env.SANITIZED_REPO_NAME }}
           path: summary_table.txt
 
   summarize:
-    name: Summarize Matrix Results
+    name: Synchronization
     runs-on: ubuntu-latest
     needs: sync
     steps:
