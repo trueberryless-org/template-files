@@ -392,12 +392,24 @@ jobs:
           file: CHANGELOG.md
           pattern: ${{ needs.image-tag.outputs.IMAGE_TAG }}
 
+      - name: Download summary artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: final-summary
+
+      - name: Save summary into Github environment variable
+        run: |
+          SYNC_SUMMARY=$(cat final_summary.md) >> $GITHUB_ENV
+
       - uses: ncipollo/release-action@v1
         id: create_release
         with:
           tag: ${{ env.IMAGE_NAME }}@${{ needs.image-tag.outputs.IMAGE_TAG }}
           makeLatest: true
-          body: ${{ steps.extract-changelog.outputs.markdown }}
+          body: >
+            ${{ steps.extract-changelog.outputs.markdown }}
+
+            ${{ env.SYNC_SUMMARY }}
           skipIfReleaseExists: true
 
       - name: Check if release was created
@@ -419,3 +431,5 @@ jobs:
             # ${{ env.IMAGE_NAME }}@${{ needs.image-tag.outputs.IMAGE_TAG }}
 
             ${{ steps.extract-changelog.outputs.markdown }}
+
+            ${{ env.SYNC_SUMMARY }}
