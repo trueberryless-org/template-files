@@ -119,7 +119,7 @@ jobs:
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
             special=$(echo "$file_config" | jq -r '.special // empty')
             
-            echo "Processing file: $src_file as $processing"
+            echo "Processing file: $src_file"
 
             # Check if the file exists in the template-files directory
             if [ ! -f "../$src_file" ]; then
@@ -128,7 +128,7 @@ jobs:
             fi
 
             if [ "$special" == "true" ]; then
-              if [[ "$dest_file" == "README.md" ]]; then
+              if [[ "$dest_file" == *README.md ]]; then
                 echo "Special handling for README.md"
 
                 # Extract the License section dynamically from the template README.md
