@@ -128,20 +128,20 @@ jobs:
             src_file_raw=$(echo "$file_config" | jq -r '.path')
             dest_file=$(echo "$file_config" | jq -r '.targetPath')
             special=$(echo "$file_config" | jq -r '.special // empty')
-            
-            echo "Processing file: $src_file_raw -> $dest_file"
 
             # Detect if src_file is a URL or relative path
             if [[ "$src_file_raw" =~ ^https?:// ]]; then
               echo "$src_file_raw is a URL. Using it directly."
-              src_path="$src_file_raw"
+              src_file="$src_file_raw"
             else
               echo "$src_file_raw is a relative path. Prefixing with '../'."
-              src_path="../$src_file_raw"
+              src_file="../$src_file_raw"
             fi
+            
+            echo "Processing file: $src_file -> $dest_file"
 
             # Check if the file exists (only for local files)
-            if [[ ! "$src_path" =~ ^https?:// ]] && [ ! -f "$src_path" ]; then
+            if [[ ! "$src_file" =~ ^https?:// ]] && [ ! -f "$src_file" ]; then
               echo "Warning: File $src_file not found in /template-files."
               continue
             fi
