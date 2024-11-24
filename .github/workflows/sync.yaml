@@ -88,8 +88,17 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
       - name: Install jq
         run: sudo apt-get install -y jq
+
+      - name: Install markdown-replace-section
+        run: |
+          npm install -g markdown-replace-section
 
       - name: Update workflows in target repository
         env:
@@ -135,18 +144,8 @@ jobs:
                 if [ -f "$dest_file" ]; then
                   # Create a temporary file to store the combined content
                   echo "Combining existing README.md with the License section..."
-
-                  # Read the contents of the first file
-                  dest_content=$(cat "$dest_file")
-
-                  # Read the contents of the second file, focusing on the License section
-                  src_license=$(awk '/## License/,EOF' "../$src_file" | tail -n +2)
-
-                  # Combine content, replace the License section from file1 with the new License content from file2
-                  combination=$(echo "$dest_content" | perl -pe 's/(## License\n)(.*?)(?=\n##|\z)/\1$src_license/s')
-
-                  # Output the combined content to a new file
-                  echo "$combination" > "$dest_file"
+                  awk '/## License/,EOF' "../$src_file" | tail -n +2 > license_content.md
+                  markdown-replace-section "$dest_file" "License" "$dest_file" < license_content.md
                 else
                   # If no existing README.md, copy the template and add the License section
                   echo "No existing README.md found. Creating a new one..."
