@@ -307,20 +307,51 @@ jobs:
             echo "| $repo_name | No PR | $changed_files |" >> summary_table.txt
           fi
 
+      - name: Upload summary as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: summary-table-${{ matrix.repo.name }}
+          path: summary_table.txt
+
   summarize:
     name: Summarize Matrix Results
     runs-on: ubuntu-latest
     needs: sync
     steps:
-      - name: Create Markdown Table
+      - name: Download summary artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: summary-table-*
+
+      - name: Combine summaries and generate final markdown
+        run: |
+          # Create or append to the final summary file
+          echo "### Summary of Changes" > final_summary.md
+          echo "" >> final_summary.md
+          echo "| Repository | PR Link | Files Changed |" >> final_summary.md
+          echo "|------------|---------|---------------|" >> final_summary.md
+
+          # Loop over the downloaded summary artifacts and append their content
+          for artifact in $(find . -name "summary_table.txt"); do
+            cat "$artifact" >> final_summary.md
+            echo "\n" >> final_summary.md
+          done
+
+      - name: Upload final summary as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: final-summary
+          path: final_summary.md
+
+      - name: Display summary in the GitHub Actions summary
         run: |
           echo "### Summary of PRs and Changed Files" > $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Repository | PR Link | Files Changed |" >> $GITHUB_STEP_SUMMARY
           echo "|------------|---------|---------------|" >> $GITHUB_STEP_SUMMARY
 
-          if [ -f summary_table.txt ]; then
-            cat summary_table.txt >> $GITHUB_STEP_SUMMARY
+          if [ -f final_summary.md ]; then
+            cat final_summary.md >> $GITHUB_STEP_SUMMARY
           else
             echo "| No data collected | - | - |" >> $GITHUB_STEP_SUMMARY
           fi
