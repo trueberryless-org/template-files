@@ -345,7 +345,6 @@ jobs:
           # Loop over the downloaded summary artifacts and append their content
           for artifact in $(find . -name "summary_table.txt"); do
             cat "$artifact" >> final_summary.md
-            echo "\n" >> final_summary.md
           done
 
       - name: Upload final summary as artifact
