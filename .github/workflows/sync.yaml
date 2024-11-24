@@ -151,6 +151,8 @@ jobs:
               fi
             fi
 
+            cat "$src_file"
+
             if [ "$special" == "README.md" ]; then
               echo "Special handling for README.md"
 
@@ -204,7 +206,6 @@ jobs:
                   # If the destination file does not exist, just copy the source file
                   echo "Destination file $dest_file does not exist. Copying $src_file to $dest_file..."
                   cp "$src_file" "$dest_file"
-                  cat "$dest_file"
                 fi
               fi
             else
