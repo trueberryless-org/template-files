@@ -195,14 +195,6 @@ jobs:
             fi
           done
 
-          # Post-processing: Run pnpm install only if package.json was modified
-          if git diff --name-only | grep -q "package.json" || git diff --name-only --cached | grep -q "package.json"; then
-            echo "package.json was modified. Running pnpm install..."
-            pnpm install
-          else
-            echo "No changes to package.json detected. Skipping pnpm install."
-          fi
-
           # Commit and push changes if any
           echo "Checking for changes..."
           git add .
