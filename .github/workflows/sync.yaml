@@ -161,6 +161,7 @@ jobs:
                   echo "Combining existing README.md with the License section..."
                   awk '/## License/,EOF' "$src_file" | tail -n +2 > license_content.md
                   markdown-replace-section "$dest_file" "License" "$dest_file" < license_content.md
+                  rm -f license_content.md
                 else
                   # If no existing README.md, copy the template and add the License section
                   echo "No existing README.md found. Creating a new one..."
