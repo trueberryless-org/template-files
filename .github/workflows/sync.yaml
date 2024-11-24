@@ -143,7 +143,7 @@ jobs:
                   src_license=$(awk '/## License/,EOF' "../$src_file" | tail -n +2)
 
                   # Combine content, replace the License section from file1 with the new License content from file2
-                  combination=$(echo "$dest_content" | perl -pe "s|(## License\n)(.*)|\1$src_license|")
+                  combination=$(echo "$dest_content" | perl -pe 's/(## License\n)(.*?)(?=\n##|\z)/\1$src_license/s')
 
                   # Output the combined content to a new file
                   echo "$combination" > "$dest_file"
