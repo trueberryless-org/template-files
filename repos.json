@@ -67,7 +67,8 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "name": "template-files"
+            "packageName": "template-files",
+            "repositoryName": "template-files"
           }
         },
         {
@@ -143,6 +144,14 @@
           "targetPath": ".gitignore"
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
           "path": "template-files/.prettierrc",
           "targetPath": ".prettierrc"
         },
@@ -208,8 +217,641 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-view-modes-monorepo",
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-view-modes/README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/starlight-cooler-credit",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-cooler-credit",
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-cooler-credit",
+            "packageName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-cooler-credit",
+            "subdomainName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "starlight-cooler-credit",
+            "subdomainName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-cooler-credit-monorepo",
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-cooler-credit/README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/starlight-sidebar-topics-dropdown",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-sidebar-topics-dropdown",
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-sidebar-topics-dropdown",
+            "packageName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown",
+            "subdomainName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown",
+            "subdomainName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-sidebar-topics-dropdown-monorepo",
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-sidebar-topics-dropdown/README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/starlight-contributor-list",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-contributor-list",
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-contributor-list",
+            "packageName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-contributor-list",
+            "subdomainName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "starlight-contributor-list",
+            "subdomainName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-contributor-list-monorepo",
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-contributor-list/README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/starlight-plugins-docs-components",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-plugins-docs-components",
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-plugins-docs-components",
+            "packageName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components",
+            "subdomainName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components",
+            "subdomainName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "@trueberryless-org/starlight-plugins-docs-components-monorepo",
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-plugins-docs-components/README.md",
           "special": "README.md"
         },
         {
@@ -260,6 +902,18 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
         },
         {
           "path": "template-files/.prettierrc",
@@ -326,7 +980,8 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "name": "blog-monorepo"
+            "packageName": "blog-monorepo",
+            "repositoryName": "blog"
           }
         },
         {

@@ -1,12 +1,12 @@
 {
-  "name": "<%= name %>",
-  "homepage": "https://github.com/trueberryless-org/<%= name %>",
+  "name": "<%= packageName %>",
+  "homepage": "https://github.com/trueberryless-org/<%= repositoryName %>",
   "bugs": {
-    "url": "https://github.com/trueberryless-org/<%= name %>/issues"
+    "url": "https://github.com/trueberryless-org/<%= repositoryName %>/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/<%= name %>.git"
+    "url": "https://github.com/trueberryless-org/<%= repositoryName %>.git"
   },
   "license": "MIT",
   "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)"
