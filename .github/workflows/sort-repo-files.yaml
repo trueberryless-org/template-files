@@ -25,12 +25,12 @@ jobs:
 
           def sort_files_by_target_path(files):
               def sort_key(file_obj):
-                  target_path = file_obj.get("targetPath", "")
+                  target_path = file_obj.get("targetPath", "").lower()
                   components = target_path.split('/')
                   is_directory = target_path.endswith('/')
                   return (components, not is_directory)
 
-              return sorted(files, key=lambda f: (sort_key(f), f["targetPath"]))
+              return sorted(files, key=lambda f: (sort_key(f), f["targetPath"].lower()))
 
           input_file = "repos.json"
 
