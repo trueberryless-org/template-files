@@ -999,6 +999,16 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -1141,9 +1151,21 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "starlight"
+          }
         }
       ]
     }
