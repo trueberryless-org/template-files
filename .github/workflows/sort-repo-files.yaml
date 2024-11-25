@@ -39,7 +39,7 @@ jobs:
 
           if "repositories" not in data:
               print(f"Error: {input_file} does not contain a 'repositories' key.")
-              return
+              exit(1)
 
           for repo in data["repositories"]:
               if "files" in repo:
