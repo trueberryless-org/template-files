@@ -22,10 +22,28 @@ jobs:
       - name: Sort Files
         run: |
           import json
+          import os
+
+          def path_sort_key(path):
+              # Split path into segments
+              segments = path.split('/')
+              
+              # Create a key that prioritizes:
+              # 1. Potential directories (segments without extensions)
+              # 2. Depth of directory structure
+              # 3. Alphabetical sorting of path
+              return (
+                  # Potential directories first (0), then files (1)
+                  [0 if not os.path.splitext(seg)[1] else 1 for seg in segments[:-1]] + 
+                  # Depth of directory structure
+                  [len(segments)] +
+                  # Alphabetical sorting of full path
+                  [seg.lower() for seg in segments]
+              )
 
           def sort_files(repositories):
               for repo in repositories:
-                  repo['files'] = sorted(repo['files'], key=lambda x: x['targetPath'].lower())
+                  repo['files'] = sorted(repo['files'], key=lambda x: path_sort_key(x['targetPath']))
               return repositories
 
           # Read the JSON file
@@ -36,7 +54,6 @@ jobs:
           sorted_data = sort_files(data['repositories'])
           data['repositories'] = sorted_data
 
-          # Write back to file
           with open('repos.json', 'w') as f:
               json.dump(data, f, indent=2)
               f.write('\n')
