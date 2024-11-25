@@ -40,5 +40,4 @@ jobs:
           labels: |
             🤖 bot
           assignees: trueberryless
-          reviewers: trueberryless
           draft: false
