@@ -1,0 +1,30 @@
+name: Add tree changes
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  commit-tree-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Write tree outputs to README.md
+        uses: shirakiya/readme-tree-writer@v1
+        with:
+          config_path: .github/readmetreerc.yaml
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          commit-message: "[ci] update tree"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: ci-tree
+          delete-branch: true
+          title: "[ci] update tree"
+          body: "This PR was automatically created to update the project structure tree in the README."
+          labels: 🤖 bot
+          assignees: trueberryless
+          draft: false
