@@ -67,7 +67,7 @@ jobs:
       - name: Push changes and manage PR
         if: steps.check_changes.outputs.changes == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
           git add -A
           git commit -m "chore: sort package.json files"
