@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.4
+
+### Patch Changes
+
+- [`4efc863`](https://github.com/trueberryless-org/template-files/commit/4efc863e414b779d85cd826e20f5a73f3447dd6a) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Mutanuq to repos.json
+
 ## 0.1.3
 
 ### Patch Changes
