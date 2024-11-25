@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.3/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "trueberryless-org/template-files" }],
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "trueberryless-org/template-files" }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],
