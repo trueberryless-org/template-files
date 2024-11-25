@@ -39,6 +39,10 @@
           "targetPath": ".gitignore"
         },
         {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
           "path": "template-files/.prettierrc",
           "targetPath": ".prettierrc"
         },
