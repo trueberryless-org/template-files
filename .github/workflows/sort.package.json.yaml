@@ -34,7 +34,7 @@ jobs:
           if git ls-remote --heads origin $BRANCH_NAME | grep -q $BRANCH_NAME; then
             git fetch origin $BRANCH_NAME
             git checkout $BRANCH_NAME
-            git reset --hard origin/<%= branchName %>
+            git reset --hard origin/main
           else
             git checkout -b $BRANCH_NAME
           fi
@@ -70,9 +70,9 @@ jobs:
           else
             echo "Creating new PR"
             gh pr create \
-              --title "chore: sort package.json files" \
+              --title "[ci] chore: sort package.json files" \
               --body "This PR was automatically created to sort package.json files in the repository using sort-package-json." \
               --label "automated pr" \
-              --base <%= branchName %> \
+              --base main \
               --head $BRANCH_NAME
           fi
