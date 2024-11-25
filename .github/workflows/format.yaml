@@ -22,15 +22,20 @@ jobs:
       - run: pnpm i
       - name: Format with Prettier
         run: pnpm prettier --write .
-      - uses: gr2m/create-or-update-pull-request-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "[ci] format"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: ci/format
+          delete-branch: true
           title: "[ci] format"
           body: "This PR was automatically created to format the repository using prettier."
-          branch: "ci/format"
-          commit-message: "[ci] format"
-          author: "trueberryless <trueberryless+github@gmail.com>"
-          labels: 🤖 bot
+          labels: |
+            🤖 bot
           assignees: trueberryless
           reviewers: trueberryless
+          draft: false
