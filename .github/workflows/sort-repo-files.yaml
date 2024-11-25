@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - "repos.json"
+    # paths:
+    #   - "repos.json"
 
 jobs:
   sort-files:
