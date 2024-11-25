@@ -318,6 +318,7 @@ jobs:
           GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
           repo_name="${{ matrix.repo.name }}"
+          branch_name="update-template-files"
           pr_url="https://github.com/${repo_name}/pull/$(gh pr list --repo "$repo_name" --base main --head "$branch_name" --json number --jq '.[0].number')"
           changed_files="${{ env.CHANGED_FILES }}"
 
