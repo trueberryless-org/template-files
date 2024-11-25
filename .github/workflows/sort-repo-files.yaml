@@ -23,16 +23,20 @@ jobs:
         run: |
           import json
 
-          def sort_key(file_obj):
-              target_path = file_obj.get("targetPath", "").lower()  # Normalize to lowercase for case-insensitivity
-              segments = target_path.split('/')  # Split into hierarchical segments
-              is_directory = target_path.endswith('/')  # Directory ends with '/'
+          def sort_files_by_target_path(files):
+              def sort_key(file_obj):
+                  target_path = file_obj.get("targetPath", "").lower()
+                  segments = target_path.split('/')
 
-              # Create a comparable key: each segment + is_directory flag for sorting
-              # Directories come first: use (segment, False) for directories, (segment, True) for files
-              return [(segment, not is_directory and idx == len(segments) - 1) for idx, segment in enumerate(segments)]
+                  key = []
+                  for idx, segment in enumerate(segments):
+                      # A file is the final segment with no further sub-paths
+                      is_file = idx == len(segments) - 1 and '.' in segment
+                      key.append((segment, is_file))
 
-          return sorted(files, key=sort_key)
+                  return key
+
+              return sorted(files, key=sort_key)
 
           input_file = "repos.json"
 
