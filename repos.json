@@ -909,10 +909,7 @@
         },
         {
           "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml",
-          "props": {
-            "chapter": "Project structure"
-          }
+          "targetPath": ".github/readmetreerc.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
