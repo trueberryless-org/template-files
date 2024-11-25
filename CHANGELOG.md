@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.3
+
+### Patch Changes
+
+- [`66ae7c0`](https://github.com/trueberryless-org/template-files/commit/66ae7c03ec4b988813ec59436e60b23491f1ce99) Thanks [@trueberryless](https://github.com/trueberryless)! - Add all starlight plugin repos to repos.json
+
 ## 0.1.2
 
 ### Patch Changes
