@@ -401,8 +401,8 @@ jobs:
         run: |
           {
             echo "SYNC_SUMMARY<<EOF"
-            echo $(cat final_summary.md)
-            echo EOF
+            cat final_summary.md
+            echo "EOF"
           } >> $GITHUB_ENV
 
       - uses: ncipollo/release-action@v1
@@ -410,10 +410,10 @@ jobs:
         with:
           tag: ${{ env.IMAGE_NAME }}@${{ needs.image-tag.outputs.IMAGE_TAG }}
           makeLatest: true
-          body: >
+          body: |
             ${{ steps.extract-changelog.outputs.markdown }}
 
-            "${{ env.SYNC_SUMMARY }}"
+            ${{ env.SYNC_SUMMARY }}
           skipIfReleaseExists: true
 
       - name: Check if release was created
@@ -436,4 +436,4 @@ jobs:
 
             ${{ steps.extract-changelog.outputs.markdown }}
 
-            "${{ env.SYNC_SUMMARY }}"
+            ${{ env.SYNC_SUMMARY }}
