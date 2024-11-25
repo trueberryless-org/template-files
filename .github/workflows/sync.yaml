@@ -263,6 +263,15 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No changes detected for $repo_name."
+
+            echo "Checking for an open PR for branch $branch_name..."
+            existing_pr=$(gh pr list --base main --head "$branch_name" --json number --jq '.[0].number')
+
+            if [ -n "$existing_pr" ]; then
+              echo "Found existing PR #$existing_pr. Closing it..."
+              gh pr comment "$existing_pr" -b "The branch has been updated. No changes detected for $repo_name."
+              gh pr close "$existing_pr"
+            fi
           else
             echo "Committing and pushing changes for $repo_name..."
             git commit -m "Update GitHub template files"
