@@ -94,11 +94,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install jq
-        run: sudo apt-get install -y jq
-
-      - name: Install markdown-replace-section
+      - name: Install jq, sort-package-json and markdown-replace-section
         run: |
+          sudo apt-get install -y jq
+          npm install -g sort-package-json
           npm install -g markdown-replace-section
 
       - name: Update template files in target repository
@@ -122,6 +121,8 @@ jobs:
           branch_name="update-template-files"
           echo "Creating branch $branch_name..."
           git checkout -b "$branch_name" || git checkout "$branch_name"
+
+          declare -a modified_package_jsons=()
 
           # Sync specified template files
           for file_config in $(echo "$files" | jq -c '.[]'); do
@@ -206,6 +207,8 @@ jobs:
                   cp "$src_file" "$dest_file"
                 fi
               fi
+
+              modified_package_jsons+=("$dest_file")
             else
               # Prepare the destination directory
               mkdir -p "$(dirname "$dest_file")"
@@ -238,6 +241,14 @@ jobs:
               rm -f "$src_file"
             fi
           done
+
+          if [ ${#modified_package_jsons[@]} -gt 0 ]; then
+            echo "Sorting modified package.json files..."
+            for package_json in "${modified_package_jsons[@]}"; do
+              echo "Sorting $package_json"
+              sort-package-json "$package_json"
+            done
+          fi
 
           # Commit and push changes if any
           echo "Checking for changes..."
