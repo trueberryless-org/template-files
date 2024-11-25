@@ -23,6 +23,17 @@ jobs:
       - name: Install sort-package-json
         run: npm install -g sort-package-json
 
+      - name: Ensure "🤖 bot" label exists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Check if label exists, create if not
+          if ! gh label list | grep -q "🤖 bot"; then
+            gh label create "🤖 bot" \
+              --description "Automatically generated pull request" \
+              --color "0075ca"
+          fi
+
       - name: Set fixed branch name
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -72,7 +83,7 @@ jobs:
             gh pr create \
               --title "[ci] chore: sort package.json files" \
               --body "This PR was automatically created to sort package.json files in the repository using sort-package-json." \
-              --label "automated pr" \
+              --label "🤖 bot" \
               --base main \
               --head $BRANCH_NAME
           fi
