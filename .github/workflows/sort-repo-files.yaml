@@ -22,41 +22,32 @@ jobs:
       - name: Sort Files
         run: |
           import json
-          import os
 
-          def path_sort_key(path):
-              # Split path into segments
-              segments = path.split('/')
-              
-              # Create a key that prioritizes:
-              # 1. Potential directories (segments without extensions)
-              # 2. Depth of directory structure
-              # 3. Alphabetical sorting of path
-              return (
-                  # Potential directories first (0), then files (1)
-                  [0 if not os.path.splitext(seg)[1] else 1 for seg in segments[:-1]] + 
-                  # Depth of directory structure
-                  [len(segments)] +
-                  # Alphabetical sorting of full path
-                  [seg.lower() for seg in segments]
-              )
+          def sort_files_by_target_path(files):
+              def sort_key(file_obj):
+                  target_path = file_obj.get("targetPath", "")
+                  components = target_path.split('/')
+                  is_directory = target_path.endswith('/')
+                  return (components, not is_directory)
 
-          def sort_files(repositories):
-              for repo in repositories:
-                  repo['files'] = sorted(repo['files'], key=lambda x: path_sort_key(x['targetPath']))
-              return repositories
+              return sorted(files, key=lambda f: (sort_key(f), f["targetPath"]))
 
-          # Read the JSON file
-          with open('repos.json', 'r') as f:
+          input_file = "repos.json"
+
+          with open(input_file, "r") as f:
               data = json.load(f)
 
-          # Sort the files
-          sorted_data = sort_files(data['repositories'])
-          data['repositories'] = sorted_data
+          if "repositories" not in data:
+              print(f"Error: {input_file} does not contain a 'repositories' key.")
+              return
 
-          with open('repos.json', 'w') as f:
+          for repo in data["repositories"]:
+              if "files" in repo:
+                  repo["files"] = sort_files_by_target_path(repo["files"])
+
+          with open(input_file, "w") as f:
               json.dump(data, f, indent=2)
-              f.write('\n')
+              f.write("\n")
 
         shell: python
 
