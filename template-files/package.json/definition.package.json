@@ -1,13 +1,13 @@
 {
   "name": "<%= name %>",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
-  "license": "MIT",
+  "homepage": "https://github.com/trueberryless-org/<%= name %>",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/<%= name %>/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trueberryless-org/<%= name %>.git"
   },
-  "bugs": {
-    "url": "https://github.com/trueberryless-org/<%= name %>/issues"
-  },
-  "homepage": "https://github.com/trueberryless-org/<%= name %>"
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)"
 }

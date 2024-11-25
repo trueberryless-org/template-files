@@ -1,15 +1,15 @@
 {
   "name": "template-files",
   "version": "0.1.1",
-  "license": "MIT",
   "description": "Provide single point of truth for template files",
+  "license": "MIT",
+  "author": "trueberryless-org",
   "scripts": {
     "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
-  "author": "trueberryless-org",
-  "packageManager": "pnpm@9.6.0",
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.9"
-  }
+  },
+  "packageManager": "pnpm@9.6.0"
 }
