@@ -885,6 +885,10 @@
           "targetPath": ".dockerignore"
         },
         {
+          "path": "template-files/.github/readmetreerc.yaml",
+          "targetPath": ".github/readmetreerc.yaml"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -906,10 +910,6 @@
           "props": {
             "branchName": "main"
           }
-        },
-        {
-          "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
