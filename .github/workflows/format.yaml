@@ -30,7 +30,7 @@ jobs:
           body: "This PR was automatically created to format the repository using prettier."
           branch: "ci/format"
           commit-message: "[ci] format"
-          author: "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)"
+          author: "trueberryless <trueberryless+github@gmail.com>"
           labels: 🤖 bot
           assignees: trueberryless
           reviewers: trueberryless
