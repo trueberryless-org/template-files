@@ -101,6 +101,10 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -142,10 +146,6 @@
         {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
         },
         {
           "path": "template-files/.prettierignore",
@@ -257,6 +257,10 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -298,10 +302,6 @@
         {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
         },
         {
           "path": "template-files/.prettierignore",
@@ -413,6 +413,10 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -454,10 +458,6 @@
         {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
         },
         {
           "path": "template-files/.prettierignore",
@@ -569,6 +569,10 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -610,10 +614,6 @@
         {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
         },
         {
           "path": "template-files/.prettierignore",
@@ -725,6 +725,10 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -766,10 +770,6 @@
         {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
         },
         {
           "path": "template-files/.prettierignore",
@@ -881,6 +881,10 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -906,10 +910,6 @@
         {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
         },
         {
           "path": "template-files/.prettierignore",
