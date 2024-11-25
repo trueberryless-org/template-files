@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.1
+
+### Patch Changes
+
+- [`c8f85f4`](https://github.com/trueberryless-org/template-files/commit/c8f85f4cd369acdd82bed5d0c13c39bff2edf3d7) Thanks [@trueberryless](https://github.com/trueberryless)! - Add synchronization table to release outputs
+
 ## 0.1.3
 
 ### Patch Changes
