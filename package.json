@@ -1,6 +1,6 @@
 {
   "name": "template-files",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Provide single point of truth for template files",
   "license": "MIT",
   "author": "trueberryless-org",
