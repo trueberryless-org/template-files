@@ -100,6 +100,19 @@ jobs:
           npm install -g sort-package-json
           npm install -g markdown-replace-section
 
+      - name: Ensure "🤖 bot" label exists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_REPO: ${{ matrix.repo }}
+        run: |
+          # Check if label exists in target repository, create if not
+          if ! gh label list -R "$TARGET_REPO" | grep -q "🤖 bot"; then
+            gh label create "🤖 bot" \
+              --description "Automatically generated pull request" \
+              --color "0075ca" \
+              -R "$TARGET_REPO"
+          fi
+
       - name: Update template files in target repository
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
@@ -303,7 +316,8 @@ jobs:
                 --base main \
                 --head "$branch_name" \
                 --title "[ci] sync template files" \
-                --body "$description"
+                --body "$description" \
+                --label "🤖 bot"
             fi
           fi
 
