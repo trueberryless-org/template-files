@@ -25,7 +25,7 @@ jobs:
 
           def sort_files(repositories):
               for repo in repositories:
-                  repo['files'] = sorted(repo['files'], key=lambda x: x['targetPath'])
+                  repo['files'] = sorted(repo['files'], key=lambda x: x['targetPath'].lower())
               return repositories
 
           # Read the JSON file
