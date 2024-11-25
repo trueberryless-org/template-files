@@ -4,6 +4,20 @@
       "name": "trueberryless-org/template-files",
       "files": [
         {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "template-files"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "template-files"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/format.yaml",
           "targetPath": ".github/workflows/format.yaml",
           "props": {
@@ -30,12 +44,20 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "name": "template-files"
+          }
+        },
+        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
         {
-          "path": "https://raw.githubusercontent.com/github/gitignore/95c8bf079cf5600d967696c7f253e352ae77d83d/Node.gitignore",
+          "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
         },
         {
@@ -84,6 +106,13 @@
             "branchName": "main",
             "repositoryName": "starlight-view-modes",
             "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
           }
         },
         {
@@ -145,6 +174,10 @@
           "props": {
             "repositoryName": "starlight-view-modes"
           }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
         },
         {
           "path": "template-files/.prettierrc",

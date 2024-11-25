@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Write tree outputs to README.md
-        uses: shirakiya/readme-tree-writer@v1
+        uses: shirakiya/readme-tree-writer@v2
         with:
           config_path: .github/readmetreerc.yaml
       - name: Create Pull Request

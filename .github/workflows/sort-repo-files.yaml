@@ -1,0 +1,58 @@
+name: Sort Repository Files
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "repos.json"
+
+jobs:
+  sort-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Sort Files
+        run: |
+          import json
+
+          def sort_files(repositories):
+              for repo in repositories:
+                  repo['files'] = sorted(repo['files'], key=lambda x: x['targetPath'])
+              return repositories
+
+          # Read the JSON file
+          with open('repos.json', 'r') as f:
+              data = json.load(f)
+
+          # Sort the files
+          sorted_data = sort_files(data['repositories'])
+          data['repositories'] = sorted_data
+
+          # Write back to file
+          with open('repos.json', 'w') as f:
+              json.dump(data, f, indent=4)
+
+        shell: python
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          commit-message: "[ci] sort repos.json files"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: ci-sort-repo-files
+          delete-branch: true
+          title: "[ci] sort repos.json files"
+          body: "This PR was automatically created to sort the files in the `repos.json` file."
+          labels: 🤖 bot
+          assignees: trueberryless
+          draft: false
