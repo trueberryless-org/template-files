@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
-      - run: pnpm i
       - name: Format with Prettier
         run: pnpm prettier --write .
       - name: Create Pull Request
@@ -37,7 +36,6 @@ jobs:
           delete-branch: true
           title: "[ci] format"
           body: "This PR was automatically created to format the repository using prettier."
-          labels: |
-            🤖 bot
+          labels: 🤖 bot
           assignees: trueberryless
           draft: false
