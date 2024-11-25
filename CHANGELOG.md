@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.2
+
+### Patch Changes
+
+- [`7cd5c03`](https://github.com/trueberryless-org/template-files/commit/7cd5c0306fbe930d2348e891afda85b733a0e35e) Thanks [@trueberryless](https://github.com/trueberryless)! - Add .prettierignore, format.yaml and many other cool stuff tbh
+
 ## 0.1.1
 
 ### Patch Changes
