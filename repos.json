@@ -995,6 +995,13 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/.github/workflows/generate-readme-tree.yaml",
+          "targetPath": ".github/workflows/generate-readme-tree.yaml",
+          "props": {
+            "branchName": "main"
+          }
         }
       ]
     },
