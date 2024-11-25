@@ -302,11 +302,18 @@ jobs:
           changed_files="${{ env.CHANGED_FILES }}"
 
           mkdir -p "summary"
+          mkdir -p "discord"
 
           if [ "$changed_files" -gt 0 ]; then
             echo "| $repo_name | [PR Link]($pr_url) | $changed_files |" >> summary/summary_table.txt
+            if [ "$changed_files" -eq 1 ]; then
+              echo "- $repo_name -- $changed_files file changed: ([PR Link]($pr_url))" >> discord/discord_list.txt
+            else
+              echo "- $repo_name -- $changed_files files changed: ([PR Link]($pr_url))" >> discord/discord_list.txt
+            fi
           else
             echo "| $repo_name | No PR | $changed_files |" >> summary/summary_table.txt
+            echo "- $repo_name -- No files changed" >> discord/discord_list.txt
           fi
 
       - name: Replace "/" with "-" in repo name for artifact upload
@@ -322,6 +329,12 @@ jobs:
           name: summary-table-${{ env.SANITIZED_REPO_NAME }}
           path: summary/summary_table.txt
 
+      - name: Upload summary as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: discord-list-${{ env.SANITIZED_REPO_NAME }}
+          path: discord/discord_list.txt
+
   summarize:
     name: Synchronization Report
     runs-on: ubuntu-latest
@@ -334,7 +347,12 @@ jobs:
         with:
           path: summary
 
-      - name: Combine summaries and generate final markdown
+      - name: Download discord artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: discord
+
+      - name: Combine summaries and generate final markdown table
         run: |
           # Create or append to the final summary file
           echo "### Summary of Changes" > final_summary.md
@@ -352,6 +370,23 @@ jobs:
         with:
           name: final-summary
           path: final_summary.md
+
+      - name: Combine discord and generate final markdown list
+        run: |
+          # Create or append to the final summary file
+          echo "### Summary of Changes" > discord_summary.md
+          echo "" >> discord_summary.md
+
+          # Loop over the downloaded summary artifacts and append their content
+          for artifact in $(find . -name "discord_list.txt"); do
+            cat "$artifact" >> discord_summary.md
+          done
+
+      - name: Upload final summary as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: discord-summary
+          path: discord_summary.md
 
       - name: Display summary in the GitHub Actions summary
         run: |
@@ -378,7 +413,7 @@ jobs:
 
   release:
     name: Release
-    needs: [sync, image-tag]
+    needs: [sync, image-tag, summarize]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -397,11 +432,22 @@ jobs:
         with:
           name: final-summary
 
+      - name: Download summary artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: discord-summary
+
       - name: Save summary into Github environment variable
         run: |
           {
             echo "SYNC_SUMMARY<<EOF"
             cat final_summary.md
+            echo "EOF"
+          } >> $GITHUB_ENV
+           
+          {
+            echo "DISCORD_SUMMARY<<EOF"
+            cat discord_summary.md
             echo "EOF"
           } >> $GITHUB_ENV
 
@@ -436,6 +482,4 @@ jobs:
 
             ${{ steps.extract-changelog.outputs.markdown }}
 
-            ```markdown
-            ${{ env.SYNC_SUMMARY }}
-            ```
+            ${{ env.DISCORD_SUMMARY }}
