@@ -3,6 +3,7 @@ name: Sort Repository Files
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - "repos.json"
 
@@ -37,7 +38,7 @@ jobs:
 
           # Write back to file
           with open('repos.json', 'w') as f:
-              json.dump(data, f, indent=4)
+              json.dump(data, f, indent=2)
 
         shell: python
 
