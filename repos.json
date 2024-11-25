@@ -39,24 +39,6 @@
           }
         },
         {
-          "path": "template-files/package.json/changeset.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "name": "template-files"
-          }
-        },
-        {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
         },
@@ -74,6 +56,24 @@
           "props": {
             "year": "2024"
           }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "name": "template-files"
+          }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/README.md",
@@ -139,6 +139,28 @@
           }
         },
         {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
           "path": "template-files/manifest/certificate.yaml",
           "targetPath": "manifest/certificate.yaml",
           "props": {
@@ -176,28 +198,6 @@
           }
         },
         {
-          "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.prettierrc",
-          "targetPath": ".prettierrc"
-        },
-        {
-          "path": "template-files/Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
-          "path": "template-files/LICENSE",
-          "targetPath": "LICENSE",
-          "props": {
-            "year": "2024"
-          }
-        },
-        {
           "path": "template-files/package.json/changeset.package.json",
           "targetPath": "package.json",
           "special": "package.json"
@@ -208,16 +208,16 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-view-modes/README.md",
+          "special": "README.md"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
             "documentationFolder": "docs"
           }
-        },
-        {
-          "path": "template-files/README.md",
-          "targetPath": "packages/starlight-view-modes/README.md",
-          "special": "README.md"
         }
       ]
     },
@@ -259,6 +259,24 @@
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
             "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "starlight"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
           }
         },
         {
@@ -309,24 +327,6 @@
           "special": "package.json",
           "props": {
             "name": "blog-monorepo"
-          }
-        },
-        {
-          "path": "template-files/.prettierrc",
-          "targetPath": ".prettierrc"
-        },
-        {
-          "path": "template-files/Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "starlight"
-          }
-        },
-        {
-          "path": "template-files/LICENSE",
-          "targetPath": "LICENSE",
-          "props": {
-            "year": "2024"
           }
         },
         {
