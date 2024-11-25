@@ -17,11 +17,13 @@ jobs:
           run_install: |
             - recursive: false
               args: [--frozen-lockfile]
-            - args: [prettier]
+            - args: [--global, prettier, sort-package-json]
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "pnpm"
+      - name: Sort package.json
+        run: find . -name "package.json" -not -path "*/node_modules/*" -exec sort-package-json {} \;
       - name: Format with Prettier
         run: pnpm prettier --write .
       - name: Create Pull Request
@@ -35,7 +37,7 @@ jobs:
           branch: ci-format
           delete-branch: true
           title: "[ci] format"
-          body: "This PR was automatically created to format the repository using prettier."
+          body: "This PR was automatically created to sort package.json files in the repository using sort-package-json and to format the repository using prettier."
           labels: 🤖 bot
           assignees: trueberryless
           draft: false
