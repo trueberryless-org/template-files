@@ -102,15 +102,14 @@ jobs:
 
       - name: Ensure "🤖 bot" label exists
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TARGET_REPO: ${{ matrix.repo }}
+          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
           # Check if label exists in target repository, create if not
-          if ! gh label list -R "$TARGET_REPO" | grep -q "🤖 bot"; then
+          if ! gh label list -R "${{ matrix.repo }}" | grep -q "🤖 bot"; then
             gh label create "🤖 bot" \
               --description "Automatically generated pull request" \
               --color "0075ca" \
-              -R "$TARGET_REPO"
+              -R "${{ matrix.repo }}"
           fi
 
       - name: Update template files in target repository
