@@ -894,6 +894,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/release.yaml",
           "targetPath": ".github/workflows/release.yaml",
           "props": {
