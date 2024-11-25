@@ -864,6 +864,141 @@
       ]
     },
     {
+      "name": "trueberryless-org/mutanuq",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "mutanuq",
+            "documentationFolder": "starlight"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "starlight"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "mutanuq",
+            "subdomainName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "mutanuq",
+            "subdomainName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "mutanuq-monorepo",
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
+        }
+      ]
+    },
+    {
       "name": "trueberryless-org/blog",
       "files": [
         {
