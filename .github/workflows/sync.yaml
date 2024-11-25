@@ -436,4 +436,6 @@ jobs:
 
             ${{ steps.extract-changelog.outputs.markdown }}
 
+            ```markdown
             ${{ env.SYNC_SUMMARY }}
+            ```
