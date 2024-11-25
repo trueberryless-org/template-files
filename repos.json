@@ -18,6 +18,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/sort.package.json.yaml",
+          "targetPath": ".github/workflows/sort.package.json.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
           "path": "template-files/package.json/changeset.package.json",
           "targetPath": "package.json",
           "special": "package.json"
