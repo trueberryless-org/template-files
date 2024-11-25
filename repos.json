@@ -901,6 +901,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/generate-readme-tree.yaml",
+          "targetPath": ".github/workflows/generate-readme-tree.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/release.yaml",
           "targetPath": ".github/workflows/release.yaml",
           "props": {
@@ -995,13 +1002,6 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        },
-        {
-          "path": "template-files/.github/workflows/generate-readme-tree.yaml",
-          "targetPath": ".github/workflows/generate-readme-tree.yaml",
-          "props": {
-            "branchName": "main"
-          }
         }
       ]
     },
