@@ -999,16 +999,16 @@
           }
         },
         {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md"
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
             "documentationFolder": "starlight"
           }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
         }
       ]
     },
