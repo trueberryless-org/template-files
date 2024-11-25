@@ -1,0 +1,37 @@
+name: Format
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: |
+            - recursive: false
+              args: [--frozen-lockfile]
+            - args: [prettier]
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - run: pnpm i
+      - name: Format with Prettier
+        run: pnpm prettier --write .
+      - uses: gr2m/create-or-update-pull-request-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+        with:
+          title: "[ci] format"
+          body: "This PR was automatically created to format the repository using prettier."
+          branch: "ci/format"
+          commit-message: "[ci] format"
+          author: "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)"
+          labels: 🤖 bot
+          assignees: trueberryless
+          reviewers: trueberryless
