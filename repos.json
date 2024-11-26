@@ -889,12 +889,14 @@
           "targetPath": ".github/readmetreerc.yaml"
         },
         {
-          "path": "template-files/.github/workflows/deployment.yaml",
+          "path": "template-files/.github/workflows/deployment-with-lunaria.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
             "branchName": "main",
             "repositoryName": "mutanuq",
-            "documentationFolder": "starlight"
+            "documentationFolder": "starlight",
+            "lunariaRepositoryName": "i18n-mutanuq",
+            "pathToLunariaDockerfile": "starlight/lunaria/Dockerfile"
           }
         },
         {
@@ -986,6 +988,43 @@
           "targetPath": "manifest/service.yaml",
           "props": {
             "repositoryName": "mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "i18n-mutanuq",
+            "subdomainName": "i18n-mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "i18n-mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "i18n-mutanuq",
+            "subdomainName": "i18n-mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "i18n-mutanuq"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "i18n-mutanuq"
           }
         },
         {
