@@ -992,7 +992,7 @@
         },
         {
           "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
+          "targetPath": "manifest-lunaria/certificate.yaml",
           "props": {
             "repositoryName": "i18n-mutanuq",
             "subdomainName": "i18n-mutanuq"
@@ -1000,14 +1000,14 @@
         },
         {
           "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
+          "targetPath": "manifest-lunaria/deployment.yaml",
           "props": {
             "repositoryName": "i18n-mutanuq"
           }
         },
         {
           "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
+          "targetPath": "manifest-lunaria/ingress.yaml",
           "props": {
             "repositoryName": "i18n-mutanuq",
             "subdomainName": "i18n-mutanuq"
@@ -1015,14 +1015,14 @@
         },
         {
           "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
+          "targetPath": "manifest-lunaria/namespace.yaml",
           "props": {
             "repositoryName": "i18n-mutanuq"
           }
         },
         {
           "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
+          "targetPath": "manifest-lunaria/service.yaml",
           "props": {
             "repositoryName": "i18n-mutanuq"
           }
