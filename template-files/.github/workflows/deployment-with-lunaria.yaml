@@ -194,8 +194,8 @@ jobs:
         shell: bash
         working-directory: ./<%= documentationFolder %>
 
-      - name: Build Website
-        run: pnpm run build
+      - name: Build Lunaria Website
+        run: pnpm run lunaria:build
         shell: bash
         working-directory: ./<%= documentationFolder %>
 
