@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.5
+
+### Patch Changes
+
+- [`fd4d152`](https://github.com/trueberryless-org/template-files/commit/fd4d15253c55cca2ede222c550ef4878619065e3) Thanks [@trueberryless](https://github.com/trueberryless)! - Prettier ignores changeset, Markdown and MDX files
+
 ## 0.1.4
 
 ### Patch Changes
