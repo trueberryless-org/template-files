@@ -110,7 +110,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "starlight-view-modes",
-            "documentationFolder": "docs"
+            "documentationFolder": "docs",
+            "makeLatest": "false"
           }
         },
         {
@@ -266,7 +267,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "starlight-cooler-credit",
-            "documentationFolder": "docs"
+            "documentationFolder": "docs",
+            "makeLatest": "false"
           }
         },
         {
@@ -422,7 +424,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "starlight-sidebar-topics-dropdown",
-            "documentationFolder": "docs"
+            "documentationFolder": "docs",
+            "makeLatest": "false"
           }
         },
         {
@@ -578,7 +581,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "starlight-contributor-list",
-            "documentationFolder": "docs"
+            "documentationFolder": "docs",
+            "makeLatest": "false"
           }
         },
         {
@@ -734,7 +738,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "starlight-plugin-show-latest-version",
-            "documentationFolder": "docs"
+            "documentationFolder": "docs",
+            "makeLatest": "false"
           }
         },
         {
@@ -890,7 +895,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "starlight-plugins-docs-components",
-            "documentationFolder": "docs"
+            "documentationFolder": "docs",
+            "makeLatest": "false"
           }
         },
         {
@@ -1052,7 +1058,8 @@
             "repositoryName": "mutanuq",
             "documentationFolder": "starlight",
             "lunariaRepositoryName": "i18n-mutanuq",
-            "pathToLunariaDockerfile": "starlight/lunaria/Dockerfile"
+            "pathToLunariaDockerfile": "starlight/lunaria/Dockerfile",
+            "makeLatest": "true"
           }
         },
         {
@@ -1248,7 +1255,8 @@
           "props": {
             "branchName": "main",
             "repositoryName": "blog",
-            "documentationFolder": "starlight"
+            "documentationFolder": "starlight",
+            "makeLatest": "true"
           }
         },
         {
