@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Write tree outputs to README.md
-        uses: trueberryless-org/readme-tree-writer-all@v0.1.0
+        uses: trueberryless-org/readme-tree-writer-all@v1
         with:
           config_path: .github/readmetreerc.yaml
       - name: Create Pull Request
