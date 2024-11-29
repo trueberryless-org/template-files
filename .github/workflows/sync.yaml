@@ -48,7 +48,7 @@ jobs:
     name: Prepare Matrix
     runs-on: ubuntu-latest
     outputs:
-      repo-matrix: ${{ env.REPO_MATRIX }}
+      repo-matrix: "${{ env.REPO_MATRIX }}"
     steps:
       - name: Checkout current repository
         uses: actions/checkout@v4
@@ -59,10 +59,10 @@ jobs:
       - name: Read Repositories from JSON
         id: set-matrix
         run: |
-          repos=$(jq -c '.repositories[] | {name: .name, files: .files}' repos.json | jq -s .)
+          repos="$(jq -c '.repositories[] | {name: .name, files: .files}' repos.json | jq -s .)"
           {
             echo "REPO_MATRIX<<EOF"
-            echo ${repos}
+            echo "${repos}"
             echo EOF
           } >> $GITHUB_ENV
 
@@ -75,7 +75,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        repo: ${{ fromJson(needs.prepare-matrix.outputs.repo-matrix) }}
+        repo: "${{ fromJson(needs.prepare-matrix.outputs.repo-matrix) }}"
     if: >
       (
         needs.changesets.outputs.hasChangesets == 'false' && 
