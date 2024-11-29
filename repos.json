@@ -29,8 +29,8 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/labeler yaml",
-          "targetPath": ".github/workflows/labeler yaml"
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
