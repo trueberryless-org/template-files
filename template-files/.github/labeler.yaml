@@ -18,7 +18,7 @@
 
 "🌏 i18n":
   - changed-files:
-      - all-glob-to-any-file: ["**/docs/**", "!**/docs/en/**"]
+      - all-globs-to-any-file: ["**/docs/**", "!**/docs/en/**"]
 
 "🚀 manifest":
   - changed-files:

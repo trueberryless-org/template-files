@@ -22,15 +22,15 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
           "path": "template-files/.github/workflows/format.yaml",
           "targetPath": ".github/workflows/format.yaml",
           "props": {
             "branchName": "main"
           }
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
@@ -107,6 +107,14 @@
           "props": {
             "repositoryName": "starlight-view-modes"
           }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.dockerignore",
@@ -266,6 +274,14 @@
           }
         },
         {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
         },
@@ -421,6 +437,14 @@
           "props": {
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.dockerignore",
@@ -580,6 +604,14 @@
           }
         },
         {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
         },
@@ -735,6 +767,14 @@
           "props": {
             "repositoryName": "starlight-plugin-show-latest-version"
           }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.dockerignore",
@@ -894,6 +934,14 @@
           }
         },
         {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
         },
@@ -1049,6 +1097,14 @@
           "props": {
             "repositoryName": "mutanuq"
           }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.dockerignore",
@@ -1252,6 +1308,14 @@
           "props": {
             "repositoryName": "blog"
           }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.dockerignore",
