@@ -15,15 +15,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh label delete "bug" || true
-          gh label delete "documentation" || true
-          gh label delete "duplicate" || true
-          gh label delete "enhancement" || true
-          gh label delete "good first issue" || true
-          gh label delete "help wanted" || true
-          gh label delete "invalid" || true
-          gh label delete "question" || true
-          gh label delete "wontfix" || true
+          gh label delete "bug" --yes || true
+          gh label delete "documentation" --yes || true
+          gh label delete "duplicate" --yes || true
+          gh label delete "enhancement" --yes || true
+          gh label delete "good first issue" --yes || true
+          gh label delete "help wanted" --yes || true
+          gh label delete "invalid" --yes || true
+          gh label delete "question" --yes || true
+          gh label delete "wontfix" --yes || true
 
           gh label create "🚨 action" --description "Changes in GitHub workflows or actions" --color "A75AD5" --force
           gh label create "🤖 bot" --description "Automatically generated pull request" --color "0075CA" --force
