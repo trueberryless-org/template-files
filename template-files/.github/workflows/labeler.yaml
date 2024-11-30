@@ -15,7 +15,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           labels=(
-            '{"name":"🚨 action","description":"Changes in GitHub workflows or actions","color":"A75AD5"}'
+            '{"name":"🚨action","description":"ChangesinGitHubworkflowsoractions","color":"A75AD5"}'
             '{"name":"🤖 bot","description":"Automatically generated pull request","color":"0075CA"}'
             '{"name":"🐛 bug","description":"Something isn't working","color":"D73A4A"}'
             '{"name":"📝 changeset","description":"Contains changeset files","color":"304EF9"}'
@@ -27,6 +27,8 @@ jobs:
             '{"name":"📦 package","description":"Updates in package structure or package.json","color":"F34A37"}'
             '{"name":"🏯 styles","description":"Stylesheets or design updates","color":"550F5A"}'
           )
+
+          echo "${labels[@]}"
 
           for label in "${labels[@]}"; do
             name=$(echo "$label" | jq -r .name)
