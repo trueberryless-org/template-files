@@ -61,13 +61,13 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
-          commit-message: "[ci] sort repos.json files"
+          commit-message: "[ci] sort `repos.json` files"
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: ci-sort-repo-files
           delete-branch: true
-          title: "[ci] sort repos.json files"
+          title: "[ci] sort `repos.json` files"
           body: "This PR was automatically created to sort the files in the `repos.json` file."
           labels: 🤖 bot
           assignees: trueberryless
