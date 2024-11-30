@@ -15,21 +15,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          labels='[
-            {"name":"🚨 action","description":"Changes in GitHub workflows or actions","color":"A75AD5"},
-            {"name":"🤖 bot","description":"Automatically generated pull request","color":"0075CA"},
-            {"name":"🐛 bug","description":"Something isn't working","color":"D73A4A"},
-            {"name":"📝 changeset","description":"Contains changeset files","color":"304EF9"},
-            {"name":"🚧 config","description":"Configuration file updates","color":"C0ED4F"},
-            {"name":"✒️ documentation","description":"Documentation updates, like README changes","color":"66741D"},
-            {"name":"⏫ enhancement","description":"New feature or request","color":"3C11FD"},
-            {"name":"🌏 i18n","description":"Updates to internationalized docs, excluding English","color":"006B75"},
-            {"name":"🚀 manifest","description":"Manifest-related changes","color":"96D3D7"},
-            {"name":"📦 package","description":"Updates in package structure or package.json","color":"F34A37"},
-            {"name":"🏯 styles","description":"Stylesheets or design updates","color":"550F5A"}
-          ]'
-
-          echo "$labels"
+          labels='[{"name":"🚨 action","description":"Changes in GitHub workflows or actions","color":"A75AD5"},{"name":"🤖 bot","description":"Automatically generated pull request","color":"0075CA"},{"name":"🐛 bug","description":"Something isn't working","color":"D73A4A"},{"name":"📝 changeset","description":"Contains changeset files","color":"304EF9"},{"name":"🚧 config","description":"Configuration file updates","color":"C0ED4F"},{"name":"✒️ documentation","description":"Documentation updates, like README changes","color":"66741D"},{"name":"⏫ enhancement","description":"New feature or request","color":"3C11FD"},{"name":"🌏 i18n","description":"Updates to internationalized docs, excluding English","color":"006B75"},{"name":"🚀 manifest","description":"Manifest-related changes","color":"96D3D7"},{"name":"📦 package","description":"Updates in package structure or package.json","color":"F34A37"},{"name":"🏯 styles","description":"Stylesheets or design updates","color":"550F5A"}]'
 
           echo "$labels" | jq -c '.[]' | while read -r label; do
             name=$(echo "$label" | jq -r '.name')
