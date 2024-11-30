@@ -42,6 +42,7 @@ jobs:
           gh label create "❓ question" --description "Further information is requested" --color "D876E3" --force
           gh label create "🏯 styles" --description "Stylesheets or design updates" --color "550F5A" --force
           gh label create "🔒 wontfix" --description "This will not be worked on" --color "FFFFFF" --force
+
       - uses: actions/labeler@v5
         with:
           configuration-path: .github/labeler.yaml
