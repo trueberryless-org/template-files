@@ -15,15 +15,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if gh label list | grep -q "bug"; then gh label delete "bug" --yes fi
-          if gh label list | grep -q "documentation"; then gh label delete "documentation" --yes fi
-          if gh label list | grep -q "duplicate"; then gh label delete "duplicate" --yes fi
-          if gh label list | grep -q "enhancement"; then gh label delete "enhancement" --yes fi
-          if gh label list | grep -q "good first issue"; then gh label delete "good first issue" --yes fi
-          if gh label list | grep -q "help wanted"; then gh label delete "help wanted" --yes fi
-          if gh label list | grep -q "invalid"; then gh label delete "invalid" --yes fi
-          if gh label list | grep -q "question"; then gh label delete "question" --yes fi
-          if gh label list | grep -q "wontfix"; then gh label delete "wontfix" --yes fi
+          delete_labels=("bug" "documentation" "duplicate" "enhancement" "good first issue" "help wanted" "invalid" "question" "wontfix")
+
+          for label in "${delete_labels[@]}"; do
+            if gh label list | grep -q "$label"; then
+              gh label delete "$label" --yes
+            fi
+          done
 
           gh label create "🚨 action" --description "Changes in GitHub workflows or actions" --color "A75AD5" --force
           gh label create "🤖 bot" --description "Automatically generated pull request" --color "0075CA" --force
