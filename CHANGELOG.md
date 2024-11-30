@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.6
+
+### Patch Changes
+
+- [`362703d`](https://github.com/trueberryless-org/template-files/commit/362703df8245ff55116049831aee8df020bec2ca) Thanks [@trueberryless](https://github.com/trueberryless)! - Add labeler and label manager
+
 ## 0.1.5
 
 ### Patch Changes
