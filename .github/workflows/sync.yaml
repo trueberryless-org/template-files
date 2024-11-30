@@ -294,7 +294,7 @@ jobs:
             latest_commit_hash=$(git rev-parse HEAD)
             latest_commit_url="https://github.com/$GITHUB_REPOSITORY/commit/$latest_commit_hash"
             latest_commit_message=$(git log -1 --pretty=%s)
-            modified_message=$(echo "$latest_commit_message" | sed -E "s/\#([0-9]+)/\$repo_name\#\1/g")
+            modified_message=$(echo "$latest_commit_message" | sed -E "s/\#([0-9]+)/trueberryless-org\/template-files\#\1/g")
             latest_commit_entry="- $modified_message - ([$(git rev-parse --short HEAD)]($latest_commit_url))"
 
             cd target-repo
