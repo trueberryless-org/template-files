@@ -11,10 +11,12 @@ Provide single point of truth for template files.
 │   └── config.json
 ├── .dockerignore
 ├── .github
+│   ├── labeler.yaml
 │   ├── readmetreerc.yaml
 │   └── workflows
 │       ├── format.yaml
 │       ├── generate-readme-tree.yaml
+│       ├── labeler.yaml
 │       ├── release.yaml
 │       ├── sort-repo-files.yaml
 │       ├── sync.yaml
@@ -41,6 +43,7 @@ Provide single point of truth for template files.
     │   │   ├── ---01-bug-report.yaml
     │   │   ├── ---02-docs-issue.yaml
     │   │   └── config.yaml
+    │   ├── labeler.yaml
     │   ├── readmetreerc.yaml
     │   └── workflows
     │       ├── deployment-with-lunaria.yaml
