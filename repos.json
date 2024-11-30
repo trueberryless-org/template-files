@@ -22,15 +22,15 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.github/workflows/format.yaml",
           "targetPath": ".github/workflows/format.yaml",
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
@@ -109,16 +109,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -136,6 +132,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/publish.yaml",
@@ -274,16 +274,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -301,6 +297,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/publish.yaml",
@@ -439,16 +439,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -466,6 +462,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/publish.yaml",
@@ -604,16 +604,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -631,6 +627,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/publish.yaml",
@@ -769,16 +769,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -796,6 +792,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/publish.yaml",
@@ -934,16 +934,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -961,6 +957,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/publish.yaml",
@@ -1099,16 +1099,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/readmetreerc.yaml",
@@ -1139,6 +1135,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
@@ -1310,16 +1310,12 @@
           }
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -1337,6 +1333,10 @@
           "props": {
             "branchName": "main"
           }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
         },
         {
           "path": "template-files/.github/workflows/release.yaml",
