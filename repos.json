@@ -1452,9 +1452,46 @@
       "name": "trueberryless-org/batch-management-system",
       "files": [
         {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md"
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc/import.order.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile/Next.Dockerfile",
+          "targetPath": "Dockerfile"
         },
         {
           "path": "template-files/LICENSE",
@@ -1462,10 +1499,6 @@
           "props": {
             "year": "2024"
           }
-        },
-        {
-          "path": "template-files/.prettierrc/import.order.prettierrc",
-          "targetPath": ".prettierrc"
         },
         {
           "path": "template-files/package.json/changeset.package.json",
@@ -1492,42 +1525,9 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/.github/labeler.yaml",
-          "targetPath": ".github/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/format.yaml",
-          "targetPath": ".github/workflows/format.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/welcome-bot.yaml",
-          "targetPath": ".github/workflows/welcome-bot.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
-          "path": "template-files/Dockerfile/Next.Dockerfile",
-          "targetPath": "Dockerfile"
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
-        },
-        {
-          "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
         }
       ]
     }
