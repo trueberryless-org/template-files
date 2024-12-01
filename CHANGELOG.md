@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.7
+
+### Patch Changes
+
+- [`9cd54ca`](https://github.com/trueberryless-org/template-files/commit/9cd54caabc48191dfdef745f1cc0cb33587a2222) Thanks [@trueberryless](https://github.com/trueberryless)! - Sync batch-management-system + refactor .prettierrc & Dockerfile
+
 ## 0.1.6
 
 ### Patch Changes
