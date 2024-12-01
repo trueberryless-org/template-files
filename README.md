@@ -59,10 +59,13 @@ Provide single point of truth for template files.
     │   └── Node.gitignore
     ├── .prettierignore
     ├── .prettierrc
+    │   ├── .prettierrc
+    │   └── import.order.prettierrc
     ├── Dockerfile
+    │   ├── Next.Dockerfile
+    │   └── httpd.Dockerfile
     ├── LICENSE
     ├── README.md
-    ├── import.order.prettierrc.json
     ├── manifest
     │   ├── certificate.yaml
     │   ├── deployment.yaml
@@ -72,6 +75,7 @@ Provide single point of truth for template files.
     ├── package.json
     │   ├── changeset.package.json
     │   ├── definition.package.json
+    │   ├── import.order.package.json
     │   └── package.manager.package.json
     └── pnpm-workspace.yaml
 
