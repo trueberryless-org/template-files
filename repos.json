@@ -1292,11 +1292,6 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        },
-        {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md"
         }
       ]
     },
