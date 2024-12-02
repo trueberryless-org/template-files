@@ -197,7 +197,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
@@ -363,7 +363,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "starlight-cooler-credit"
           }
@@ -529,7 +529,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
@@ -695,7 +695,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "starlight-contributor-list"
           }
@@ -861,7 +861,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "starlight-plugin-show-latest-version"
           }
@@ -1027,7 +1027,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "starlight-plugins-docs-components"
           }
@@ -1197,7 +1197,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "mutanuq"
           }
@@ -1235,7 +1235,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest-lunaria/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "i18n-mutanuq"
           }
@@ -1397,7 +1397,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "deployment.yaml",
+          "special": "manifest/deployment.yaml",
           "props": {
             "repositoryName": "blog"
           }

@@ -221,40 +221,44 @@ jobs:
               fi
 
               modified_package_jsons+=("$dest_file")
-            elif [ "$special" == "deployment.yaml" ]; then
-              echo "Special handling for deployment.yaml"
+            elif [ "$special" == "manifest/deployment.yaml" ]; then
+              echo "Special handling for manifest/deployment.yaml"
 
               # Prepare the destination directory
               mkdir -p "$(dirname "$dest_file")"
 
-              # Check if the destination file exists
-              if [ -f "$dest_file" ]; then
-                echo "Existing deployment.yaml detected. Comparing files, ignoring the 'image' line..."
+              # Resolve placeholders in the source file using props
+              props=$(echo "$file_config" | jq -c '.props // empty')
+              temp_file=$(mktemp)
+              cp "$src_file" "$temp_file"
 
-                # Remove the `image` line from both source and destination for comparison
-                temp_source=$(mktemp)
-                temp_dest=$(mktemp)
-
-                # Filter out the `image` line from both files
-                grep -v '^\s*image:\s' "$src_file" > "$temp_source"
-                grep -v '^\s*image:\s' "$dest_file" > "$temp_dest"
-
-                # Compare the filtered files
-                if diff -q "$temp_source" "$temp_dest" > /dev/null; then
-                  echo "No relevant changes detected in deployment.yaml. Skipping update."
-                  rm -f "$temp_source" "$temp_dest"
-                  continue
-                else
-                  echo "Relevant changes detected in deployment.yaml. Updating file..."
-                fi
-
-                rm -f "$temp_source" "$temp_dest"
-              else
-                echo "No existing deployment.yaml found. Copying template file."
+              if [ -n "$props" ]; then
+                for key in $(echo "$props" | jq -r 'keys[]'); do
+                  value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+                  placeholder="<%= $key %>"
+                  echo "Replacing $placeholder with $value in $src_file..."
+                  sed -i "s|$placeholder|$value|g" "$temp_file"
+                done
               fi
 
-              # Copy the source file to the destination
-              cp "$src_file" "$dest_file"
+              # Check if the destination file exists
+              if [ -f "$dest_file" ]; then
+                # Exclude the image line from comparison
+                diff_output=$(diff <(grep -v 'image:' "$temp_file") <(grep -v 'image:' "$dest_file"))
+                
+                if [ -z "$diff_output" ]; then
+                  echo "No significant changes detected in $dest_file. Skipping update."
+                  rm -f "$temp_file"
+                  continue
+                fi
+
+                echo "Significant changes detected. Updating $dest_file..."
+              else
+                echo "Destination file $dest_file does not exist. Creating it..."
+              fi
+
+              # Move the processed file to the target location
+              mv "$temp_file" "$dest_file"
             else
               # Prepare the destination directory
               mkdir -p "$(dirname "$dest_file")"
