@@ -221,6 +221,40 @@ jobs:
               fi
 
               modified_package_jsons+=("$dest_file")
+            elif [ "$special" == "deployment.yaml" ]; then
+              echo "Special handling for deployment.yaml"
+
+              # Prepare the destination directory
+              mkdir -p "$(dirname "$dest_file")"
+
+              # Check if the destination file exists
+              if [ -f "$dest_file" ]; then
+                echo "Existing deployment.yaml detected. Comparing files, ignoring the 'image' line..."
+
+                # Remove the `image` line from both source and destination for comparison
+                temp_source=$(mktemp)
+                temp_dest=$(mktemp)
+
+                # Filter out the `image` line from both files
+                grep -v '^\s*image:\s' "$src_file" > "$temp_source"
+                grep -v '^\s*image:\s' "$dest_file" > "$temp_dest"
+
+                # Compare the filtered files
+                if diff -q "$temp_source" "$temp_dest" > /dev/null; then
+                  echo "No relevant changes detected in deployment.yaml. Skipping update."
+                  rm -f "$temp_source" "$temp_dest"
+                  continue
+                else
+                  echo "Relevant changes detected in deployment.yaml. Updating file..."
+                fi
+
+                rm -f "$temp_source" "$temp_dest"
+              else
+                echo "No existing deployment.yaml found. Copying template file."
+              fi
+
+              # Copy the source file to the destination
+              cp "$src_file" "$dest_file"
             else
               # Prepare the destination directory
               mkdir -p "$(dirname "$dest_file")"
