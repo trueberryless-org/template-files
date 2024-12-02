@@ -1561,6 +1561,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/readmetreerc.yaml",
+          "targetPath": ".github/readmetreerc.yaml"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -1656,10 +1660,6 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        },
-{
-          "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml"
         }
       ]
     }
