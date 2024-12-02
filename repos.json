@@ -1654,6 +1654,13 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/Dockerfile/httpd.Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "src"
+          }
         }
       ]
     }
