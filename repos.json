@@ -1642,7 +1642,7 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "@trueberyless-org/trueberryless",
+            "packageName": "trueberryless-monorepo",
             "repositoryName": "trueberyless"
           }
         },
@@ -1660,6 +1660,13 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "src"
+          }
         }
       ]
     }
