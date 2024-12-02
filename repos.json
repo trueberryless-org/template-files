@@ -1544,18 +1544,6 @@
       "name": "trueberryless-org/trueberryless",
       "files": [
         {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md"
-        },
-        {
-          "path": "template-files/.github/workflows/generate-readme-tree.yaml",
-          "targetPath": ".github/workflows/generate-readme-tree.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -1570,8 +1558,54 @@
           }
         },
         {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "trueberryless",
+            "documentationFolder": "src",
+            "makeLatest": "true"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/generate-readme-tree.yaml",
+          "targetPath": ".github/workflows/generate-readme-tree.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
@@ -1580,6 +1614,10 @@
         {
           "path": "template-files/.prettierignore",
           "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc/import.order.prettierrc",
+          "targetPath": ".prettierrc"
         },
         {
           "path": "template-files/LICENSE",
@@ -1608,52 +1646,14 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/.prettierrc/import.order.prettierrc",
-          "targetPath": ".prettierrc"
-        },
-        {
           "path": "template-files/package.json/import.order.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "trueberryless",
-            "documentationFolder": "src",
-            "makeLatest": "true"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/format.yaml",
-          "targetPath": ".github/workflows/format.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/labeler.yaml",
-          "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/welcome-bot.yaml",
-          "targetPath": ".github/workflows/welcome-bot.yaml",
-          "props": {
-            "branchName": "main"
-          }
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
         }
       ]
     }
