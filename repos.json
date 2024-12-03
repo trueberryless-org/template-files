@@ -1667,7 +1667,44 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        }
+        },{
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "trueberryless",
+            "subdomainName": "trueberryless"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "special": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "trueberryless"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "trueberryless",
+            "subdomainName": "trueberryless"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "trueberryless"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "trueberryless"
+          }
+        },
       ]
     }
   ]
