@@ -1542,14 +1542,14 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "trueberyless"
+            "repositoryName": "trueberryless"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "trueberyless"
+            "repositoryName": "trueberryless"
           }
         },
         {
@@ -1643,7 +1643,7 @@
           "special": "package.json",
           "props": {
             "packageName": "trueberryless-monorepo",
-            "repositoryName": "trueberyless"
+            "repositoryName": "trueberryless"
           }
         },
         {
