@@ -243,18 +243,15 @@ jobs:
 
               # Check if the destination file exists
               if [ -f "$dest_file" ]; then
-                if grep -q 'image:' "$dest_file"; then
-                  # Exclude the image line from comparison
-                  echo "Comparing $dest_file with $temp_file..."
-                  diff_output=$(diff <(grep -v 'image:' "$temp_file") <(grep -v 'image:' "$dest_file"))
-                  
-                  if [ -z "$diff_output" ]; then
-                    echo "No significant changes detected in $dest_file. Skipping update."
-                    rm -f "$temp_file"
-                    continue
-                  fi
+                # Exclude the image line from comparison
+                echo "Comparing $dest_file with $temp_file..."
+                diff_output=$(diff <(grep -v 'image:' "$temp_file") <(grep -v 'image:' "$dest_file"))
+                
+                if [ -z "$diff_output" ]; then
+                  echo "No significant changes detected in $dest_file. Skipping update."
+                  rm -f "$temp_file"
+                  continue
                 fi
-
                 echo "Significant changes detected. Updating $dest_file..."
               else
                 echo "Destination file $dest_file does not exist. Creating it..."
