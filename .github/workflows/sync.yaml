@@ -243,11 +243,9 @@ jobs:
 
               # Check if the destination file exists
               if [ -f "$dest_file" ]; then
-                # Exclude the image line from comparison
-                diff_output=$(diff <(grep -v 'image:' "$temp_file") <(grep -v 'image:' "$dest_file"))
-
                 if grep -q 'image:' "$dest_file"; then
                   # Exclude the image line from comparison
+                  echo "Comparing $dest_file with $temp_file..."
                   diff_output=$(diff <(grep -v 'image:' "$temp_file") <(grep -v 'image:' "$dest_file"))
                   
                   if [ -z "$diff_output" ]; then
