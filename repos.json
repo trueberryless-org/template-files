@@ -1667,7 +1667,8 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        },{
+        },
+        {
           "path": "template-files/manifest/certificate.yaml",
           "targetPath": "manifest/certificate.yaml",
           "props": {
@@ -1704,7 +1705,7 @@
           "props": {
             "repositoryName": "trueberryless"
           }
-        },
+        }
       ]
     }
   ]
