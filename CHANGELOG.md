@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.8
+
+### Patch Changes
+
+- [#55](https://github.com/trueberryless-org/template-files/pull/55) [`58226a7`](https://github.com/trueberryless-org/template-files/commit/58226a76c834d0fcdf4430863f36227c3317eeeb) Thanks [@trueberryless](https://github.com/trueberryless)! - Use autofix to automatically format and optimize png images
+
 ## 0.1.7
 
 ### Patch Changes
