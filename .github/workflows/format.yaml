@@ -2,7 +2,7 @@ name: autofix.ci
 on:
   pull_request:
   push:
-    branches: [<%= branchName %>]
+    branches: [main]
 permissions:
   contents: read
 
