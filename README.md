@@ -8,7 +8,8 @@ Provide single point of truth for template files.
 .
 ├── .changeset
 │   ├── README.md
-│   └── config.json
+│   ├── config.json
+│   └── quick-carrots-kneel.md
 ├── .dockerignore
 ├── .github
 │   ├── labeler.yaml
