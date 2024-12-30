@@ -21,6 +21,11 @@ jobs:
           node-version: 20
           cache: "pnpm"
 
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
       - name: Install Dependencies
         run: pnpm i
 
@@ -33,5 +38,41 @@ jobs:
         run: |
           shopt -s globstar
           find . -name '*.png' -exec pngquant --ext .png --force 256 {} \;
+
+      - name: Sort Files
+        run: |
+          import json
+
+          def sort_files_by_target_path(files):
+              def sort_key(file_obj):
+                  target_path = file_obj.get("targetPath", "").lower()
+                  segments = target_path.split('/')
+
+                  key = []
+                  for idx, segment in enumerate(segments):
+                      # A file is the final segment with no further sub-paths
+                      is_file = idx == len(segments) - 1 and '.' in segment
+                      key.append((segment, is_file))
+
+                  return key
+
+              return sorted(files, key=sort_key)
+
+          input_file = "repos.json"
+
+          with open(input_file, "r") as f:
+              data = json.load(f)
+
+          if "repositories" not in data:
+              print(f"Error: {input_file} does not contain a 'repositories' key.")
+              exit(1)
+
+          for repo in data["repositories"]:
+              if "files" in repo:
+                  repo["files"] = sort_files_by_target_path(repo["files"])
+
+          with open(input_file, "w") as f:
+              json.dump(data, f, indent=2)
+              f.write("\n")
 
       - uses: autofix-ci/action@ff86a557419858bb967097bfc916833f5647fa8c
