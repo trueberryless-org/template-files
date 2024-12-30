@@ -18,7 +18,6 @@ Provide single point of truth for template files.
 │       ├── generate-readme-tree.yaml
 │       ├── labeler.yaml
 │       ├── release.yaml
-│       ├── sort-repo-files.yaml
 │       ├── sync.yaml
 │       └── welcome-bot.yaml
 ├── .gitignore
