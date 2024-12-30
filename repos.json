@@ -22,13 +22,6 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/format.yaml",
-          "targetPath": ".github/workflows/format.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
         },
