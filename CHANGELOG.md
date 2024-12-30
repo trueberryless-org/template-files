@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.9
+
+### Patch Changes
+
+- [#61](https://github.com/trueberryless-org/template-files/pull/61) [`f7500e4`](https://github.com/trueberryless-org/template-files/commit/f7500e4c268aafd6e2e660a23001743fd337097d) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Sidebar Swipe Plugin to repos.json
+
 ## 0.1.8
 
 ### Patch Changes
