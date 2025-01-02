@@ -135,8 +135,6 @@ jobs:
 
       - name: Append summary for repository
         if: success()
-        env:
-          GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
         run: |
           repo_name="${{ matrix.repo.name }}"
           branch_name="update-template-files"
