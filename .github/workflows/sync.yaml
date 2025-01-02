@@ -18,6 +18,13 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: tibdex/github-app-token@v2.1.0
+        with:
+          app_id: ${{ secrets.BOT_APP_ID }}
+          private_key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
@@ -42,7 +49,7 @@ jobs:
           commit: "[ci] release"
           title: "[ci] release"
         env:
-          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
 
   prepare-matrix:
     name: Prepare Matrix
@@ -86,6 +93,13 @@ jobs:
       ) || 
       github.event_name == 'workflow_dispatch'
     steps:
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.BOT_APP_ID }}
+          private_key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Checkout current repository
         uses: actions/checkout@v4
 
@@ -102,7 +116,7 @@ jobs:
 
       - name: Ensure "🤖 bot" label exists
         env:
-          GITHUB_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
           # Check if label exists in target repository, create if not
           if ! gh label list -R "${{ matrix.repo.name }}" | grep -q "🤖 bot"; then
@@ -114,7 +128,7 @@ jobs:
 
       - name: Update template files in target repository
         env:
-          GH_TOKEN: ${{ secrets.PUBLIC_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
