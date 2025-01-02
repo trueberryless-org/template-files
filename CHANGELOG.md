@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.10
+
+### Patch Changes
+
+- [`62446dd`](https://github.com/trueberryless-org/template-files/commit/62446dd3f83da4978655c71a2acf391e3865638a) Thanks [@trueberryless](https://github.com/trueberryless)! - Use GitHub App trueberryless-org to make all CI
+
 ## 0.1.9
 
 ### Patch Changes
