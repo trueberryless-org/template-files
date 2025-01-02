@@ -29,6 +29,7 @@ Provide single point of truth for template files.
 ├── package.json
 ├── pnpm-lock.yaml
 ├── repos.json
+├── sync_templates.sh
 └── template-files
     ├── .changeset
     │   ├── README.md
