@@ -243,7 +243,8 @@ else
       --title "[ci] sync template files" \
       --body "$description" \
       --label "🤖 bot" \
-      --assignee "trueberryless"
+      --assignee "trueberryless" \
+      --reviewer "trueberryless"
   fi
 fi
 
