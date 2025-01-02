@@ -242,7 +242,8 @@ else
       --head "$branch_name" \
       --title "[ci] sync template files" \
       --body "$description" \
-      --label "🤖 bot"
+      --label "🤖 bot" \
+      --assignee "@trueberryless"
   fi
 fi
 
