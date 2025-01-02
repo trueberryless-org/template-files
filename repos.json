@@ -996,13 +996,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
