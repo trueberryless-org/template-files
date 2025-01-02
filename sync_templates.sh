@@ -179,6 +179,14 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
   fi
 done
 
+# Post-processing: Run pnpm install only if package.json was modified
+if git diff --name-only | grep -q "package.json" || git diff --name-only --cached | grep -q "package.json"; then
+  echo "package.json was modified. Running pnpm install..."
+  pnpm install
+else
+  echo "No changes to package.json detected. Skipping pnpm install."
+fi
+
 if [ ${#modified_package_jsons[@]} -gt 0 ]; then
   echo "Sorting modified package.json files..."
   for package_json in "${modified_package_jsons[@]}"; do
