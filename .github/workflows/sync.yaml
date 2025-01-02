@@ -135,6 +135,8 @@ jobs:
 
       - name: Append summary for repository
         if: success()
+        env:
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
           repo_name="${{ matrix.repo.name }}"
           branch_name="update-template-files"
