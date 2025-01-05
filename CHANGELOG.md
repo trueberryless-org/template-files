@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.11
+
+### Patch Changes
+
+- [`55a6fa6`](https://github.com/trueberryless-org/template-files/commit/55a6fa61359235f770f72adf2a73a709ec8c4e4c) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Spell Checker Plugin to repos.json
+
 ## 0.1.10
 
 ### Patch Changes
