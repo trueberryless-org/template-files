@@ -103,10 +103,14 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: "pnpm"
 
       - name: Install jq, sort-package-json and markdown-replace-section
         run: |
