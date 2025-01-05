@@ -182,7 +182,7 @@ done
 # Post-processing: Run pnpm install only if package.json was modified
 if git diff --name-only | grep -q "package.json" || git diff --name-only --cached | grep -q "package.json"; then
   echo "package.json was modified. Running pnpm install..."
-  pnpm install
+  pnpm install --no-frozen-lockfile
 else
   echo "No changes to package.json detected. Skipping pnpm install."
 fi
