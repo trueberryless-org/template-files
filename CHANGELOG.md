@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.12
+
+### Patch Changes
+
+- [`6aeed6b`](https://github.com/trueberryless-org/template-files/commit/6aeed6be8a04556b0b80e90feb613c97df4a42f7) Thanks [@trueberryless](https://github.com/trueberryless)! - Add videos repository to `repos.json`.
+
 ## 0.1.11
 
 ### Patch Changes
