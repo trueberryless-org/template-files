@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.13
+
+### Patch Changes
+
+- [`b09b4e3`](https://github.com/trueberryless-org/template-files/commit/b09b4e3d739f7a3afb43478dedf05328e5818644) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Minimalistic Theme
+
 ## 0.1.12
 
 ### Patch Changes
