@@ -95,11 +95,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -176,6 +171,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -266,11 +266,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -347,6 +342,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -437,11 +437,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -518,6 +513,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -608,11 +608,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -689,6 +684,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -779,11 +779,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -860,6 +855,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -950,11 +950,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -1031,6 +1026,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -1121,11 +1121,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -1195,6 +1190,11 @@
         {
           "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -1285,11 +1285,6 @@
           }
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "docs/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -1366,6 +1361,11 @@
           "props": {
             "documentationFolder": "docs"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
@@ -1527,6 +1527,11 @@
           "targetPath": ".prettierrc"
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "apps/docs/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/Dockerfile/httpd.Dockerfile",
           "targetPath": "Dockerfile",
           "props": {
@@ -1586,11 +1591,6 @@
         {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "package.json",
-          "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "apps/docs/package.json",
           "special": "package.json"
         },
         {
@@ -1811,11 +1811,6 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "starlight/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -1826,6 +1821,11 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json"
         }
       ]
     },
@@ -1973,11 +1973,6 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "starlight/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -1988,6 +1983,11 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json"
         }
       ]
     },
@@ -2135,11 +2135,6 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "starlight/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -2150,6 +2145,11 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json"
         }
       ]
     },
