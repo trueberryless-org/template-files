@@ -95,6 +95,11 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -259,6 +264,11 @@
           "props": {
             "repositoryName": "starlight-cooler-credit"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/.changeset/README.md",
@@ -427,6 +437,11 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -591,6 +606,11 @@
           "props": {
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/.changeset/README.md",
@@ -759,6 +779,11 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -923,6 +948,11 @@
           "props": {
             "repositoryName": "starlight-contributor-list"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/.changeset/README.md",
@@ -1091,6 +1121,11 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -1250,6 +1285,11 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -1401,6 +1441,177 @@
           "targetPath": "pnpm-workspace.yaml",
           "props": {
             "documentationFolder": "docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/starlight-minimalistic-theme",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-minimalistic-theme",
+            "documentationFolder": "apps/docs",
+            "makeLatest": "false"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-minimalistic-theme",
+            "packageName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile/httpd.Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "apps/docs"
+          }
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2025"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme",
+            "subdomainName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "special": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme",
+            "subdomainName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "apps/docs/package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-minimalistic-theme-monorepo",
+            "repositoryName": "starlight-minimalistic-theme"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-minimalistic-theme/README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "apps/docs"
           }
         }
       ]
@@ -1600,6 +1811,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -1757,6 +1973,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -1911,6 +2132,11 @@
         {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
           "special": "package.json"
         },
         {
