@@ -1604,7 +1604,7 @@
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/starlight-minimalistic-theme/README.md",
+          "targetPath": "packages/theme/README.md",
           "special": "README.md"
         },
         {
