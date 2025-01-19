@@ -1606,13 +1606,6 @@
           "path": "template-files/README.md",
           "targetPath": "packages/theme/README.md",
           "special": "README.md"
-        },
-        {
-          "path": "template-files/pnpm-workspace.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "props": {
-            "documentationFolder": "apps/docs"
-          }
         }
       ]
     },
