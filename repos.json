@@ -2461,16 +2461,16 @@
           }
         },
         {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
             "documentationFolder": "src"
           }
-        },
-        {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
         },
         {
           "path": "template-files/README.md",
