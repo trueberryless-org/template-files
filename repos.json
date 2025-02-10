@@ -2452,25 +2452,6 @@
           }
         },
         {
-          "path": "template-files/package.json/changeset.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "github-activity-monorepo",
-            "repositoryName": "github-activity"
-          }
-        },
-        {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/manifest/certificate.yaml",
           "targetPath": "manifest/certificate.yaml",
           "props": {
@@ -2507,6 +2488,25 @@
           "props": {
             "repositoryName": "github-activity"
           }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "github-activity-monorepo",
+            "repositoryName": "github-activity"
+          }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
