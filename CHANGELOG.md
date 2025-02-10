@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.14
+
+### Patch Changes
+
+- [#77](https://github.com/trueberryless-org/template-files/pull/77) [`50a2279`](https://github.com/trueberryless-org/template-files/commit/50a22792a4245fea7f38bf850ffee6a5338b0d96) Thanks [@trueberryless](https://github.com/trueberryless)! - Add GitHub Activity repo to repos.json
+
 ## 0.1.13
 
 ### Patch Changes
