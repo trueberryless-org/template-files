@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.15
+
+### Patch Changes
+
+- [`d27bddb`](https://github.com/trueberryless-org/template-files/commit/d27bddb5d89d3388e9ae3a0f136f0e62d81e7e02) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Automatic Overview Pages
+
 ## 0.1.14
 
 ### Patch Changes
