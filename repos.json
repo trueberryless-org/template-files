@@ -1363,6 +1363,13 @@
           "targetPath": ".prettierrc"
         },
         {
+          "path": "template-files/Dockerfile/Node.Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        },
+        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -1527,7 +1534,7 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
+          "path": "template-files/Dockerfile/Node.Dockerfile",
           "targetPath": "Dockerfile",
           "props": {
             "documentationFolder": "docs"
