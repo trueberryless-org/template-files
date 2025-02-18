@@ -63,6 +63,7 @@ Provide single point of truth for template files.
     │   └── import.order.prettierrc
     ├── Dockerfile
     │   ├── Next.Dockerfile
+    │   ├── Node.Dockerfile
     │   └── httpd.Dockerfile
     ├── LICENSE
     ├── README.md
