@@ -2778,7 +2778,7 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
+          "path": "template-files/Dockerfile/httpd.Dockerfile",
           "targetPath": "Dockerfile",
           "props": {
             "documentationFolder": "starlight"
