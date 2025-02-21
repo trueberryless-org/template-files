@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.16
+
+### Patch Changes
+
+- [#84](https://github.com/trueberryless-org/template-files/pull/84) [`13e6389`](https://github.com/trueberryless-org/template-files/commit/13e63895646942633aa8e6315e1219b092a6d1ac) Thanks [@trueberryless](https://github.com/trueberryless)! - Add subtle-top-level-items-repo to repos.json
+
 ## 0.1.15
 
 ### Patch Changes
