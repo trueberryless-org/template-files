@@ -2932,17 +2932,17 @@
           "targetPath": "app/.dockerignore"
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "app/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/Dockerfile/DotNet.Dockerfile",
           "targetPath": "app/Dockerfile",
           "props": {
             "projectFolder": "ReleaseImageGenerator",
             "projectName": "ReleaseImageGenerator.API"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "app/package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/LICENSE",
