@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.17
+
+### Patch Changes
+
+- [#87](https://github.com/trueberryless-org/template-files/pull/87) [`ee763df`](https://github.com/trueberryless-org/template-files/commit/ee763df5c345df90de39e4484be87e10a534e582) Thanks [@trueberryless](https://github.com/trueberryless)! - Add DotNet Support: Release Image Generator
+
 ## 0.1.16
 
 ### Patch Changes
