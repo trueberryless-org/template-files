@@ -2938,7 +2938,7 @@
         },
         {
           "path": "template-files/Dockerfile/DotNet.Dockerfile",
-          "targetPath": "Dockerfile",
+          "targetPath": "app/Dockerfile",
           "props": {
             "projectFolder": "ReleaseImageGenerator",
             "projectName": "ReleaseImageGenerator.API"
