@@ -3009,16 +3009,16 @@
           }
         },
         {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md"
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
             "documentationFolder": "app"
           }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
         }
       ]
     }
