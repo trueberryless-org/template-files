@@ -3010,7 +3010,7 @@
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/release-image-generator/README.md",
+          "targetPath": "README.md",
           "special": "README.md"
         },
         {
