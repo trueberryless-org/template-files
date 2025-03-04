@@ -1,5 +1,11 @@
 # template-files
 
+## 0.1.18
+
+### Patch Changes
+
+- [#90](https://github.com/trueberryless-org/template-files/pull/90) [`238b885`](https://github.com/trueberryless-org/template-files/commit/238b885e157d66fa1ec1539daff29ca715c331ed) Thanks [@trueberryless](https://github.com/trueberryless)! - Add releases repo
+
 ## 0.1.17
 
 ### Patch Changes
