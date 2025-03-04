@@ -2942,7 +2942,7 @@
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "app/README.md",
+          "targetPath": "README.md",
           "special": "README.md"
         },
         {
