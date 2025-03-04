@@ -2868,6 +2868,150 @@
       ]
     },
     {
+      "name": "trueberryless-org/releases",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "releases"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "releases"
+          }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "releases",
+            "documentationFolder": "app",
+            "makeLatest": "true"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/release.yaml",
+          "targetPath": ".github/workflows/release.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "app/package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2025"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "releases",
+            "subdomainName": "releases"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "special": "manifest/deployment.yaml",
+          "props": {
+            "repositoryName": "releases"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "releases",
+            "subdomainName": "releases"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "releases"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "props": {
+            "repositoryName": "releases"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "releases-monorepo",
+            "repositoryName": "releases"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
+        }
+      ]
+    },
+    {
       "name": "trueberryless-org/release-image-generator",
       "files": [
         {
@@ -2889,7 +3033,7 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/deployment-dotnet.yaml",
+          "path": "template-files/.github/workflows/DotNet.deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
             "branchName": "main",
@@ -3006,13 +3150,6 @@
           "props": {
             "packageName": "release-image-generator-monorepo",
             "repositoryName": "release-image-generator"
-          }
-        },
-        {
-          "path": "template-files/pnpm-workspace.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "props": {
-            "documentationFolder": "app"
           }
         },
         {
