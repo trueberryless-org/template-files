@@ -2941,6 +2941,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/README.md",
+          "targetPath": "app/README.md",
+          "special": "README.md"
+        },
+        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
@@ -3003,11 +3008,6 @@
             "packageName": "releases-monorepo",
             "repositoryName": "releases"
           }
-        },
-        {
-          "path": "template-files/README.md",
-          "targetPath": "app/README.md",
-          "special": "README.md"
         }
       ]
     },
