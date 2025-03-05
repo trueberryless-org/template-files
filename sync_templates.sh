@@ -171,7 +171,7 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     if [ -f "$dest_file" ]; then
       # Compare: allow extra lines in target, only sync if temp adds new lines
       echo "Comparing $dest_file with $temp_file..."
-      if ! comm -23 <(sort "$temp_file") <(sort "$dest_file") | grep -q .;
+      if ! comm -13 <(sort "$temp_file") <(sort "$dest_file") | grep -q .;
       then
         echo "Significant changes detected. Updating $dest_file..."
       else
