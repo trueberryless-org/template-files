@@ -42,11 +42,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -104,7 +106,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -149,11 +152,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -269,7 +274,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -314,11 +320,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -427,7 +435,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -472,11 +481,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -592,7 +603,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -637,11 +649,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -757,7 +771,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -802,11 +817,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -922,7 +939,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -967,11 +985,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -1087,7 +1107,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1132,11 +1153,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -1252,7 +1275,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1297,11 +1321,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -1417,7 +1443,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1462,11 +1489,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -1582,7 +1611,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1627,11 +1657,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -1740,7 +1772,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1789,11 +1822,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -1948,7 +1983,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1984,11 +2020,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -2104,7 +2142,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2140,11 +2179,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -2246,7 +2287,8 @@
       "files": [
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2282,11 +2324,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/import.order.prettierrc",
@@ -2353,7 +2397,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2400,11 +2445,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/import.order.prettierrc",
@@ -2486,7 +2533,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2522,11 +2570,13 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/Dockerfile/httpd.Dockerfile",
@@ -2638,7 +2688,8 @@
         },
         {
           "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore"
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2678,7 +2729,8 @@
         },
         {
           "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
@@ -2799,6 +2851,7 @@
         {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "branchName": "main",
             "repositoryName": "releases",
@@ -2826,11 +2879,8 @@
         },
         {
           "path": "template-files/.gitignore/Node.gitignore",
-          "targetPath": ".gitignore"
-        },
-        {
-          "path": "template-files/.prettierignore",
-          "targetPath": ".prettierignore"
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
         },
         {
           "path": "template-files/.prettierrc/.prettierrc",
