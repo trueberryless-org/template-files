@@ -1,5 +1,11 @@
 # template-files
 
+## 0.2.0
+
+### Minor Changes
+
+- [#92](https://github.com/trueberryless-org/template-files/pull/92) [`4c2666d`](https://github.com/trueberryless-org/template-files/commit/4c2666d7b95c793e80e3cfb8672cbbcc55da8300) Thanks [@trueberryless](https://github.com/trueberryless)! - Every changeset commit will include the version of the package in all repos
+
 ## 0.1.18
 
 ### Patch Changes
