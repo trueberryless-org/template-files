@@ -1,5 +1,11 @@
 # template-files
 
+## 0.4.0
+
+### Minor Changes
+
+- [`b35291a`](https://github.com/trueberryless-org/template-files/commit/b35291a91a0038089a67dc57f9b9171b835c3557) Thanks [@trueberryless](https://github.com/trueberryless)! - Add "add-additional-lines" logic. But be careful: DO NOT use it on any files where inline contents will change (e.g. the change a folder in a path) because then the "comm" command wrongly interprets the output. Reference: https://chatgpt.com/share/67c8ae80-aa18-800b-9b88-a62393ddbe08
+
 ## 0.3.0
 
 ### Minor Changes
