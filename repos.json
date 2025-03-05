@@ -189,7 +189,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
@@ -212,6 +212,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
@@ -353,7 +354,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-cooler-credit"
           }
@@ -376,6 +377,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-cooler-credit"
           }
@@ -510,7 +512,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-spell-checker"
           }
@@ -533,6 +535,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-spell-checker"
           }
@@ -674,7 +677,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
@@ -697,6 +700,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
@@ -838,7 +842,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-sidebar-swipe"
           }
@@ -861,6 +865,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-sidebar-swipe"
           }
@@ -1002,7 +1007,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-contributor-list"
           }
@@ -1025,6 +1030,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-contributor-list"
           }
@@ -1166,7 +1172,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-automatic-overview-pages"
           }
@@ -1189,6 +1195,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-automatic-overview-pages"
           }
@@ -1330,7 +1337,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-plugin-show-latest-version"
           }
@@ -1353,6 +1360,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-plugin-show-latest-version"
           }
@@ -1494,7 +1502,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-plugins-docs-components"
           }
@@ -1517,6 +1525,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-plugins-docs-components"
           }
@@ -1658,7 +1667,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-minimalistic-theme"
           }
@@ -1681,6 +1690,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-minimalistic-theme"
           }
@@ -1814,7 +1824,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "mutanuq"
           }
@@ -1837,6 +1847,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "mutanuq"
           }
@@ -1852,7 +1863,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest-lunaria/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "i18n-mutanuq"
           }
@@ -1875,6 +1886,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest-lunaria/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "i18n-mutanuq"
           }
@@ -2007,7 +2019,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "blog"
           }
@@ -2030,6 +2042,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "blog"
           }
@@ -2162,7 +2175,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "videos"
           }
@@ -2185,6 +2198,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "videos"
           }
@@ -2539,7 +2553,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "github-activity"
           }
@@ -2562,6 +2576,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "github-activity"
           }
@@ -2694,7 +2709,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-subtle-top-level-items"
           }
@@ -2717,6 +2732,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "starlight-subtle-top-level-items"
           }
@@ -2843,7 +2859,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "releases"
           }
@@ -2866,6 +2882,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "releases"
           }
@@ -2984,7 +3001,7 @@
         {
           "path": "template-files/manifest/deployment.yaml",
           "targetPath": "manifest/deployment.yaml",
-          "special": "manifest/deployment.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "release-image-generator"
           }
@@ -3007,6 +3024,7 @@
         {
           "path": "template-files/manifest/service.yaml",
           "targetPath": "manifest/service.yaml",
+          "special": "manifest",
           "props": {
             "repositoryName": "release-image-generator"
           }

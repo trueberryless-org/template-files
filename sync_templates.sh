@@ -109,8 +109,8 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     fi
 
     modified_package_jsons+=("$dest_file")
-  elif [ "$special" == "manifest/deployment.yaml" ]; then
-    echo "Special handling for manifest/deployment.yaml"
+  elif [ "$special" == "manifest" ]; then
+    echo "Special handling for manifest file"
 
     # Prepare the destination directory
     mkdir -p "$(dirname "$dest_file")"
@@ -133,7 +133,7 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     if [ -f "$dest_file" ]; then
       # Exclude the image line from comparison
       echo "Comparing $dest_file with $temp_file..."
-      if ! diff -q <(grep -Ev 'image:|ports:|containerPort:' "$temp_file") <(grep -Ev 'image:|ports:|containerPort:' "$dest_file") > /dev/null; then
+      if ! diff -q <(grep -Ev 'image:|ports:|containerPort:|targetPort:' "$temp_file") <(grep -Ev 'image:|ports:|containerPort:|targetPort:' "$dest_file") > /dev/null; then
         echo "Significant changes detected. Updating $dest_file..."
       else
         echo "No significant changes detected in $dest_file. Skipping update."
