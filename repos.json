@@ -417,13 +417,6 @@
       "name": "trueberryless-org/starlight-spell-checker",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
-          "props": {
-            "repositoryName": "starlight-spell-checker"
-          }
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -2244,6 +2237,16 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "batch-management-system",
+            "documentationFolder": "app",
+            "makeLatest": "true"
+          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
