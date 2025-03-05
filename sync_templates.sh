@@ -133,7 +133,7 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     if [ -f "$dest_file" ]; then
       # Exclude the image line from comparison
       echo "Comparing $dest_file with $temp_file..."
-      if ! diff -q <(grep -v 'image:' "$temp_file") <(grep -v 'image:' "$dest_file") > /dev/null; then
+      if ! diff -q <(grep -Ev 'image:|ports:|containerPort:' "$temp_file") <(grep -Ev 'image:|ports:|containerPort:' "$dest_file") > /dev/null; then
         echo "Significant changes detected. Updating $dest_file..."
       else
         echo "No significant changes detected in $dest_file. Skipping update."
