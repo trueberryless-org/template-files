@@ -1,5 +1,11 @@
 # template-files
 
+## 0.3.0
+
+### Minor Changes
+
+- [`f04e6fa`](https://github.com/trueberryless-org/template-files/commit/f04e6fa1976148311c4eb79940492e69cd57105d) Thanks [@trueberryless](https://github.com/trueberryless)! - Ignore ports, containerPort and targetPort in manifest special handling
+
 ## 0.2.0
 
 ### Minor Changes
