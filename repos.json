@@ -2283,6 +2283,305 @@
       ]
     },
     {
+      "name": "trueberryless-org/withastro-github-comment-templates",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "withastro-github-comment-templates",
+            "documentationFolder": "starlight",
+            "makeLatest": "false"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/Dockerfile/httpd.Dockerfile",
+          "targetPath": "Dockerfile",
+          "props": {
+            "documentationFolder": "starlight"
+          }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates",
+            "subdomainName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "special": "manifest",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates",
+            "subdomainName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "special": "manifest",
+          "props": {
+            "repositoryName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "withastro-github-comment-templates-monorepo",
+            "repositoryName": "withastro-github-comment-templates"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "starlight"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trueberryless-org/truzzles",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": ".dockerignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/DotNet.deployment.yaml",
+          "targetPath": ".github/workflows/deployment.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "truzzles",
+            "documentationFolder": "src",
+            "makeLatest": "false"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2024"
+          }
+        },
+        {
+          "path": "template-files/manifest/certificate.yaml",
+          "targetPath": "manifest/certificate.yaml",
+          "props": {
+            "repositoryName": "truzzles",
+            "subdomainName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/manifest/deployment.yaml",
+          "targetPath": "manifest/deployment.yaml",
+          "special": "manifest",
+          "props": {
+            "repositoryName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/manifest/ingress.yaml",
+          "targetPath": "manifest/ingress.yaml",
+          "props": {
+            "repositoryName": "truzzles",
+            "subdomainName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/manifest/namespace.yaml",
+          "targetPath": "manifest/namespace.yaml",
+          "props": {
+            "repositoryName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/manifest/service.yaml",
+          "targetPath": "manifest/service.yaml",
+          "special": "manifest",
+          "props": {
+            "repositoryName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "truzzles-monorepo",
+            "repositoryName": "truzzles"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
+        }
+      ]
+    },
+    {
       "name": "trueberryless-org/batch-management-system",
       "files": [
         {
@@ -2724,7 +3023,7 @@
           }
         },
         {
-          "path": "template-files/.gitignore/httpd.gitignore",
+          "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
         },
         {
