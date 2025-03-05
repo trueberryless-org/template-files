@@ -1,5 +1,11 @@
 # template-files
 
+## 0.4.1
+
+### Patch Changes
+
+- [`829a3b7`](https://github.com/trueberryless-org/template-files/commit/829a3b7d1f2a57938c55b41ab55978ed7c214340) Thanks [@trueberryless](https://github.com/trueberryless)! - Add truzzles, marketing & withastr-github-comment-templates repos
+
 ## 0.4.0
 
 ### Minor Changes
