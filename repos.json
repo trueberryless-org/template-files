@@ -29,7 +29,8 @@
           "path": "template-files/.github/workflows/release.yaml",
           "targetPath": ".github/workflows/release.yaml",
           "props": {
-            "branchName": "main"
+            "branchName": "main",
+            "projectFolder": ""
           }
         },
         {
@@ -137,13 +138,6 @@
             "branchName": "main",
             "repositoryName": "starlight-view-modes",
             "packageName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
           }
         },
         {
@@ -311,13 +305,6 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -479,13 +466,6 @@
             "branchName": "main",
             "repositoryName": "starlight-spell-checker",
             "packageName": "starlight-spell-checker"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
           }
         },
         {
@@ -653,13 +633,6 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -821,13 +794,6 @@
             "branchName": "main",
             "repositoryName": "starlight-sidebar-swipe",
             "packageName": "starlight-sidebar-swipe"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
           }
         },
         {
@@ -995,13 +961,6 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -1163,13 +1122,6 @@
             "branchName": "main",
             "repositoryName": "starlight-automatic-overview-pages",
             "packageName": "starlight-automatic-overview-pages"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
           }
         },
         {
@@ -1337,13 +1289,6 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -1505,13 +1450,6 @@
             "branchName": "main",
             "repositoryName": "starlight-plugins-docs-components",
             "packageName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
           }
         },
         {
@@ -1679,13 +1617,6 @@
           }
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -1845,13 +1776,6 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
@@ -2047,13 +1971,6 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -2207,13 +2124,6 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
@@ -2465,13 +2375,6 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -2592,13 +2495,6 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
@@ -2752,13 +2648,6 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -2910,13 +2799,6 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -3052,13 +2934,6 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
-        },
-        {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main"
-          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
