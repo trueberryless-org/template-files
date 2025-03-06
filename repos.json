@@ -22,6 +22,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/readmetreerc.yaml",
+          "targetPath": ".github/readmetreerc.yaml"
+        },
+        {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
         },
@@ -1837,10 +1841,6 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
-          "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml"
-        },
-        {
           "path": "template-files/.github/workflows/deployment-with-lunaria.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -2938,10 +2938,6 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
-          "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml"
-        },
-        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -2955,13 +2951,6 @@
         {
           "path": "template-files/.github/workflows/format.yaml",
           "targetPath": ".github/workflows/format.yaml",
-          "props": {
-            "branchName": "main"
-          }
-        },
-        {
-          "path": "template-files/.github/workflows/generate-readme-tree.yaml",
-          "targetPath": ".github/workflows/generate-readme-tree.yaml",
           "props": {
             "branchName": "main"
           }
