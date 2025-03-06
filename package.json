@@ -30,4 +30,4 @@
   "lint-staged": {
     "*": "prettier --write"
   }
-}
+    }
