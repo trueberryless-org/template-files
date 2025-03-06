@@ -26,14 +26,6 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/release.yaml",
-          "targetPath": ".github/workflows/release.yaml",
-          "props": {
-            "branchName": "main",
-            "projectFolder": ""
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
