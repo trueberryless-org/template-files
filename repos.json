@@ -11,10 +11,6 @@
           }
         },
         {
-          "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml"
-        },
-        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -24,6 +20,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/readmetreerc.yaml",
+          "targetPath": ".github/readmetreerc.yaml"
         },
         {
           "path": "template-files/.github/workflows/labeler.yaml",
