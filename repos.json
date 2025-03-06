@@ -1794,7 +1794,7 @@
             "documentationFolder": "starlight",
             "lunariaRepositoryName": "i18n-mutanuq",
             "pathToLunariaDockerfile": "starlight/lunaria/Dockerfile",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -2000,7 +2000,7 @@
             "branchName": "main",
             "repositoryName": "blog",
             "documentationFolder": "starlight",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -2160,7 +2160,7 @@
             "branchName": "main",
             "repositoryName": "videos",
             "documentationFolder": "starlight",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -2320,7 +2320,7 @@
             "branchName": "main",
             "repositoryName": "withastro-github-comment-templates",
             "documentationFolder": "starlight",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "false"
           }
         },
@@ -2480,7 +2480,7 @@
             "branchName": "main",
             "repositoryName": "truzzles",
             "documentationFolder": "src",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "false"
           }
         },
@@ -2621,7 +2621,7 @@
             "branchName": "main",
             "repositoryName": "marketing",
             "documentationFolder": "src",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "false"
           }
         },
@@ -2748,7 +2748,7 @@
             "branchName": "main",
             "repositoryName": "batch-management-system",
             "documentationFolder": "app",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -2863,7 +2863,7 @@
             "branchName": "main",
             "repositoryName": "trueberryless",
             "documentationFolder": "src",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -2997,7 +2997,7 @@
             "branchName": "main",
             "repositoryName": "github-activity",
             "documentationFolder": "src",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -3153,7 +3153,7 @@
             "branchName": "main",
             "repositoryName": "starlight-subtle-top-level-items",
             "documentationFolder": "starlight",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -3308,7 +3308,7 @@
             "branchName": "main",
             "repositoryName": "releases",
             "documentationFolder": "app",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
@@ -3444,7 +3444,7 @@
             "branchName": "main",
             "repositoryName": "release-image-generator",
             "projectFolder": "app",
-            "packageSuffix": null,
+            "packageSuffix": "",
             "makeLatest": "true"
           }
         },
