@@ -8,7 +8,9 @@ Provide single point of truth for template files.
 .
 ├── .changeset
 │   ├── README.md
-│   └── config.json
+│   ├── config.json
+│   ├── late-humans-press.md
+│   └── late-terms-swim.md
 ├── .dockerignore
 ├── .github
 │   ├── labeler.yaml
