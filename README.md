@@ -17,7 +17,6 @@ Provide single point of truth for template files.
 │       ├── format.yaml
 │       ├── generate-readme-tree.yaml
 │       ├── labeler.yaml
-│       ├── release.yaml
 │       ├── sync.yaml
 │       └── welcome-bot.yaml
 ├── .gitignore
@@ -37,13 +36,7 @@ Provide single point of truth for template files.
     │   └── config.json
     ├── .dockerignore
     ├── .github
-    │   ├── DISCUSSION_TEMPLATES
-    │   │   └── feature_request.yaml
     │   ├── FUNDING.yaml
-    │   ├── ISSUE_TEMPLATES
-    │   │   ├── ---01-bug-report.yaml
-    │   │   ├── ---02-docs-issue.yaml
-    │   │   └── config.yaml
     │   ├── labeler.yaml
     │   ├── readmetreerc.yaml
     │   └── workflows
@@ -62,8 +55,7 @@ Provide single point of truth for template files.
     │   └── Node.gitignore
     ├── .prettierignore
     ├── .prettierrc
-    │   ├── .prettierrc
-    │   └── import.order.prettierrc
+    │   └── .prettierrc
     ├── Dockerfile
     │   ├── DotNet.Dockerfile
     │   ├── Next.Dockerfile
@@ -80,8 +72,8 @@ Provide single point of truth for template files.
     ├── package.json
     │   ├── changeset.package.json
     │   ├── definition.package.json
-    │   ├── import.order.package.json
-    │   └── package.manager.package.json
+    │   ├── package.manager.package.json
+    │   └── prettier.package.json
     └── pnpm-workspace.yaml
 
 ```
