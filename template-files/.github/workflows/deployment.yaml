@@ -79,7 +79,7 @@ jobs:
         run: |
           git checkout changeset-release/main
           VERSION=$(node -p "require('./<%= documentationFolder %>/package.json').version")
-          git commit --amend -m "[ci] release v$VERSION" --no-edit
+          git commit --amend -m "[ci] release ${{ env.IMAGE_NAME }}<%= packageSuffix %> v$VERSION" --no-edit
           git push origin changeset-release/main:changeset-release/main --force
 
   image-tag:
