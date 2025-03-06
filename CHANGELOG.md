@@ -1,5 +1,13 @@
 # template-files
 
+## 0.4.2
+
+### Patch Changes
+
+- [`1146c8d`](https://github.com/trueberryless-org/template-files/commit/1146c8dbbbaaa8d194060bd540eb2587b46402c0) Thanks [@trueberryless](https://github.com/trueberryless)! - Add package name to changeset commit message
+
+- [`113aa7f`](https://github.com/trueberryless-org/template-files/commit/113aa7f27accd2288e952f0b965a873da619dea6) Thanks [@trueberryless](https://github.com/trueberryless)! - Make package suffix "-docs" optional by passing additional "packageSuffix" prop
+
 ## 0.4.1
 
 ### Patch Changes
