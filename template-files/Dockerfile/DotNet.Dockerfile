@@ -7,17 +7,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["<%= projectFolder %>/<%= projectName %>.csproj", "<%= projectFolder %>/"]
-RUN dotnet restore "<%= projectFolder %>/<%= projectName %>.csproj"
+COPY ["<%= projectFolder %>/<%= projectFolder %>.csproj", "<%= projectFolder %>/"]
+RUN dotnet restore "<%= projectFolder %>/<%= projectFolder %>.csproj"
 COPY . .
 WORKDIR "/src/<%= projectFolder %>"
-RUN dotnet build "<%= projectName %>.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "<%= projectFolder %>.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "<%= projectName %>.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "<%= projectFolder %>.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "<%= projectName %>.dll"]
+ENTRYPOINT ["dotnet", "<%= projectFolder %>.dll"]

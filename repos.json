@@ -73,6 +73,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
@@ -222,6 +227,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -395,6 +405,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -553,6 +568,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -726,6 +746,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -891,6 +916,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -1064,6 +1094,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -1229,6 +1264,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -1402,6 +1442,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -1571,6 +1616,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -1736,6 +1786,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -1949,6 +2004,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -2105,6 +2165,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -2269,6 +2334,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -2420,6 +2490,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -2451,7 +2526,7 @@
       "name": "trueberryless-org/truzzles",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
+          "path": "template-files/.changeset/Dotnet.config.json",
           "targetPath": ".changeset/config.json",
           "props": {
             "repositoryName": "truzzles"
@@ -2569,6 +2644,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -2592,10 +2672,10 @@
       "name": "trueberryless-org/marketing",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
+          "path": "template-files/.changeset/Dotnet.config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "marketing"
+            "repositoryName": "truzzles"
           }
         },
         {
@@ -2710,6 +2790,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -2781,7 +2866,7 @@
           "special": "allow-additional-lines"
         },
         {
-          "path": "template-files/.prettierrc/import.order.prettierrc",
+          "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
         },
         {
@@ -2815,7 +2900,7 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/package.json/import.order.package.json",
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -2903,7 +2988,7 @@
           "special": "allow-additional-lines"
         },
         {
-          "path": "template-files/.prettierrc/import.order.prettierrc",
+          "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
         },
         {
@@ -2940,7 +3025,7 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/package.json/import.order.package.json",
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
@@ -3030,6 +3115,10 @@
           "special": "allow-additional-lines"
         },
         {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
           "path": "template-files/Dockerfile/httpd.Dockerfile",
           "targetPath": "Dockerfile",
           "props": {
@@ -3095,6 +3184,11 @@
             "packageName": "github-activity-monorepo",
             "repositoryName": "github-activity"
           }
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
@@ -3252,6 +3346,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -3336,6 +3435,11 @@
           "special": "allow-additional-lines"
         },
         {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
         },
@@ -3397,6 +3501,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
