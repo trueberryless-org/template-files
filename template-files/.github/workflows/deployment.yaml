@@ -191,7 +191,7 @@ jobs:
       - uses: ncipollo/release-action@v1
         id: create_release
         with:
-          tag: ${{ env.IMAGE_NAME }}-docs@${{ needs.image-tag.outputs.IMAGE_TAG }}
+          tag: ${{ env.IMAGE_NAME }}<%= packageSuffix %>@${{ needs.image-tag.outputs.IMAGE_TAG }}
           makeLatest: <%= makeLatest %>
           body: ${{ steps.extract-changelog.outputs.markdown }}
           skipIfReleaseExists: true
