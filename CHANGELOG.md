@@ -1,5 +1,15 @@
 # template-files
 
+## 0.5.0
+
+### Minor Changes
+
+- [#105](https://github.com/trueberryless-org/template-files/pull/105) [`64ec038`](https://github.com/trueberryless-org/template-files/commit/64ec03873817d015f91ae62f6d4f60dbbd8d9085) Thanks [@trueberryless](https://github.com/trueberryless)! - Add sort import order and Astro integration to prettier
+
+### Patch Changes
+
+- [#107](https://github.com/trueberryless-org/template-files/pull/107) [`de0253b`](https://github.com/trueberryless-org/template-files/commit/de0253b507255cd9dfccc5fc69d4151d0aa7625c) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove readmetree from all projects except template-files itself
+
 ## 0.4.2
 
 ### Patch Changes
