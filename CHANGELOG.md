@@ -1,5 +1,11 @@
 # template-files
 
+## 0.5.1
+
+### Patch Changes
+
+- [#109](https://github.com/trueberryless-org/template-files/pull/109) [`31285c6`](https://github.com/trueberryless-org/template-files/commit/31285c6fb9a8bfe105bd876111cab6120b091411) Thanks [@trueberryless](https://github.com/trueberryless)! - Add new Download Link project to repos.json
+
 ## 0.5.0
 
 ### Minor Changes
