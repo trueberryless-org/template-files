@@ -60,7 +60,8 @@ Provide single point of truth for template files.
     │   ├── DotNet.Dockerfile
     │   ├── Next.Dockerfile
     │   ├── Node.Dockerfile
-    │   └── httpd.Dockerfile
+    │   ├── httpd.Dockerfile
+    │   └── nginx.Dockerfile
     ├── LICENSE
     ├── README.md
     ├── manifest
@@ -69,6 +70,7 @@ Provide single point of truth for template files.
     │   ├── ingress.yaml
     │   ├── namespace.yaml
     │   └── service.yaml
+    ├── nginx.conf
     ├── package.json
     │   ├── changeset.package.json
     │   ├── definition.package.json
