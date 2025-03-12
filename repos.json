@@ -1815,20 +1815,20 @@
       ]
     },
     {
-      "name": "trueberryless-org/starlight-download-link",
+      "name": "trueberryless-org/starlight-save-file-component",
       "files": [
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
@@ -1845,7 +1845,7 @@
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-download-link",
+            "repositoryName": "starlight-save-file-component",
             "documentationFolder": "docs",
             "packageSuffix": "-docs",
             "makeLatest": "false"
@@ -1867,8 +1867,8 @@
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-download-link",
-            "packageName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component",
+            "packageName": "starlight-save-file-component"
           }
         },
         {
@@ -1915,8 +1915,8 @@
           "path": "template-files/manifest/certificate.yaml",
           "targetPath": "manifest/certificate.yaml",
           "props": {
-            "repositoryName": "starlight-download-link",
-            "subdomainName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component",
+            "subdomainName": "starlight-save-file-component"
           }
         },
         {
@@ -1924,22 +1924,22 @@
           "targetPath": "manifest/deployment.yaml",
           "special": "manifest",
           "props": {
-            "repositoryName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
           "path": "template-files/manifest/ingress.yaml",
           "targetPath": "manifest/ingress.yaml",
           "props": {
-            "repositoryName": "starlight-download-link",
-            "subdomainName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component",
+            "subdomainName": "starlight-save-file-component"
           }
         },
         {
           "path": "template-files/manifest/namespace.yaml",
           "targetPath": "manifest/namespace.yaml",
           "props": {
-            "repositoryName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
@@ -1947,7 +1947,7 @@
           "targetPath": "manifest/service.yaml",
           "special": "manifest",
           "props": {
-            "repositoryName": "starlight-download-link"
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
@@ -1970,13 +1970,13 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-download-link-monorepo",
-            "repositoryName": "starlight-download-link"
+            "packageName": "starlight-save-file-component-monorepo",
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/starlight-download-link/README.md",
+          "targetPath": "packages/starlight-save-file-component/README.md",
           "special": "README.md"
         },
         {
