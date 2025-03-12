@@ -121,6 +121,7 @@
             "branchName": "main",
             "repositoryName": "starlight-view-modes",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-view-modes",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -295,6 +296,7 @@
             "branchName": "main",
             "repositoryName": "starlight-cooler-credit",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-cooler-credit",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -462,6 +464,7 @@
             "branchName": "main",
             "repositoryName": "starlight-spell-checker",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-spell-checker",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -636,6 +639,7 @@
             "branchName": "main",
             "repositoryName": "starlight-sidebar-topics-dropdown",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-sidebar-topics-dropdown",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -810,6 +814,7 @@
             "branchName": "main",
             "repositoryName": "starlight-sidebar-swipe",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-sidebar-swipe",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -984,6 +989,7 @@
             "branchName": "main",
             "repositoryName": "starlight-contributor-list",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-contributor-list",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -1158,6 +1164,7 @@
             "branchName": "main",
             "repositoryName": "starlight-automatic-overview-pages",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-automatic-overview-pages",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -1332,6 +1339,7 @@
             "branchName": "main",
             "repositoryName": "starlight-plugin-show-latest-version",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-plugin-show-latest-version",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -1506,6 +1514,7 @@
             "branchName": "main",
             "repositoryName": "starlight-plugins-docs-components",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-plugins-docs-components",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -1680,6 +1689,7 @@
             "branchName": "main",
             "repositoryName": "starlight-minimalistic-theme",
             "documentationFolder": "apps/docs",
+            "projectFolder": "packages/starlight-minimalistic-theme",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -1847,6 +1857,7 @@
             "branchName": "main",
             "repositoryName": "starlight-save-file-component",
             "documentationFolder": "docs",
+            "projectFolder": "packages/starlight-save-file-component",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -2227,6 +2238,7 @@
             "branchName": "main",
             "repositoryName": "blog",
             "documentationFolder": "starlight",
+            "projectFolder": "starlight",
             "packageSuffix": "",
             "makeLatest": "true"
           }
@@ -2392,6 +2404,7 @@
             "branchName": "main",
             "repositoryName": "videos",
             "documentationFolder": "starlight",
+            "projectFolder": "starlight",
             "packageSuffix": "",
             "makeLatest": "true"
           }
@@ -2557,6 +2570,7 @@
             "branchName": "main",
             "repositoryName": "withastro-github-comment-templates",
             "documentationFolder": "starlight",
+            "projectFolder": "starlight",
             "packageSuffix": "",
             "makeLatest": "false"
           }
@@ -3000,6 +3014,7 @@
             "branchName": "main",
             "repositoryName": "batch-management-system",
             "documentationFolder": "app",
+            "projectFolder": "app",
             "packageSuffix": "",
             "makeLatest": "true"
           }
@@ -3111,6 +3126,7 @@
             "branchName": "main",
             "repositoryName": "trueberryless",
             "documentationFolder": "src",
+            "projectFolder": "src",
             "packageSuffix": "",
             "makeLatest": "true"
           }
@@ -3238,6 +3254,7 @@
             "branchName": "main",
             "repositoryName": "github-activity",
             "documentationFolder": "src",
+            "projectFolder": "src",
             "packageSuffix": "",
             "makeLatest": "true"
           }
@@ -3403,6 +3420,7 @@
             "branchName": "main",
             "repositoryName": "starlight-subtle-top-level-items",
             "documentationFolder": "starlight",
+            "projectFolder": "starlight",
             "packageSuffix": "",
             "makeLatest": "true"
           }
@@ -3563,6 +3581,7 @@
             "branchName": "main",
             "repositoryName": "releases",
             "documentationFolder": "app",
+            "projectFolder": "app",
             "packageSuffix": "",
             "makeLatest": "true"
           }
