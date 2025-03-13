@@ -168,7 +168,7 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
+          "path": "template-files/Dockerfile/Node.Dockerfile",
           "targetPath": "Dockerfile",
           "props": {
             "documentationFolder": "docs"
