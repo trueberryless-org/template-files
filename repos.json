@@ -2032,6 +2032,7 @@
             "branchName": "main",
             "repositoryName": "mutanuq",
             "documentationFolder": "starlight",
+            "projectFolder": "starlight",
             "lunariaRepositoryName": "i18n-mutanuq",
             "pathToLunariaDockerfile": "starlight/lunaria/Dockerfile",
             "packageSuffix": "",
