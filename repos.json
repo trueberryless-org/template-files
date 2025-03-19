@@ -26,6 +26,10 @@
           "targetPath": ".github/readmetreerc.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
         },
@@ -113,6 +117,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -290,6 +298,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -456,6 +468,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -633,6 +649,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -806,6 +826,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -983,6 +1007,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -1156,6 +1184,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -1333,6 +1365,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -1506,6 +1542,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -1683,6 +1723,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -1849,6 +1893,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -2024,6 +2072,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment-with-lunaria.yaml",
@@ -2233,6 +2285,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -2397,6 +2453,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -2565,6 +2625,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -2731,6 +2795,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/DotNet.deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -2877,6 +2945,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/DotNet.deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -3009,6 +3081,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -3119,6 +3195,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -3246,6 +3326,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/deployment.yaml",
@@ -3415,6 +3499,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
@@ -3575,6 +3663,10 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.github/workflows/deployment.yaml",
           "targetPath": ".github/workflows/deployment.yaml",
           "special": "allow-additional-lines",
@@ -3721,6 +3813,10 @@
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
         },
         {
           "path": "template-files/.github/workflows/DotNet.deployment.yaml",
