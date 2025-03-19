@@ -1,5 +1,11 @@
 # template-files
 
+## 0.5.2
+
+### Patch Changes
+
+- [#111](https://github.com/trueberryless-org/template-files/pull/111) [`5c26f89`](https://github.com/trueberryless-org/template-files/commit/5c26f8912d51d017192a42a223e4f60645ee049d) Thanks [@trueberryless](https://github.com/trueberryless)! - Add renovate bot and config to all repos
+
 ## 0.5.1
 
 ### Patch Changes
