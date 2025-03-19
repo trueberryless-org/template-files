@@ -13,6 +13,7 @@ Provide single point of truth for template files.
 ├── .github
 │   ├── labeler.yaml
 │   ├── readmetreerc.yaml
+│   ├── renovate.json5
 │   └── workflows
 │       ├── format.yaml
 │       ├── generate-readme-tree.yaml
@@ -39,6 +40,7 @@ Provide single point of truth for template files.
     │   ├── FUNDING.yaml
     │   ├── labeler.yaml
     │   ├── readmetreerc.yaml
+    │   ├── renovate.json5
     │   └── workflows
     │       ├── DotNet.deployment.yaml
     │       ├── deployment-with-lunaria.yaml
