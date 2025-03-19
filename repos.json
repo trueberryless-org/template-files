@@ -4,6 +4,10 @@
       "name": "trueberryless-org/template-files",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -91,6 +95,10 @@
     {
       "name": "trueberryless-org/starlight-view-modes",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -267,6 +275,10 @@
       "name": "trueberryless-org/starlight-cooler-credit",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -442,6 +454,10 @@
       "name": "trueberryless-org/starlight-spell-checker",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
@@ -609,6 +625,10 @@
     {
       "name": "trueberryless-org/starlight-sidebar-topics-dropdown",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -785,6 +805,10 @@
       "name": "trueberryless-org/starlight-sidebar-swipe",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -959,6 +983,10 @@
     {
       "name": "trueberryless-org/starlight-contributor-list",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -1135,6 +1163,10 @@
       "name": "trueberryless-org/starlight-automatic-overview-pages",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -1309,6 +1341,10 @@
     {
       "name": "trueberryless-org/starlight-plugin-show-latest-version",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -1485,6 +1521,10 @@
       "name": "trueberryless-org/starlight-plugins-docs-components",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -1660,6 +1700,10 @@
       "name": "trueberryless-org/starlight-minimalistic-theme",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -1827,6 +1871,10 @@
     {
       "name": "trueberryless-org/starlight-save-file-component",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -2002,6 +2050,10 @@
     {
       "name": "trueberryless-org/mutanuq",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -2210,6 +2262,10 @@
       "name": "trueberryless-org/blog",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -2375,6 +2431,10 @@
     {
       "name": "trueberryless-org/videos",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -2542,6 +2602,10 @@
       "name": "trueberryless-org/withastro-github-comment-templates",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -2708,6 +2772,10 @@
       "name": "trueberryless-org/truzzles",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/Dotnet.config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -2853,6 +2921,10 @@
     {
       "name": "trueberryless-org/marketing",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/Dotnet.config.json",
           "targetPath": ".changeset/config.json",
@@ -3000,6 +3072,10 @@
       "name": "trueberryless-org/batch-management-system",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore",
           "special": "allow-additional-lines"
@@ -3097,6 +3173,10 @@
     {
       "name": "trueberryless-org/trueberryless",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -3224,6 +3304,10 @@
     {
       "name": "trueberryless-org/github-activity",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
@@ -3392,6 +3476,10 @@
       "name": "trueberryless-org/starlight-subtle-top-level-items",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -3557,6 +3645,10 @@
       "name": "trueberryless-org/releases",
       "files": [
         {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
@@ -3704,6 +3796,10 @@
     {
       "name": "trueberryless-org/release-image-generator",
       "files": [
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
         {
           "path": "template-files/.changeset/DotNet.config.json",
           "targetPath": ".changeset/config.json",
