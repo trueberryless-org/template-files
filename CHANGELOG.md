@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.1
+
+### Patch Changes
+
+- [#126](https://github.com/trueberryless-org/template-files/pull/126) [`9eaf262`](https://github.com/trueberryless-org/template-files/commit/9eaf26216bccef62626fc1f40bae5f59c5dfc90d) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Toc Overview Costomizer plugin to repos
+
 ## 0.6.0
 
 ### Minor Changes
