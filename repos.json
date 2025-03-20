@@ -1697,20 +1697,20 @@
       ]
     },
     {
-      "name": "trueberryless-org/starlight-toc-overview-costomizer",
+      "name": "trueberryless-org/starlight-toc-overview-customizer",
       "files": [
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
@@ -1731,9 +1731,9 @@
           "targetPath": ".github/workflows/deployment.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-toc-overview-costomizer",
+            "repositoryName": "starlight-toc-overview-customizer",
             "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-toc-overview-costomizer",
+            "projectFolder": "packages/starlight-toc-overview-customizer",
             "packageSuffix": "-docs",
             "makeLatest": "false"
           }
@@ -1754,8 +1754,8 @@
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-toc-overview-costomizer",
-            "packageName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer",
+            "packageName": "starlight-toc-overview-customizer"
           }
         },
         {
@@ -1802,8 +1802,8 @@
           "path": "template-files/manifest/certificate.yaml",
           "targetPath": "manifest/certificate.yaml",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer",
-            "subdomainName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer",
+            "subdomainName": "starlight-toc-overview-customizer"
           }
         },
         {
@@ -1811,22 +1811,22 @@
           "targetPath": "manifest/deployment.yaml",
           "special": "manifest",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
           "path": "template-files/manifest/ingress.yaml",
           "targetPath": "manifest/ingress.yaml",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer",
-            "subdomainName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer",
+            "subdomainName": "starlight-toc-overview-customizer"
           }
         },
         {
           "path": "template-files/manifest/namespace.yaml",
           "targetPath": "manifest/namespace.yaml",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
@@ -1834,7 +1834,7 @@
           "targetPath": "manifest/service.yaml",
           "special": "manifest",
           "props": {
-            "repositoryName": "starlight-toc-overview-costomizer"
+            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
@@ -1857,13 +1857,13 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-toc-overview-costomizer-monorepo",
-            "repositoryName": "starlight-toc-overview-costomizer"
+            "packageName": "starlight-toc-overview-customizer-monorepo",
+            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/starlight-toc-overview-costomizer/README.md",
+          "targetPath": "packages/starlight-toc-overview-customizer/README.md",
           "special": "README.md"
         },
         {
