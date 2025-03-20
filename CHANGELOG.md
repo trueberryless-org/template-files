@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.0
+
+### Minor Changes
+
+- [#123](https://github.com/trueberryless-org/template-files/pull/123) [`b0cefd0`](https://github.com/trueberryless-org/template-files/commit/b0cefd08e85793d58973c98fafb79a0886401521) Thanks [@renovate](https://github.com/apps/renovate)! - Update GitHub action major versions
+
 ## 0.5.2
 
 ### Patch Changes
