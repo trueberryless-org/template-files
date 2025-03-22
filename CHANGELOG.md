@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.2
+
+### Patch Changes
+
+- [`8d82201`](https://github.com/trueberryless-org/template-files/commit/8d8220136f495d243e2d5c5c6fdd33c5c5b9161a) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove sync for all files unnecessary for Netlify
+
 ## 0.6.1
 
 ### Patch Changes
