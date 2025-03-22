@@ -110,29 +110,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-view-modes",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-view-modes",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -176,13 +159,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -192,45 +168,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-view-modes",
-            "subdomainName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-view-modes",
-            "subdomainName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-view-modes"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-view-modes"
           }
         },
         {
@@ -289,29 +226,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-cooler-credit",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-cooler-credit",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -355,13 +275,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -371,45 +284,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-cooler-credit",
-            "subdomainName": "starlight-cooler-credit"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-cooler-credit"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-cooler-credit",
-            "subdomainName": "starlight-cooler-credit"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-cooler-credit"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-cooler-credit"
           }
         },
         {
@@ -461,29 +335,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-spell-checker",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-spell-checker",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -527,13 +384,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -543,45 +393,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-spell-checker",
-            "subdomainName": "starlight-spell-checker"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-spell-checker"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-spell-checker",
-            "subdomainName": "starlight-spell-checker"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-spell-checker"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-spell-checker"
           }
         },
         {
@@ -640,29 +451,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-sidebar-topics-dropdown",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-sidebar-topics-dropdown",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -706,13 +500,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -722,45 +509,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown",
-            "subdomainName": "starlight-sidebar-topics-dropdown"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown",
-            "subdomainName": "starlight-sidebar-topics-dropdown"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown"
           }
         },
         {
@@ -819,29 +567,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-sidebar-swipe",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-sidebar-swipe",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -885,13 +616,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -901,45 +625,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-sidebar-swipe",
-            "subdomainName": "starlight-sidebar-swipe"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-sidebar-swipe"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-sidebar-swipe",
-            "subdomainName": "starlight-sidebar-swipe"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-sidebar-swipe"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-sidebar-swipe"
           }
         },
         {
@@ -998,29 +683,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-contributor-list",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-contributor-list",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1064,13 +732,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -1080,45 +741,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-contributor-list",
-            "subdomainName": "starlight-contributor-list"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-contributor-list"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-contributor-list",
-            "subdomainName": "starlight-contributor-list"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-contributor-list"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-contributor-list"
           }
         },
         {
@@ -1177,29 +799,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-automatic-overview-pages",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-automatic-overview-pages",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1243,13 +848,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -1259,45 +857,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-automatic-overview-pages",
-            "subdomainName": "starlight-automatic-overview-pages"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-automatic-overview-pages"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-automatic-overview-pages",
-            "subdomainName": "starlight-automatic-overview-pages"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-automatic-overview-pages"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-automatic-overview-pages"
           }
         },
         {
@@ -1356,29 +915,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-plugin-show-latest-version",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-plugin-show-latest-version",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1422,13 +964,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -1438,45 +973,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-plugin-show-latest-version",
-            "subdomainName": "starlight-plugin-show-latest-version"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-plugin-show-latest-version"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-plugin-show-latest-version",
-            "subdomainName": "starlight-plugin-show-latest-version"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-plugin-show-latest-version"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-plugin-show-latest-version"
           }
         },
         {
@@ -1535,29 +1031,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-plugins-docs-components",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-plugins-docs-components",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1601,13 +1080,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -1617,45 +1089,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-plugins-docs-components",
-            "subdomainName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-plugins-docs-components",
-            "subdomainName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-plugins-docs-components"
           }
         },
         {
@@ -1714,29 +1147,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-toc-overview-customizer",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-toc-overview-customizer",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1780,13 +1196,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -1796,45 +1205,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-toc-overview-customizer",
-            "subdomainName": "starlight-toc-overview-customizer"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-toc-overview-customizer"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-toc-overview-customizer",
-            "subdomainName": "starlight-toc-overview-customizer"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-toc-overview-customizer"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-toc-overview-customizer"
           }
         },
         {
@@ -1893,29 +1263,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-minimalistic-theme",
-            "documentationFolder": "apps/docs",
-            "projectFolder": "packages/starlight-minimalistic-theme",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1964,56 +1317,10 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "apps/docs"
-          }
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-minimalistic-theme",
-            "subdomainName": "starlight-minimalistic-theme"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-minimalistic-theme"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-minimalistic-theme",
-            "subdomainName": "starlight-minimalistic-theme"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-minimalistic-theme"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-minimalistic-theme"
           }
         },
         {
@@ -2065,29 +1372,12 @@
           }
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-save-file-component",
-            "documentationFolder": "docs",
-            "projectFolder": "packages/starlight-save-file-component",
-            "packageSuffix": "-docs",
-            "makeLatest": "false"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -2131,13 +1421,6 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/Node.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "docs"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "docs/package.json",
           "special": "package.json"
@@ -2147,45 +1430,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-save-file-component",
-            "subdomainName": "starlight-save-file-component"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-save-file-component"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-save-file-component",
-            "subdomainName": "starlight-save-file-component"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-save-file-component"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-save-file-component"
           }
         },
         {
