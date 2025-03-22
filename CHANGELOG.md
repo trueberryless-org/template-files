@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.3
+
+### Patch Changes
+
+- [`980560f`](https://github.com/trueberryless-org/template-files/commit/980560f4be1feebff58161707b7858dc86be7904) Thanks [@trueberryless](https://github.com/trueberryless)! - Add changeset commit message manipulation to publish action
+
 ## 0.6.2
 
 ### Patch Changes
