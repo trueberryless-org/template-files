@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.4
+
+### Patch Changes
+
+- [`1a357ba`](https://github.com/trueberryless-org/template-files/commit/1a357ba7bdf5d4613d55d4d43fdc81fc29ac7db7) Thanks [@trueberryless](https://github.com/trueberryless)! - Add ignore option to changeset config
+
 ## 0.6.3
 
 ### Patch Changes
