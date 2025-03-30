@@ -7,7 +7,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "template-files"
+            "repositoryName": "template-files",
+            "ignore": "[]"
           }
         },
         {
@@ -95,6 +96,14 @@
     {
       "name": "trueberryless-org/starlight-view-modes",
       "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-view-modes",
+            "ignore": "[\"starlight-view-modes-docs\", \"@starlight-view-modes-tests/*\"]"
+          }
+        },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
@@ -208,7 +217,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-cooler-credit"
+            "repositoryName": "starlight-cooler-credit",
+            "ignore": "[\"starlight-cooler-credit-docs\"]"
           }
         },
         {
@@ -320,6 +330,14 @@
     {
       "name": "trueberryless-org/starlight-spell-checker",
       "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-spell-checker",
+            "ignore": "[\"starlight-spell-checker-docs\", \"@starlight-spell-checker-tests/*\"]"
+          }
+        },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
@@ -433,7 +451,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown"
+            "repositoryName": "starlight-sidebar-topics-dropdown",
+            "ignore": "[\"starlight-sidebar-topics-dropdown-docs\"]"
           }
         },
         {
@@ -549,7 +568,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-sidebar-swipe"
+            "repositoryName": "starlight-sidebar-swipe",
+            "ignore": "[\"starlight-sidebar-swipe-docs\"]"
           }
         },
         {
@@ -665,7 +685,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-contributor-list"
+            "repositoryName": "starlight-contributor-list",
+            "ignore": "[\"starlight-contributor-list-docs\"]"
           }
         },
         {
@@ -781,7 +802,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-automatic-overview-pages"
+            "repositoryName": "starlight-automatic-overview-pages",
+            "ignore": "[\"starlight-automatic-overview-pages-docs\"]"
           }
         },
         {
@@ -897,7 +919,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-plugin-show-latest-version"
+            "repositoryName": "starlight-plugin-show-latest-version",
+            "ignore": "[\"starlight-plugin-show-latest-version-docs\"]"
           }
         },
         {
@@ -1013,7 +1036,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-plugins-docs-components"
+            "repositoryName": "starlight-plugins-docs-components",
+            "ignore": "[\"@trueberryless-org/starlight-plugins-docs-components-docs\"]"
           }
         },
         {
@@ -1129,7 +1153,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-toc-overview-customizer"
+            "repositoryName": "starlight-toc-overview-customizer",
+            "ignore": "[\"starlight-toc-overview-customizer-docs\"]"
           }
         },
         {
@@ -1245,7 +1270,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-minimalistic-theme"
+            "repositoryName": "starlight-minimalistic-theme",
+            "ignore": "[\"starlight-minimalistic-theme-docs\"]"
           }
         },
         {
@@ -1354,7 +1380,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-save-file-component"
+            "repositoryName": "starlight-save-file-component",
+            "ignore": "[\"starlight-save-file-component-docs\"]"
           }
         },
         {
@@ -1470,7 +1497,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "mutanuq"
+            "repositoryName": "mutanuq",
+            "ignore": "[]"
           }
         },
         {
@@ -1681,7 +1709,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "blog"
+            "repositoryName": "blog",
+            "ignore": "[]"
           }
         },
         {
@@ -1851,7 +1880,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "videos"
+            "repositoryName": "videos",
+            "ignore": "[]"
           }
         },
         {
@@ -2021,7 +2051,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "withastro-github-comment-templates"
+            "repositoryName": "withastro-github-comment-templates",
+            "ignore": "[]"
           }
         },
         {
@@ -2593,7 +2624,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "trueberryless"
+            "repositoryName": "trueberryless",
+            "ignore": "[]"
           }
         },
         {
@@ -2724,7 +2756,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "github-activity"
+            "repositoryName": "github-activity",
+            "ignore": "[]"
           }
         },
         {
@@ -2895,7 +2928,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-subtle-top-level-items"
+            "repositoryName": "starlight-subtle-top-level-items",
+            "ignore": "[]"
           }
         },
         {
@@ -3064,7 +3098,8 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "releases"
+            "repositoryName": "releases",
+            "ignore": "[]"
           }
         },
         {
