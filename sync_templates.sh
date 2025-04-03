@@ -287,7 +287,7 @@ else
     gh pr create \
       --base main \
       --head "$branch_name" \
-      --title "[ci] sync template files" \
+      --title "ci: sync template files" \
       --body "$description" \
       --label "🤖 bot" \
       --reviewer "trueberryless"
