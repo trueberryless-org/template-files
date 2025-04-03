@@ -23,13 +23,13 @@ jobs:
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
           token: ${{ steps.generate_token.outputs.token }}
-          commit-message: "[ci] update tree"
+          commit-message: "ci: update tree"
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: ci-tree
           delete-branch: true
-          title: "[ci] update tree"
+          title: "ci: update tree"
           body: "This PR was automatically created to update the project structure tree in every `README.md`."
           labels: 🤖 bot
           assignees: trueberryless
