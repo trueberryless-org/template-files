@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.5
+
+### Patch Changes
+
+- [#138](https://github.com/trueberryless-org/template-files/pull/138) [`8f52c2d`](https://github.com/trueberryless-org/template-files/commit/8f52c2dc5a2df677454f0d93b5b18262b82cd42b) Thanks [@trueberryless](https://github.com/trueberryless)! - Rename CI commits from [ci] to ci:
+
 ## 0.6.4
 
 ### Patch Changes
