@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.6
+
+### Patch Changes
+
+- [#141](https://github.com/trueberryless-org/template-files/pull/141) [`a1334b6`](https://github.com/trueberryless-org/template-files/commit/a1334b69dfbeed267814934db854c6f0a308ac4b) Thanks [@trueberryless](https://github.com/trueberryless)! - Add NextJS theme and remove minimalistic theme sync
+
 ## 0.6.5
 
 ### Patch Changes
