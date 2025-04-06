@@ -1264,21 +1264,21 @@
       ]
     },
     {
-      "name": "trueberryless-org/starlight-minimalistic-theme",
+      "name": "trueberryless-org/starlight-nextjs-theme",
       "files": [
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-minimalistic-theme",
-            "ignore": "[\"starlight-minimalistic-theme-docs\"]"
+            "repositoryName": "starlight-nextjs-theme",
+            "ignore": "[\"starlight-nextjs-theme-docs\"]"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "starlight-minimalistic-theme"
+            "repositoryName": "starlight-nextjs-theme"
           }
         },
         {
@@ -1305,8 +1305,8 @@
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-minimalistic-theme",
-            "packageName": "starlight-minimalistic-theme"
+            "repositoryName": "starlight-nextjs-theme",
+            "packageName": "starlight-nextjs-theme"
           }
         },
         {
@@ -1332,7 +1332,7 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "apps/docs/package.json",
+          "targetPath": "docs/package.json",
           "special": "package.json"
         },
         {
@@ -1362,14 +1362,21 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-minimalistic-theme-monorepo",
-            "repositoryName": "starlight-minimalistic-theme"
+            "packageName": "starlight-nextjs-theme-monorepo",
+            "repositoryName": "starlight-nextjs-theme"
           }
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/theme/README.md",
+          "targetPath": "packages/starlight-nextjs-theme/README.md",
           "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
         }
       ]
     },
