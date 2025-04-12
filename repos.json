@@ -2907,44 +2907,12 @@
       "name": "trueberryless-org/starlight-subtle-top-level-items",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items",
-            "ignore": "[]"
-          }
-        },
-        {
-          "path": "template-files/.changeset/README.md",
-          "targetPath": ".changeset/README.md",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "starlight-subtle-top-level-items",
-            "documentationFolder": "starlight",
-            "projectFolder": "starlight",
-            "packageSuffix": "",
-            "makeLatest": "true"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -2978,56 +2946,10 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "starlight"
-          }
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items",
-            "subdomainName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items",
-            "subdomainName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "starlight-subtle-top-level-items"
           }
         },
         {
