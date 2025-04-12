@@ -258,7 +258,7 @@ if git diff --cached --quiet; then
   fi
 else
   echo "Committing and pushing changes for $REPO_NAME..."
-  git commit -m "Update GitHub template files"
+  git commit -m "ci: update GitHub template files"
   git push --force origin "$branch_name"
 
   cd ..
@@ -287,7 +287,7 @@ else
     gh pr create \
       --base main \
       --head "$branch_name" \
-      --title "ci: sync template files" \
+      --title "ci: sync template files [skip netlify]" \
       --body "$description" \
       --label "🤖 bot" \
       --reviewer "trueberryless"

@@ -29,7 +29,7 @@ jobs:
           signoff: false
           branch: ci-tree
           delete-branch: true
-          title: "ci: update tree"
+          title: "ci: update tree [skip netlify]"
           body: "This PR was automatically created to update the project structure tree in every `README.md`."
           labels: 🤖 bot
           assignees: trueberryless
