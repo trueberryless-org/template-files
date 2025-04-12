@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.8
+
+### Patch Changes
+
+- [`634f697`](https://github.com/trueberryless-org/template-files/commit/634f697601c47b8d4edecad25b98a37c30258a88) Thanks [@trueberryless](https://github.com/trueberryless)! - Add package.json definitions for Starlight plugins
+
 ## 0.6.7
 
 ### Patch Changes
