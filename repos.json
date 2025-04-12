@@ -197,6 +197,15 @@
           }
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-view-modes/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-view-modes",
+            "repositoryName": "starlight-view-modes"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-view-modes/README.md",
           "special": "README.md"
@@ -310,6 +319,15 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-cooler-credit-monorepo",
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-cooler-credit/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-cooler-credit",
             "repositoryName": "starlight-cooler-credit"
           }
         },
@@ -431,6 +449,15 @@
           }
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-spell-checker/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-spell-checker",
+            "repositoryName": "starlight-spell-checker"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-spell-checker/README.md",
           "special": "README.md"
@@ -544,6 +571,15 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-topics-dropdown-monorepo",
+            "repositoryName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-sidebar-topics-dropdown/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-sidebar-topics-dropdown",
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
         },
@@ -665,6 +701,15 @@
           }
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-sidebar-swipe/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-sidebar-swipe",
+            "repositoryName": "starlight-sidebar-swipe"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-sidebar-swipe/README.md",
           "special": "README.md"
@@ -778,6 +823,15 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-contributor-list-monorepo",
+            "repositoryName": "starlight-contributor-list"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-contributor-list/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-contributor-list",
             "repositoryName": "starlight-contributor-list"
           }
         },
@@ -1016,6 +1070,15 @@
           }
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-plugin-show-latest-version/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-plugin-show-latest-version",
+            "repositoryName": "starlight-plugin-show-latest-version"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-plugin-show-latest-version/README.md",
           "special": "README.md"
@@ -1129,6 +1192,15 @@
           "special": "package.json",
           "props": {
             "packageName": "@trueberryless-org/starlight-plugins-docs-components-monorepo",
+            "repositoryName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-plugins-docs-components/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "@trueberryless-org/starlight-plugins-docs-components",
             "repositoryName": "starlight-plugins-docs-components"
           }
         },
@@ -1250,6 +1322,15 @@
           }
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-toc-overview-customizer/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-toc-overview-customizer",
+            "repositoryName": "starlight-toc-overview-customizer"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-toc-overview-customizer/README.md",
           "special": "README.md"
@@ -1363,6 +1444,15 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-nextjs-theme-monorepo",
+            "repositoryName": "starlight-nextjs-theme"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-nextjs-theme/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-nextjs-theme",
             "repositoryName": "starlight-nextjs-theme"
           }
         },
@@ -1484,6 +1574,15 @@
           }
         },
         {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-save-file-component/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-save-file-component",
+            "repositoryName": "starlight-save-file-component"
+          }
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-save-file-component/README.md",
           "special": "README.md"
@@ -1501,46 +1600,12 @@
       "name": "trueberryless-org/mutanuq",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
-          "props": {
-            "repositoryName": "mutanuq",
-            "ignore": "[]"
-          }
-        },
-        {
-          "path": "template-files/.changeset/README.md",
-          "targetPath": ".changeset/README.md",
-          "props": {
-            "repositoryName": "mutanuq"
-          }
-        },
-        {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment-with-lunaria.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "mutanuq",
-            "documentationFolder": "starlight",
-            "projectFolder": "starlight",
-            "lunariaRepositoryName": "i18n-mutanuq",
-            "pathToLunariaDockerfile": "starlight/lunaria/Dockerfile",
-            "packageSuffix": "",
-            "makeLatest": "true"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -1575,101 +1640,11 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "starlight"
-          }
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
             "year": "2024"
           }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "mutanuq",
-            "subdomainName": "mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "mutanuq",
-            "subdomainName": "mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest-lunaria/certificate.yaml",
-          "props": {
-            "repositoryName": "i18n-mutanuq",
-            "subdomainName": "i18n-mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest-lunaria/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "i18n-mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest-lunaria/ingress.yaml",
-          "props": {
-            "repositoryName": "i18n-mutanuq",
-            "subdomainName": "i18n-mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest-lunaria/namespace.yaml",
-          "props": {
-            "repositoryName": "i18n-mutanuq"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest-lunaria/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "i18n-mutanuq"
-          }
-        },
-        {
-          "path": "template-files/package.json/changeset.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
         },
         {
           "path": "template-files/package.json/definition.package.json",
