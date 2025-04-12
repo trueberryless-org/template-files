@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.7
+
+### Patch Changes
+
+- [`cf36636`](https://github.com/trueberryless-org/template-files/commit/cf36636f9690dccbbdcae66cee5f4714f6075065) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix deployment and publishing issue with colon"
+
 ## 0.6.6
 
 ### Patch Changes
