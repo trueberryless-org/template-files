@@ -89,7 +89,7 @@ jobs:
         needs.changesets.outputs.hasChangesets == 'false' && 
         (
           contains(github.event.head_commit.message, 'deploy') || 
-          contains(github.event.head_commit.message, 'ci: release')
+          contains(github.event.head_commit.message, 'release')
         )
       ) || 
       github.event_name == 'workflow_dispatch'
