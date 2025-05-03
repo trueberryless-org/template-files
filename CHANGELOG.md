@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.9
+
+### Patch Changes
+
+- [`e467d7b`](https://github.com/trueberryless-org/template-files/commit/e467d7b45a5b143378fe6695bcff962d497a0e91) Thanks [@trueberryless](https://github.com/trueberryless)! - Netlify videos, blog and github-activity and upgrade pnpm to 10.10
+
 ## 0.6.8
 
 ### Patch Changes
