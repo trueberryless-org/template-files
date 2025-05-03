@@ -8,6 +8,7 @@ Provide single point of truth for template files.
 .
 ├── .changeset
 │   ├── README.md
+│   ├── brave-geckos-juggle.md
 │   └── config.json
 ├── .dockerignore
 ├── .github
