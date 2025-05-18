@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.10
+
+### Patch Changes
+
+- [`6903fb2`](https://github.com/trueberryless-org/template-files/commit/6903fb2b332356bdb556d1ad8427ec4b8189e58f) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Scroll Indicator repo
+
 ## 0.6.9
 
 ### Patch Changes
