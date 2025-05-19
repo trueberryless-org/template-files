@@ -3022,6 +3022,11 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
