@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.11
+
+### Patch Changes
+
+- [#156](https://github.com/trueberryless-org/template-files/pull/156) [`c881634`](https://github.com/trueberryless-org/template-files/commit/c8816348c89885cf7d7d303fa2ae1f2fcdba2fb2) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove parts of trueberryless repo sync because it is now deployed with Netlify
+
 ## 0.6.10
 
 ### Patch Changes
