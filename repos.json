@@ -2437,11 +2437,6 @@
       "name": "trueberryless-org/trueberryless",
       "files": [
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": ".dockerignore",
-          "special": "allow-additional-lines"
-        },
-        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
