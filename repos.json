@@ -2927,6 +2927,15 @@
           "targetPath": "app/.dockerignore"
         },
         {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "app/package.json",
           "special": "package.json"
@@ -2984,6 +2993,11 @@
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
         },
