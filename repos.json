@@ -2923,10 +2923,6 @@
           "targetPath": ".gitignore"
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": "app/.dockerignore"
-        },
-        {
           "path": "template-files/.prettierignore",
           "targetPath": ".prettierignore",
           "special": "allow-additional-lines"
@@ -2934,6 +2930,10 @@
         {
           "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": "app/.dockerignore"
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
