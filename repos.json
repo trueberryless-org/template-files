@@ -2437,21 +2437,6 @@
       "name": "trueberryless-org/trueberryless",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
-          "props": {
-            "repositoryName": "trueberryless",
-            "ignore": "[]"
-          }
-        },
-        {
-          "path": "template-files/.changeset/README.md",
-          "targetPath": ".changeset/README.md",
-          "props": {
-            "repositoryName": "trueberryless"
-          }
-        },
-        {
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore",
           "special": "allow-additional-lines"
@@ -2463,18 +2448,6 @@
         {
           "path": "template-files/.github/renovate.json5",
           "targetPath": ".github/renovate.json5"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "trueberryless",
-            "documentationFolder": "src",
-            "projectFolder": "src",
-            "packageSuffix": "",
-            "makeLatest": "true"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -2507,13 +2480,6 @@
         {
           "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
-        },
-        {
-          "path": "template-files/Dockerfile/httpd.Dockerfile",
-          "targetPath": "Dockerfile",
-          "props": {
-            "documentationFolder": "src"
-          }
         },
         {
           "path": "template-files/LICENSE",
@@ -2957,10 +2923,6 @@
           "targetPath": ".gitignore"
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": "app/.dockerignore"
-        },
-        {
           "path": "template-files/.prettierignore",
           "targetPath": ".prettierignore",
           "special": "allow-additional-lines"
@@ -2968,6 +2930,10 @@
         {
           "path": "template-files/.prettierrc/.prettierrc",
           "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/.dockerignore",
+          "targetPath": "app/.dockerignore"
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
