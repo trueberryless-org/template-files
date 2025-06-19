@@ -1,5 +1,11 @@
 # template-files
 
+## 0.6.12
+
+### Patch Changes
+
+- [#161](https://github.com/trueberryless-org/template-files/pull/161) [`1a30bf8`](https://github.com/trueberryless-org/template-files/commit/1a30bf83699cf6e1e16bb43f3094d8bcc9cc9af6) Thanks [@trueberryless](https://github.com/trueberryless)! - Add true tracker repo to repos.json
+
 ## 0.6.11
 
 ### Patch Changes
