@@ -1,5 +1,11 @@
 # template-files
 
+## 0.7.0
+
+### Minor Changes
+
+- [#164](https://github.com/trueberryless-org/template-files/pull/164) [`a04a5d5`](https://github.com/trueberryless-org/template-files/commit/a04a5d5ed50be6febb1673740c76195c54adfc8f) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Plugin Translations repo
+
 ## 0.6.12
 
 ### Patch Changes
