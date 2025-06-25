@@ -2922,6 +2922,73 @@
       ]
     },
     {
+      "name": "trueberryless-org/starlight-plugin-translations",
+      "files": [
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json5",
+          "targetPath": ".github/renovate.json5"
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2025"
+          }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md"
+        }
+      ]
+    },
+    {
       "name": "trueberryless-org/release-image-generator",
       "files": [
         {
