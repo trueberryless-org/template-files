@@ -3141,7 +3141,6 @@
         }
       ]
     },
-
     {
       "name": "trueberryless-org/implications-trainer",
       "files": [
@@ -3186,16 +3185,16 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
           }
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
         },
         {
           "path": "template-files/package.json/prettier.package.json",
