@@ -1,5 +1,11 @@
 # template-files
 
+## 0.7.1
+
+### Patch Changes
+
+- [`2298524`](https://github.com/trueberryless-org/template-files/commit/229852437e3558f59c72d5fb0452a2d2ae92c0cf) Thanks [@trueberryless](https://github.com/trueberryless)! - Add implications-trainer
+
 ## 0.7.0
 
 ### Minor Changes
