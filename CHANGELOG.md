@@ -1,5 +1,11 @@
 # template-files
 
+## 0.7.2
+
+### Patch Changes
+
+- [`b518adc`](https://github.com/trueberryless-org/template-files/commit/b518adc0caed7160d41d3aaa655164888f68d7a1) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix next theme rename
+
 ## 0.7.1
 
 ### Patch Changes
