@@ -1345,21 +1345,21 @@
       ]
     },
     {
-      "name": "trueberryless-org/starlight-nextjs-theme",
+      "name": "trueberryless-org/starlight-theme-next",
       "files": [
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-nextjs-theme",
-            "ignore": "[\"starlight-nextjs-theme-docs\"]"
+            "repositoryName": "starlight-theme-next",
+            "ignore": "[\"starlight-theme-next-docs\"]"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "starlight-nextjs-theme"
+            "repositoryName": "starlight-theme-next"
           }
         },
         {
@@ -1386,8 +1386,8 @@
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-nextjs-theme",
-            "packageName": "starlight-nextjs-theme"
+            "repositoryName": "starlight-theme-next",
+            "packageName": "starlight-theme-next"
           }
         },
         {
@@ -1443,22 +1443,22 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-nextjs-theme-monorepo",
-            "repositoryName": "starlight-nextjs-theme"
+            "packageName": "starlight-theme-next-monorepo",
+            "repositoryName": "starlight-theme-next"
           }
         },
         {
           "path": "template-files/package.json/definition.package.json",
-          "targetPath": "packages/starlight-nextjs-theme/package.json",
+          "targetPath": "packages/starlight-theme-next/package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-nextjs-theme",
-            "repositoryName": "starlight-nextjs-theme"
+            "packageName": "starlight-theme-next",
+            "repositoryName": "starlight-theme-next"
           }
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/starlight-nextjs-theme/README.md",
+          "targetPath": "packages/starlight-theme-next/README.md",
           "special": "README.md"
         },
         {
