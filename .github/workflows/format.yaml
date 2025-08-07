@@ -25,7 +25,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
-          python-version: "3.13.3"
+          python-version: "3.13.6"
 
       - name: Install Dependencies
         run: pnpm i
@@ -78,4 +78,4 @@ jobs:
 
         shell: python
 
-      - uses: autofix-ci/action@551dded8c6cc8a1054039c8bc0b8b48c51dfc6ef
+      - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
