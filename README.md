@@ -40,7 +40,7 @@ Provide single point of truth for template files.
     │   ├── FUNDING.yaml
     │   ├── labeler.yaml
     │   ├── readmetreerc.yaml
-    │   ├── renovate.json5
+    │   ├── renovate.json
     │   └── workflows
     │       ├── DotNet.deployment.yaml
     │       ├── deployment-with-lunaria.yaml
