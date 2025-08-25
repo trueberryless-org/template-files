@@ -67,6 +67,8 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
       echo "No existing README.md found. Creating a new one..."
       cp "$src_file" "$dest_file"
     fi
+
+
   elif [ "$special" == "package.json" ]; then
     echo "Special handling for package.json"
 
@@ -109,6 +111,8 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     fi
 
     modified_package_jsons+=("$dest_file")
+
+
   elif [ "$special" == "manifest" ]; then
     echo "Special handling for manifest file"
 
@@ -146,6 +150,8 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
 
     # Move the processed file to the target location
     mv "$temp_file" "$dest_file"
+
+
   elif [ "$special" == "allow-additional-lines" ]; then
     # This logic cannot handle cases where a line is changed in the dest_file
     echo "Special handling for file where additional lines are allowed"
@@ -185,6 +191,18 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
 
     # Move the processed file to the target location
     mv "$temp_file" "$dest_file"
+
+
+  elif [ "$special" == "delete" ]; then
+    echo "Special handling for delete: removing $dest_file if it exists..."
+    if [ -f "$dest_file" ]; then
+      rm -f "$dest_file"
+      echo "Deleted $dest_file"
+    else
+      echo "File $dest_file does not exist. Skipping delete."
+    fi
+
+
   else
     # Prepare the destination directory
     mkdir -p "$(dirname "$dest_file")"
