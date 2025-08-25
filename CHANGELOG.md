@@ -1,5 +1,11 @@
 # template-files
 
+## 0.8.1
+
+### Patch Changes
+
+- [`0177638`](https://github.com/trueberryless-org/template-files/commit/01776388c1430272d3f263319272e4c4a15bf6d5) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix renovate configuration
+
 ## 0.8.0
 
 ### Minor Changes
