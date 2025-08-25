@@ -16,17 +16,11 @@
       "matchManagers": ["github-actions"]
     },
     {
-      "description": "Group patch and minor updates into one PR",
+      "groupName": "npm-packages",
+      "description": "Group patch+minor updates, keep majors separate",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "npm non-major updates"
-    },
-    {
-      "description": "Keep major updates separate",
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": ["patch", "minor", "major"],
       "separateMajorMinor": true
     },
     {
