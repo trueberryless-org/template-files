@@ -1,5 +1,13 @@
 # template-files
 
+## 0.8.0
+
+### Minor Changes
+
+- [#171](https://github.com/trueberryless-org/template-files/pull/171) [`2ef4755`](https://github.com/trueberryless-org/template-files/commit/2ef4755bfadf978d9e7ed4d83caefbbea003e7e5) Thanks [@trueberryless](https://github.com/trueberryless)! - Add new special file treatment: delete (path still needed nonetheless, although unused)
+
+- [#171](https://github.com/trueberryless-org/template-files/pull/171) [`2ef4755`](https://github.com/trueberryless-org/template-files/commit/2ef4755bfadf978d9e7ed4d83caefbbea003e7e5) Thanks [@trueberryless](https://github.com/trueberryless)! - Rename renovate.json5 to renovate.json and adapt it to include npm updates (major and non-major)
+
 ## 0.7.2
 
 ### Patch Changes
