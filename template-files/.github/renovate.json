@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":disableDependencyDashboard",
+    ":disablePeerDependencies",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     "workarounds:all",
@@ -10,6 +11,7 @@
   ],
   "rangeStrategy": "bump",
   "ignorePaths": ["**/node_modules/**"],
+  "commitMessageSuffix": "[skip netlify]",
   "packageRules": [
     {
       "groupName": "github-actions",
@@ -20,7 +22,6 @@
       "description": "Group patch+minor updates, keep majors separate",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "matchUpdateTypes": ["patch", "minor", "major"],
       "separateMajorMinor": true
     },
     {
