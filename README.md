@@ -13,7 +13,7 @@ Provide single point of truth for template files.
 ├── .github
 │   ├── labeler.yaml
 │   ├── readmetreerc.yaml
-│   ├── renovate.json5
+│   ├── renovate.json
 │   └── workflows
 │       ├── format.yaml
 │       ├── generate-readme-tree.yaml
