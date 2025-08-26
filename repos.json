@@ -1407,7 +1407,7 @@
           "targetPath": ".changeset/config.json",
           "props": {
             "repositoryName": "starlight-theme-next",
-            "ignore": "[\"starlight-theme-next-docs\"]"
+            "ignore": "[\"starlight-theme-next-docs\", \"@fontsource/geist-mono\", \"@fontsource/geist-sans\"]"
           }
         },
         {
