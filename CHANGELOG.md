@@ -1,5 +1,11 @@
 # template-files
 
+## 0.8.2
+
+### Patch Changes
+
+- [`85077f2`](https://github.com/trueberryless-org/template-files/commit/85077f212500ac8aadde0800a56d835ffc6291ab) Thanks [@trueberryless](https://github.com/trueberryless)! - Skip all CIs and reviews for update PRs
+
 ## 0.8.1
 
 ### Patch Changes
