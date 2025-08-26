@@ -301,11 +301,11 @@ else
     gh pr comment "$existing_pr" --body "The branch has been updated with the [latest changes]($latest_commit_url)."
   else
     echo "No existing PR found. Creating a new one..."
-    description=$(printf "%s\n\n%s\n%s" "This PR syncs the specified GitHub template files from the [central repository](https://github.com/trueberryless-org/template-files)." "### Changes:" "$latest_commit_entry")
+    description=$(printf "%s\n\n%s\n%s" "This PR syncs the specified GitHub template files from the [central repository](https://github.com/trueberryless-org/template-files). @coderabbitai ignore" "### Changes:" "$latest_commit_entry")
     gh pr create \
       --base main \
       --head "$branch_name" \
-      --title "ci: sync template files [skip netlify]" \
+      --title "ci: sync template files [skip ci]" \
       --body "$description" \
       --label "🤖 bot" \
       --reviewer "trueberryless"
