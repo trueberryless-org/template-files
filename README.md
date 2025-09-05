@@ -11,6 +11,7 @@ Provide single point of truth for template files.
 │   └── config.json
 ├── .dockerignore
 ├── .github
+│   ├── CODEOWNERS
 │   ├── labeler.yaml
 │   ├── readmetreerc.yaml
 │   ├── renovate.json
@@ -37,6 +38,7 @@ Provide single point of truth for template files.
     │   └── config.json
     ├── .dockerignore
     ├── .github
+    │   ├── CODEOWNERS
     │   ├── FUNDING.yaml
     │   ├── labeler.yaml
     │   ├── readmetreerc.yaml
