@@ -19,6 +19,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -115,6 +119,10 @@
           "props": {
             "repositoryName": "starlight-view-modes"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -248,6 +256,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -377,6 +389,10 @@
           "props": {
             "repositoryName": "starlight-spell-checker"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -510,6 +526,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -639,6 +659,10 @@
           "props": {
             "repositoryName": "starlight-sidebar-swipe"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -772,6 +796,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -903,6 +931,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -1023,6 +1055,10 @@
           "props": {
             "repositoryName": "starlight-plugin-show-latest-version"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1156,6 +1192,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -1285,6 +1325,10 @@
           "props": {
             "repositoryName": "starlight-toc-overview-customizer"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1418,6 +1462,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -1542,6 +1590,10 @@
           "props": {
             "repositoryName": "starlight-theme-next"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -1675,6 +1727,10 @@
           }
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -1791,6 +1847,10 @@
       "name": "trueberryless-org/mutanuq",
       "files": [
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -1884,6 +1944,10 @@
       "name": "trueberryless-org/blog",
       "files": [
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -1976,6 +2040,10 @@
     {
       "name": "trueberryless-org/videos",
       "files": [
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
@@ -2087,6 +2155,10 @@
           "path": "template-files/.dockerignore",
           "targetPath": ".dockerignore",
           "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2244,6 +2316,10 @@
           "special": "allow-additional-lines"
         },
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -2380,6 +2456,10 @@
       "name": "trueberryless-org/trueberryless",
       "files": [
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -2473,6 +2553,10 @@
       "name": "trueberryless-org/true-tracker",
       "files": [
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -2544,6 +2628,10 @@
     {
       "name": "trueberryless-org/github-activity",
       "files": [
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
@@ -2637,6 +2725,10 @@
     {
       "name": "trueberryless-org/starlight-subtle-top-level-items",
       "files": [
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
@@ -2748,6 +2840,10 @@
           "props": {
             "repositoryName": "releases"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -2893,6 +2989,10 @@
       "name": "trueberryless-org/starlight-plugin-translations",
       "files": [
         {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
+        {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
         },
@@ -2977,6 +3077,10 @@
           "props": {
             "repositoryName": "release-image-generator"
           }
+        },
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
         },
         {
           "path": "template-files/.github/labeler.yaml",
@@ -3122,6 +3226,10 @@
     {
       "name": "trueberryless-org/implications-trainer",
       "files": [
+        {
+          "path": "template-files/.github/CODEOWNERS",
+          "targetPath": ".github/CODEOWNERS"
+        },
         {
           "path": "template-files/.github/labeler.yaml",
           "targetPath": ".github/labeler.yaml"
