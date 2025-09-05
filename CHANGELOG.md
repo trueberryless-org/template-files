@@ -1,5 +1,11 @@
 # template-files
 
+## 0.9.0
+
+### Minor Changes
+
+- [`9c2d1fa`](https://github.com/trueberryless-org/template-files/commit/9c2d1fab3cfce22939f4cc224f9f27d1051b792b) Thanks [@trueberryless](https://github.com/trueberryless)! - Add `CODEOWNERS` file to all repos ([@trueberryless](https://github.com/trueberryless) for all files)
+
 ## 0.8.3
 
 ### Patch Changes
