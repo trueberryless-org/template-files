@@ -8,7 +8,8 @@ Provide single point of truth for template files.
 .
 ├── .changeset
 │   ├── README.md
-│   └── config.json
+│   ├── config.json
+│   └── many-humans-visit.md
 ├── .dockerignore
 ├── .github
 │   ├── CODEOWNERS
