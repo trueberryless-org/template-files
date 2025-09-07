@@ -1,5 +1,11 @@
 # template-files
 
+## 0.9.1
+
+### Patch Changes
+
+- [`940b0db`](https://github.com/trueberryless-org/template-files/commit/940b0db6b6d0302ad37d5f0bf7d9005894e27a68) Thanks [@trueberryless](https://github.com/trueberryless)! - Group npm updates into one Renovate PR
+
 ## 0.9.0
 
 ### Minor Changes
