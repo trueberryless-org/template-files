@@ -1,5 +1,11 @@
 # template-files
 
+## 0.9.2
+
+### Patch Changes
+
+- [#203](https://github.com/trueberryless-org/template-files/pull/203) [`b86bbbd`](https://github.com/trueberryless-org/template-files/commit/b86bbbdadabd8506a524039ecbdee9528c0d218d) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Sidebar Clickable Groups plugin to repos.json
+
 ## 0.9.1
 
 ### Patch Changes
