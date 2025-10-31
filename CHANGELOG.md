@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.0
+
+### Minor Changes
+
+- [`bae0635`](https://github.com/trueberryless-org/template-files/commit/bae0635157b3f671651e29fa08d76d9ffc51d3c6) Thanks [@trueberryless](https://github.com/trueberryless)! - Add support for OIDC by upgrading Node versions and removing --provenance flag
+
 ## 0.9.2
 
 ### Patch Changes
