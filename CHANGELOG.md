@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.1
+
+### Patch Changes
+
+- [`38e07c4`](https://github.com/trueberryless-org/template-files/commit/38e07c4d88c1d243a3e5eb276ea43046aeb01d6e) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove NPM_TOKENs from GitHub Actions
+
 ## 0.10.0
 
 ### Minor Changes
