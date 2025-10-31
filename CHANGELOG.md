@@ -1,5 +1,29 @@
 # template-files
 
+## 0.10.3
+
+### Patch Changes
+
+- [`0ca6b52`](https://github.com/trueberryless-org/template-files/commit/0ca6b52d0a800d3b21a8d3455652591725811113) Thanks [@trueberryless](https://github.com/trueberryless)! - Disable persist credentials on checkout action
+
+## 0.10.2
+
+### Patch Changes
+
+- [`860aeff`](https://github.com/trueberryless-org/template-files/commit/860aeff044abe0e3df9c232d72e0d3648bf05486) Thanks [@trueberryless](https://github.com/trueberryless)! - Update GitHub Actions and NPM Dependencies
+
+## 0.10.1
+
+### Patch Changes
+
+- [`38e07c4`](https://github.com/trueberryless-org/template-files/commit/38e07c4d88c1d243a3e5eb276ea43046aeb01d6e) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove NPM_TOKENs from GitHub Actions
+
+## 0.10.0
+
+### Minor Changes
+
+- [`bae0635`](https://github.com/trueberryless-org/template-files/commit/bae0635157b3f671651e29fa08d76d9ffc51d3c6) Thanks [@trueberryless](https://github.com/trueberryless)! - Add support for OIDC by upgrading Node versions and removing --provenance flag
+
 ## 0.9.2
 
 ### Patch Changes
