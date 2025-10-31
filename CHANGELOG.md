@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.5
+
+### Patch Changes
+
+- [`7f09154`](https://github.com/trueberryless-org/template-files/commit/7f09154e710a6ea85a602cdaf97771609656dc67) Thanks [@trueberryless](https://github.com/trueberryless)! - Sort summary list alphabetically
+
 ## 0.10.4
 
 ### Patch Changes
