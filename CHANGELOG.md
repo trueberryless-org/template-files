@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.2
+
+### Patch Changes
+
+- [`860aeff`](https://github.com/trueberryless-org/template-files/commit/860aeff044abe0e3df9c232d72e0d3648bf05486) Thanks [@trueberryless](https://github.com/trueberryless)! - Update GitHub Actions and NPM Dependencies
+
 ## 0.10.1
 
 ### Patch Changes
