@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.3
+
+### Patch Changes
+
+- [`0ca6b52`](https://github.com/trueberryless-org/template-files/commit/0ca6b52d0a800d3b21a8d3455652591725811113) Thanks [@trueberryless](https://github.com/trueberryless)! - Disable persist credentials on checkout action
+
 ## 0.10.2
 
 ### Patch Changes
