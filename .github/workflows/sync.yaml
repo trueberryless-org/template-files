@@ -94,12 +94,12 @@ jobs:
         repo: "${{ fromJson(needs.prepare-matrix.outputs.repo-matrix) }}"
     if: >
       (
-        needs.changesets.outputs.hasChangesets == 'false' && 
+        needs.changesets.outputs.hasChangesets == 'false' &&
         (
-          contains(github.event.head_commit.message, 'deploy') || 
+          contains(github.event.head_commit.message, 'deploy') ||
           contains(github.event.head_commit.message, 'release')
         )
-      ) || 
+      ) ||
       github.event_name == 'workflow_dispatch'
     steps:
       - name: Generate GitHub App token
@@ -202,16 +202,17 @@ jobs:
 
       - name: Combine summaries and generate final markdown table
         run: |
-          # Create or append to the final summary file
-          echo "### Summary of Changes" > final_summary.md
-          echo "" >> final_summary.md
-          echo "| Repository | PR Link | Files Changed |" >> final_summary.md
-          echo "|------------|---------|---------------|" >> final_summary.md
+          # Combine and sort summary tables alphabetically by repo name
+          find . -name "summary_table.txt" -exec cat {} + | sort -t'|' -k2,2 > sorted_summary.txt
 
-          # Loop over the downloaded summary artifacts and append their content
-          for artifact in $(find . -name "summary_table.txt"); do
-            cat "$artifact" >> final_summary.md
-          done
+          # Write header and sorted content
+          {
+            echo "### Summary of Changes"
+            echo ""
+            echo "| Repository | PR Link | Files Changed |"
+            echo "|------------|---------|---------------|"
+            cat sorted_summary.txt
+          } > final_summary.md
 
       - name: Upload final summary as artifact
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
@@ -221,14 +222,14 @@ jobs:
 
       - name: Combine discord and generate final markdown list
         run: |
-          # Create or append to the final summary file
-          echo "### Summary of Changes" > discord_summary.md
-          echo "" >> discord_summary.md
+          # Combine and sort Discord summaries alphabetically by repo name
+          find . -name "discord_list.txt" -exec cat {} + | sort -t'-' -k2,2 > sorted_discord.txt
 
-          # Loop over the downloaded summary artifacts and append their content
-          for artifact in $(find . -name "discord_list.txt"); do
-            cat "$artifact" >> discord_summary.md
-          done
+          {
+            echo "### Summary of Changes"
+            echo ""
+            cat sorted_discord.txt
+          } > discord_summary.md
 
       - name: Upload final summary as artifact
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
@@ -292,7 +293,7 @@ jobs:
             cat final_summary.md
             echo "EOF"
           } >> $GITHUB_ENV
-           
+
           {
             echo "DISCORD_SUMMARY<<EOF"
             cat discord_summary.md
