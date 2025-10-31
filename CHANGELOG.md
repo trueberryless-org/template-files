@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.4
+
+### Patch Changes
+
+- [`b6b6fd0`](https://github.com/trueberryless-org/template-files/commit/b6b6fd0fb19449e5e142d5a4ca7a65293b1bc366) Thanks [@trueberryless](https://github.com/trueberryless)! - Update changeset and prettier packages
+
 ## 0.10.3
 
 ### Patch Changes
