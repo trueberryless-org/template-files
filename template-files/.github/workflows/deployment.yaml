@@ -13,7 +13,7 @@ env:
   REGISTRY: docker.io
   IMAGE_OWNER: trueberryless
   IMAGE_NAME: <%= repositoryName %>
-  NODE_VERSION: 20
+  NODE_VERSION: 24.10.0
 
 jobs:
   changes:
@@ -102,12 +102,12 @@ jobs:
     needs: [changes, changesets, image-tag]
     if: >
       (
-        needs.changesets.outputs.hasChangesets == 'false' && 
+        needs.changesets.outputs.hasChangesets == 'false' &&
         (
-          contains(github.event.head_commit.message, 'deploy') || 
+          contains(github.event.head_commit.message, 'deploy') ||
           contains(github.event.head_commit.message, 'release')
         )
-      ) || 
+      ) ||
       github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
