@@ -3200,7 +3200,7 @@
       "name": "trueberryless-org/release-image-generator",
       "files": [
         {
-          "path": "template-files/.changeset/DotNet.config.json",
+          "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
             "repositoryName": "release-image-generator"
@@ -3226,22 +3226,6 @@
           "targetPath": ".github/renovate.json"
         },
         {
-          "path": "template-files/.github/renovate.json",
-          "targetPath": ".github/renovate.json5",
-          "special": "delete"
-        },
-        {
-          "path": "template-files/.github/workflows/DotNet.deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "release-image-generator",
-            "projectFolder": "app",
-            "packageSuffix": "",
-            "makeLatest": "true"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/format.yaml",
           "targetPath": ".github/workflows/format.yaml",
           "props": {
@@ -3260,7 +3244,7 @@
           }
         },
         {
-          "path": "template-files/.gitignore/DotNet.gitignore",
+          "path": "template-files/.gitignore/Node.gitignore",
           "targetPath": ".gitignore"
         },
         {
@@ -3273,12 +3257,8 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/.dockerignore",
-          "targetPath": "app/.dockerignore"
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "app/package.json",
+          "targetPath": "package.json",
           "special": "package.json"
         },
         {
@@ -3286,45 +3266,6 @@
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "release-image-generator",
-            "subdomainName": "release-image-generator"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "release-image-generator"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "release-image-generator",
-            "subdomainName": "release-image-generator"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "release-image-generator"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "release-image-generator"
           }
         },
         {
@@ -3347,7 +3288,7 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "release-image-generator-monorepo",
+            "packageName": "release-image-generator",
             "repositoryName": "release-image-generator"
           }
         },
