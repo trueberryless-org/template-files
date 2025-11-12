@@ -1,5 +1,13 @@
 # template-files
 
+## 0.10.6
+
+### Patch Changes
+
+- [`345eb24`](https://github.com/trueberryless-org/template-files/commit/345eb24ba84edb67e4b0a3dd21276ee41010f5bb) Thanks [@trueberryless](https://github.com/trueberryless)! - Adapt repo config to Release Image Generator Migration to Astro
+
+- [#224](https://github.com/trueberryless-org/template-files/pull/224) [`b45120f`](https://github.com/trueberryless-org/template-files/commit/b45120f21d0a8a2119586d5cc10b098e129b5dfe) Thanks [@trueberryless](https://github.com/trueberryless)! - Delete all CODEOWNERS files
+
 ## 0.10.5
 
 ### Patch Changes
