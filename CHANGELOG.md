@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.7
+
+### Patch Changes
+
+- [`82d6cba`](https://github.com/trueberryless-org/template-files/commit/82d6cba280c4b738917e304551155cd59b6ff61e) Thanks [@trueberryless](https://github.com/trueberryless)! - Update `releases` repository to new `recent-releases` repository.
+
 ## 0.10.6
 
 ### Patch Changes
