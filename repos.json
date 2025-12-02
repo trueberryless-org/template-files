@@ -32,15 +32,6 @@
           "targetPath": ".github/readmetreerc.yaml"
         },
         {
-          "path": "template-files/.github/renovate.json",
-          "targetPath": ".github/renovate.json"
-        },
-        {
-          "path": "template-files/.github/renovate.json",
-          "targetPath": ".github/renovate.json5",
-          "special": "delete"
-        },
-        {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
         },
