@@ -8,6 +8,7 @@ Provide single point of truth for template files.
 .
 ├── .changeset
 │   ├── README.md
+│   ├── blue-birds-fly.md
 │   └── config.json
 ├── .dockerignore
 ├── .github
