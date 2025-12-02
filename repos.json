@@ -2852,23 +2852,8 @@
       ]
     },
     {
-      "name": "trueberryless-org/releases",
+      "name": "trueberryless-org/recent-releases",
       "files": [
-        {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
-          "props": {
-            "repositoryName": "releases",
-            "ignore": "[]"
-          }
-        },
-        {
-          "path": "template-files/.changeset/README.md",
-          "targetPath": ".changeset/README.md",
-          "props": {
-            "repositoryName": "releases"
-          }
-        },
         {
           "path": "template-files/.github/CODEOWNERS",
           "targetPath": ".github/CODEOWNERS",
@@ -2886,19 +2871,6 @@
           "path": "template-files/.github/renovate.json",
           "targetPath": ".github/renovate.json5",
           "special": "delete"
-        },
-        {
-          "path": "template-files/.github/workflows/deployment.yaml",
-          "targetPath": ".github/workflows/deployment.yaml",
-          "special": "allow-additional-lines",
-          "props": {
-            "branchName": "main",
-            "repositoryName": "releases",
-            "documentationFolder": "app",
-            "projectFolder": "app",
-            "packageSuffix": "",
-            "makeLatest": "true"
-          }
         },
         {
           "path": "template-files/.github/workflows/format.yaml",
@@ -2933,54 +2905,10 @@
           "targetPath": ".prettierrc"
         },
         {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "app/package.json",
-          "special": "package.json"
-        },
-        {
           "path": "template-files/LICENSE",
           "targetPath": "LICENSE",
           "props": {
             "year": "2025"
-          }
-        },
-        {
-          "path": "template-files/manifest/certificate.yaml",
-          "targetPath": "manifest/certificate.yaml",
-          "props": {
-            "repositoryName": "releases",
-            "subdomainName": "releases"
-          }
-        },
-        {
-          "path": "template-files/manifest/deployment.yaml",
-          "targetPath": "manifest/deployment.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "releases"
-          }
-        },
-        {
-          "path": "template-files/manifest/ingress.yaml",
-          "targetPath": "manifest/ingress.yaml",
-          "props": {
-            "repositoryName": "releases",
-            "subdomainName": "releases"
-          }
-        },
-        {
-          "path": "template-files/manifest/namespace.yaml",
-          "targetPath": "manifest/namespace.yaml",
-          "props": {
-            "repositoryName": "releases"
-          }
-        },
-        {
-          "path": "template-files/manifest/service.yaml",
-          "targetPath": "manifest/service.yaml",
-          "special": "manifest",
-          "props": {
-            "repositoryName": "releases"
           }
         },
         {
@@ -3003,8 +2931,8 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "releases-monorepo",
-            "repositoryName": "releases"
+            "packageName": "recent-releases",
+            "repositoryName": "recent-releases"
           }
         },
         {
