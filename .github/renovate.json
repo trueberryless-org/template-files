@@ -13,7 +13,7 @@
   "includePaths": [
     "template-files/package.json/**",
     "template-files/.github/workflows/**"
-  ]
+  ],
   "commitMessageSuffix": "[skip ci]",
   "packageRules": [
     {
