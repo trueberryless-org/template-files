@@ -308,7 +308,7 @@ else
       --title "ci: sync template files [skip ci]" \
       --body "$description" \
       --label "🤖 bot" \
-      --reviewer "trueberryless"
+      --assignee "trueberryless"
   fi
 fi
 
