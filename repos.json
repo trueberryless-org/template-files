@@ -2012,15 +2012,6 @@
           }
         },
         {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "blog-monorepo",
-            "repositoryName": "blog"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "package.json",
           "special": "package.json"
@@ -2031,21 +2022,9 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "props": {
-            "documentationFolder": "starlight"
-          }
-        },
-        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        },
-        {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "starlight/package.json",
-          "special": "package.json"
         }
       ]
     },
