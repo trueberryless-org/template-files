@@ -31,6 +31,21 @@
       "matchPackageNames": ["pnpm"],
       "matchDepTypes": ["packageManager"],
       "enabled": false
+    },
+    {
+      "description": "Enable dependency updates in custom template package.json files",
+      "matchFileNames": [
+        "template-files/package.json/*.package.json"
+      ],
+      "enabledManagers": ["json"],
+      "json5Extractors": {
+        "dependencies": [
+          "$.dependencies.*"
+        ],
+        "devDependencies": [
+          "$.devDependencies.*"
+        ]
+      }
     }
   ]
 }
