@@ -15,6 +15,8 @@
     "template-files/.github/workflows/**"
   ],
   "commitMessageSuffix": "[skip ci]",
+  "assignees": [],
+  "reviewers": [],
   "packageRules": [
     {
       "groupName": "github-actions",
