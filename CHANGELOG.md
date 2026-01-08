@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.8
+
+### Patch Changes
+
+- [#240](https://github.com/trueberryless-org/template-files/pull/240) [`93f904c`](https://github.com/trueberryless-org/template-files/commit/93f904cade2a68334380525536b07193acf4989a) Thanks [@trueberryless](https://github.com/trueberryless)! - Add explicit empty reviewers and assignees arrays to Renovate config.
+
 ## 0.10.7
 
 ### Patch Changes
