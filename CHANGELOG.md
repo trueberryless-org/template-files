@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.12
+
+### Patch Changes
+
+- [`9c730b7`](https://github.com/trueberryless-org/template-files/commit/9c730b7402224c295544beffe25bf37baf408a79) Thanks [@trueberryless](https://github.com/trueberryless)! - Clean up trueberryless repo
+
 ## 0.10.11
 
 ### Patch Changes
