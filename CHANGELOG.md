@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.9
+
+### Patch Changes
+
+- [#247](https://github.com/trueberryless-org/template-files/pull/247) [`e9220e0`](https://github.com/trueberryless-org/template-files/commit/e9220e0ca40eb351f0f1f14424ceb666b2be2d09) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove assignee when sync PR is created
+
 ## 0.10.8
 
 ### Patch Changes
