@@ -2264,11 +2264,6 @@
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md"
-        },
-        {
-          "path": "template-files/package.json/package.manager.package.json",
-          "targetPath": "src/package.json",
-          "special": "package.json"
         }
       ]
     },
