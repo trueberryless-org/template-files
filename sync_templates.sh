@@ -11,7 +11,7 @@ git config --global user.name "github-actions[bot]"
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
 echo "Processing repository: $REPO_NAME"
-  
+
 # Clone the target repository
 echo "Cloning repository $REPO_NAME..."
 git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/${REPO_NAME}.git" target-repo
@@ -29,8 +29,8 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
   src_file_raw=$(echo "$file_config" | jq -r '.path')
   dest_file=$(echo "$file_config" | jq -r '.targetPath')
   special=$(echo "$file_config" | jq -r '.special // empty')
-  
-  echo "Processing file: $src_file_raw -> $dest_file"  
+
+  echo "Processing file: $src_file_raw -> $dest_file"
 
   # Detect if src_file is a URL or relative path
   if [[ "$src_file_raw" =~ ^https?:// ]]; then
@@ -280,7 +280,7 @@ else
   git push --force origin "$branch_name"
 
   cd ..
-  
+
   latest_commit_hash=$(git rev-parse HEAD)
   latest_commit_url="https://github.com/$GITHUB_REPOSITORY/commit/$latest_commit_hash"
   latest_commit_message=$(git log -1 --pretty=%s)
@@ -307,8 +307,7 @@ else
       --head "$branch_name" \
       --title "ci: sync template files [skip ci]" \
       --body "$description" \
-      --label "🤖 bot" \
-      --assignee "trueberryless"
+      --label "🤖 bot"
   fi
 fi
 
