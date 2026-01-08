@@ -1,5 +1,15 @@
 # template-files
 
+## 0.10.11
+
+### Patch Changes
+
+- [`2a42061`](https://github.com/trueberryless-org/template-files/commit/2a42061c48e84efd7a19ea748db8d13f26ede1d7) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove release-image-generator changeset sync
+
+- [`ad91b0b`](https://github.com/trueberryless-org/template-files/commit/ad91b0bab39abb1050b47af42b85f1c9d55042d5) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove src/package.json from trueberryless repo
+
+- [`3b0a329`](https://github.com/trueberryless-org/template-files/commit/3b0a3294361d818c026ee396fdb55199dd27893e) Thanks [@trueberryless](https://github.com/trueberryless)! - Delete marketing
+
 ## 0.10.10
 
 ### Patch Changes
