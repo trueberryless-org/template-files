@@ -2079,7 +2079,7 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "trueberryless-monorepo",
+            "packageName": "trueberryless",
             "repositoryName": "trueberryless"
           }
         },
@@ -2092,13 +2092,6 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
-        },
-        {
-          "path": "template-files/pnpm-workspace.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "props": {
-            "documentationFolder": "src"
-          }
         },
         {
           "path": "template-files/README.md",
