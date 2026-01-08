@@ -1038,21 +1038,21 @@
       ]
     },
     {
-      "name": "trueberryless-org/starlight-plugin-show-latest-version",
+      "name": "trueberryless-org/starlight-latest-version",
       "files": [
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-plugin-show-latest-version",
-            "ignore": "[\"starlight-plugin-show-latest-version-docs\"]"
+            "repositoryName": "starlight-latest-version",
+            "ignore": "[\"starlight-latest-version-docs\"]"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "starlight-plugin-show-latest-version"
+            "repositoryName": "starlight-latest-version"
           }
         },
         {
@@ -1089,8 +1089,8 @@
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-plugin-show-latest-version",
-            "packageName": "starlight-plugin-show-latest-version"
+            "repositoryName": "starlight-latest-version",
+            "packageName": "starlight-latest-version"
           }
         },
         {
@@ -1146,22 +1146,22 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-plugin-show-latest-version-monorepo",
-            "repositoryName": "starlight-plugin-show-latest-version"
+            "packageName": "starlight-latest-version-monorepo",
+            "repositoryName": "starlight-latest-version"
           }
         },
         {
           "path": "template-files/package.json/definition.package.json",
-          "targetPath": "packages/starlight-plugin-show-latest-version/package.json",
+          "targetPath": "packages/starlight-latest-version/package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-plugin-show-latest-version",
-            "repositoryName": "starlight-plugin-show-latest-version"
+            "packageName": "starlight-latest-version",
+            "repositoryName": "starlight-latest-version"
           }
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/starlight-plugin-show-latest-version/README.md",
+          "targetPath": "packages/starlight-latest-version/README.md",
           "special": "README.md"
         },
         {
