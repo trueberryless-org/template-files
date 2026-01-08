@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.13
+
+### Patch Changes
+
+- [#258](https://github.com/trueberryless-org/template-files/pull/258) [`9dfbe41`](https://github.com/trueberryless-org/template-files/commit/9dfbe41f80ae71e7598ec2a510d7d1da85b16041) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Recipes repository
+
 ## 0.10.12
 
 ### Patch Changes
