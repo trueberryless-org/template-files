@@ -95,6 +95,132 @@
       ]
     },
     {
+      "name": "trueberryless-org/starlight-recipes",
+      "files": [
+        {
+          "path": "template-files/.changeset/config.json",
+          "targetPath": ".changeset/config.json",
+          "props": {
+            "repositoryName": "starlight-recipes",
+            "ignore": "[\"starlight-recipes-docs\"]"
+          }
+        },
+        {
+          "path": "template-files/.changeset/README.md",
+          "targetPath": ".changeset/README.md",
+          "props": {
+            "repositoryName": "starlight-recipes"
+          }
+        },
+        {
+          "path": "template-files/.github/labeler.yaml",
+          "targetPath": ".github/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/renovate.json",
+          "targetPath": ".github/renovate.json"
+        },
+        {
+          "path": "template-files/.github/workflows/format.yaml",
+          "targetPath": ".github/workflows/format.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/labeler.yaml",
+          "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/publish.yaml",
+          "targetPath": ".github/workflows/publish.yaml",
+          "props": {
+            "branchName": "main",
+            "repositoryName": "starlight-recipes",
+            "packageName": "starlight-recipes"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/welcome-bot.yaml",
+          "targetPath": ".github/workflows/welcome-bot.yaml",
+          "props": {
+            "branchName": "main"
+          }
+        },
+        {
+          "path": "template-files/.gitignore/Node.gitignore",
+          "targetPath": ".gitignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierignore",
+          "targetPath": ".prettierignore",
+          "special": "allow-additional-lines"
+        },
+        {
+          "path": "template-files/.prettierrc/.prettierrc",
+          "targetPath": ".prettierrc"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "docs/package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/LICENSE",
+          "targetPath": "LICENSE",
+          "props": {
+            "year": "2026"
+          }
+        },
+        {
+          "path": "template-files/package.json/changeset.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/package.manager.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/prettier.package.json",
+          "targetPath": "package.json",
+          "special": "package.json"
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-recipes-monorepo",
+            "repositoryName": "starlight-recipes"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "packages/starlight-recipes/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-recipes",
+            "repositoryName": "starlight-recipes"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "packages/starlight-recipes/README.md",
+          "special": "README.md"
+        },
+        {
+          "path": "template-files/pnpm-workspace.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "props": {
+            "documentationFolder": "docs"
+          }
+        }
+      ]
+    },
+    {
       "name": "trueberryless-org/starlight-view-modes",
       "files": [
         {
