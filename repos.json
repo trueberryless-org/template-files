@@ -2556,20 +2556,6 @@
       "name": "trueberryless-org/release-image-generator",
       "files": [
         {
-          "path": "template-files/.changeset/config.json",
-          "targetPath": ".changeset/config.json",
-          "props": {
-            "repositoryName": "release-image-generator"
-          }
-        },
-        {
-          "path": "template-files/.changeset/README.md",
-          "targetPath": ".changeset/README.md",
-          "props": {
-            "repositoryName": "release-image-generator"
-          }
-        },
-        {
           "path": "template-files/.github/CODEOWNERS",
           "targetPath": ".github/CODEOWNERS",
           "special": "delete"
