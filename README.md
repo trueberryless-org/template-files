@@ -8,10 +8,11 @@ Provide single point of truth for template files.
 .
 ├── .changeset
 │   ├── README.md
-│   └── config.json
+│   ├── config.json
+│   ├── nasty-llamas-know.md
+│   └── witty-baths-learn.md
 ├── .dockerignore
 ├── .github
-│   ├── CODEOWNERS
 │   ├── labeler.yaml
 │   ├── readmetreerc.yaml
 │   ├── renovate.json
