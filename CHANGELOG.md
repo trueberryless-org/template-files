@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.10
+
+### Patch Changes
+
+- [`03c0c37`](https://github.com/trueberryless-org/template-files/commit/03c0c37acec29e402b7fb10a11c34c63df1c97ed) Thanks [@trueberryless](https://github.com/trueberryless)! - Manually update prettier-sort plugin
+
 ## 0.10.9
 
 ### Patch Changes
