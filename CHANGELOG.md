@@ -1,5 +1,13 @@
 # template-files
 
+## 0.10.14
+
+### Patch Changes
+
+- [#263](https://github.com/trueberryless-org/template-files/pull/263) [`34677c0`](https://github.com/trueberryless-org/template-files/commit/34677c0fdcbb16cfe1e2fd57a20a603a3e98e42f) Thanks [@trueberryless](https://github.com/trueberryless)! - Add npmx-digest to repos
+
+- [#263](https://github.com/trueberryless-org/template-files/pull/263) [`34677c0`](https://github.com/trueberryless-org/template-files/commit/34677c0fdcbb16cfe1e2fd57a20a603a3e98e42f) Thanks [@trueberryless](https://github.com/trueberryless)! - Add nxjt to repos
+
 ## 0.10.13
 
 ### Patch Changes
