@@ -36,14 +36,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
-          node-version: 24.13.0
+          node-version: 24.14.0
           cache: "pnpm"
 
       - name: Install Dependencies
         run: pnpm i
 
       - name: Create Release Pull Request
-        uses: changesets/action@c48e67d110a68bc90ccf1098e9646092baacaa87 # v1.6.0
+        uses: changesets/action@6a0a831ff30acef54f2c6aa1cbbc1096b066edaf # v1.7.0
         id: changesets
         with:
           version: pnpm run version
@@ -118,7 +118,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
-          node-version: 24.13.0
+          node-version: 24.14.0
           cache: "pnpm"
 
       - name: Install jq, sort-package-json and markdown-replace-section
