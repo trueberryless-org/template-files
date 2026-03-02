@@ -1684,11 +1684,6 @@
           }
         },
         {
-          "path": "template-files/README.md",
-          "targetPath": "packages/starlight-theme-rose-pine/README.md",
-          "special": "README.md"
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
