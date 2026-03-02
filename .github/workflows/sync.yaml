@@ -179,13 +179,13 @@ jobs:
           echo "SANITIZED_REPO_NAME=$sanitized_repo_name" >> $GITHUB_ENV
 
       - name: Upload summary as artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: summary-table-${{ env.SANITIZED_REPO_NAME }}
           path: summary/summary_table.txt
 
       - name: Upload summary as artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: discord-list-${{ env.SANITIZED_REPO_NAME }}
           path: discord/discord_list.txt
@@ -198,7 +198,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Download summary artifacts
-        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
+        uses: actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3 # v8.0.0
 
       - name: Combine summaries and generate final markdown table
         run: |
@@ -215,7 +215,7 @@ jobs:
           } > final_summary.md
 
       - name: Upload final summary as artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: final-summary
           path: final_summary.md
@@ -232,7 +232,7 @@ jobs:
           } > discord_summary.md
 
       - name: Upload final summary as artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: discord-summary
           path: discord_summary.md
@@ -277,12 +277,12 @@ jobs:
           pattern: ${{ needs.image-tag.outputs.IMAGE_TAG }}
 
       - name: Download summary artifacts
-        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
+        uses: actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3 # v8.0.0
         with:
           name: final-summary
 
       - name: Download summary artifacts
-        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
+        uses: actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3 # v8.0.0
         with:
           name: discord-summary
 
