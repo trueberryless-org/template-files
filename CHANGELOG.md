@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.15
+
+### Patch Changes
+
+- [`1a5e00f`](https://github.com/trueberryless-org/template-files/commit/1a5e00f270685234827b6ab3a772727bab10603c) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Rose Pine
+
 ## 0.10.14
 
 ### Patch Changes
