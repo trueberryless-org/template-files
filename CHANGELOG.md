@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.16
+
+### Patch Changes
+
+- [#273](https://github.com/trueberryless-org/template-files/pull/273) [`094b0a5`](https://github.com/trueberryless-org/template-files/commit/094b0a5847a2759e91c7a22ad27019e286f86a77) Thanks [@trueberryless](https://github.com/trueberryless)! - Make labeler configuration more robust
+
 ## 0.10.15
 
 ### Patch Changes
