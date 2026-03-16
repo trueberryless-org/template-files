@@ -1,5 +1,11 @@
 # template-files
 
+## 0.10.17
+
+### Patch Changes
+
+- [`6d0d266`](https://github.com/trueberryless-org/template-files/commit/6d0d2662d453673bf67649f76f7d37ef6488370b) Thanks [@trueberryless](https://github.com/trueberryless)! - Redo labeler changes as they got reverted by sync.
+
 ## 0.10.16
 
 ### Patch Changes
