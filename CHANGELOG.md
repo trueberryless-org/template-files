@@ -1,5 +1,11 @@
 # template-files
 
+## 0.11.1
+
+### Patch Changes
+
+- [`21589e7`](https://github.com/trueberryless-org/template-files/commit/21589e701e2348bb6045532aeec7651017e82388) Thanks [@trueberryless](https://github.com/trueberryless)! - Rename starlight-contributor-list to astro-contributors
+
 ## 0.11.0
 
 ### Minor Changes
