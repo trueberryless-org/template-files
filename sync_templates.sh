@@ -73,14 +73,16 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     if [ -f "$dest_file" ]; then
       # Create a temporary file to store the combined content
       echo "Combining existing README.md with the License section..."
-      awk '/## License/,EOF' "$src_file" | tail -n +2 > license_content.md
+      awk '/## License/,EOF' "$processed_src" | tail -n +2 > license_content.md
       markdown-replace-section "$dest_file" "License" "$dest_file" < license_content.md
       rm -f license_content.md
     else
       # If no existing README.md, copy the template and add the License section
       echo "No existing README.md found. Creating a new one..."
-      cp "$src_file" "$dest_file"
+      cp "$processed_src" "$dest_file"
     fi
+
+    rm -f "$processed_src"
 
 
   elif [ "$special" == "package.json" ]; then
