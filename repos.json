@@ -90,7 +90,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "template-files"
+          }
         }
       ]
     },
@@ -209,7 +212,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-recipes/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-recipes"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -345,7 +351,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-view-modes/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-view-modes"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -481,7 +490,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-cooler-credit/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-cooler-credit"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -617,7 +629,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-sidebar-topics-dropdown/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-sidebar-topics-dropdown"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -753,7 +768,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-sidebar-swipe/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-sidebar-swipe"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -889,7 +907,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-contributor-list/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-contributor-list"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1016,7 +1037,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-automatic-overview-pages/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-automatic-overview-pages"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1152,7 +1176,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-sidebar-clickable-groups/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-sidebar-clickable-groups"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1288,7 +1315,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-latest-version/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-latest-version"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1424,7 +1454,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-plugins-docs-components/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-plugins-docs-components"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1560,7 +1593,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-theme-next/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-theme-next"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1817,7 +1853,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "packages/starlight-save-file-component/README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-save-file-component"
+          }
         },
         {
           "path": "template-files/pnpm-workspace.yaml",
@@ -1917,7 +1956,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "mutanuq"
+          }
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
@@ -1999,7 +2041,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "blog"
+          }
         }
       ]
     },
@@ -2092,7 +2137,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "videos"
+          }
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
@@ -2257,7 +2305,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "truzzles"
+          }
         }
       ]
     },
@@ -2343,7 +2394,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "trueberryless"
+          }
         }
       ]
     },
@@ -2420,7 +2474,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "true-tracker"
+          }
         }
       ]
     },
@@ -2513,7 +2570,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "github-activity"
+          }
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
@@ -2615,7 +2675,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-subtle-top-level-items"
+          }
         },
         {
           "path": "template-files/package.json/package.manager.package.json",
@@ -2711,7 +2774,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "recent-releases"
+          }
         }
       ]
     },
@@ -2788,7 +2854,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "starlight-plugin-translations"
+          }
         }
       ]
     },
@@ -2878,7 +2947,10 @@
         {
           "path": "template-files/README.md",
           "targetPath": "README.md",
-          "special": "README.md"
+          "special": "README.md",
+          "props": {
+            "repo": "release-image-generator"
+          }
         }
       ]
     },
