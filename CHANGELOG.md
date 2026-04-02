@@ -1,5 +1,11 @@
 # template-files
 
+## 0.11.0
+
+### Minor Changes
+
+- [#281](https://github.com/trueberryless-org/template-files/pull/281) [`c4939f7`](https://github.com/trueberryless-org/template-files/commit/c4939f71bd1064214809e4962df3d0859ce8d41e) Thanks [@trueberryless](https://github.com/trueberryless)! - Make links to LICENSE in README.md absolute.
+
 ## 0.10.17
 
 ### Patch Changes
