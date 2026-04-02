@@ -783,21 +783,21 @@
       ]
     },
     {
-      "name": "trueberryless-org/starlight-contributor-list",
+      "name": "trueberryless-org/astro-contributors",
       "files": [
         {
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-contributor-list",
-            "ignore": "[\"starlight-contributor-list-docs\"]"
+            "repositoryName": "astro-contributors",
+            "ignore": "[\"astro-contributors-docs\"]"
           }
         },
         {
           "path": "template-files/.changeset/README.md",
           "targetPath": ".changeset/README.md",
           "props": {
-            "repositoryName": "starlight-contributor-list"
+            "repositoryName": "astro-contributors"
           }
         },
         {
@@ -834,8 +834,8 @@
           "targetPath": ".github/workflows/publish.yaml",
           "props": {
             "branchName": "main",
-            "repositoryName": "starlight-contributor-list",
-            "packageName": "starlight-contributor-list"
+            "repositoryName": "astro-contributors",
+            "packageName": "astro-contributors"
           }
         },
         {
@@ -891,25 +891,25 @@
           "targetPath": "package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-contributor-list-monorepo",
-            "repositoryName": "starlight-contributor-list"
+            "packageName": "astro-contributors-monorepo",
+            "repositoryName": "astro-contributors"
           }
         },
         {
           "path": "template-files/package.json/definition.package.json",
-          "targetPath": "packages/starlight-contributor-list/package.json",
+          "targetPath": "packages/astro-contributors/package.json",
           "special": "package.json",
           "props": {
-            "packageName": "starlight-contributor-list",
-            "repositoryName": "starlight-contributor-list"
+            "packageName": "astro-contributors",
+            "repositoryName": "astro-contributors"
           }
         },
         {
           "path": "template-files/README.md",
-          "targetPath": "packages/starlight-contributor-list/README.md",
+          "targetPath": "packages/astro-contributors/README.md",
           "special": "README.md",
           "props": {
-            "repo": "starlight-contributor-list"
+            "repo": "astro-contributors"
           }
         },
         {
