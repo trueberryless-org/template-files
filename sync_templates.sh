@@ -55,6 +55,20 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
   if [ "$special" == "README.md" ]; then
     echo "Special handling for README.md"
 
+    # Handle dynamic content replacement in README.md if "props" is specified
+    props=$(echo "$file_config" | jq -c '.props // empty')
+    processed_src=$(mktemp)
+    cp "$src_file" "$processed_src"
+
+    if [ -n "$props" ]; then
+      for key in $(echo "$props" | jq -r 'keys[]'); do
+        value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
+        placeholder="<%= $key %>"
+        echo "Replacing $placeholder with $value in $src_file..."
+        sed -i "s|$placeholder|$value|g" "$processed_src"
+      done
+    fi
+
     # Combine existing README.md with the License section
     if [ -f "$dest_file" ]; then
       # Create a temporary file to store the combined content
