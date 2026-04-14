@@ -16,10 +16,10 @@ importers:
         version: 2.30.0
       '@trivago/prettier-plugin-sort-imports':
         specifier: 6.0.2
-        version: 6.0.2(prettier@3.8.1)
+        version: 6.0.2(prettier@3.8.2)
       prettier:
-        specifier: 3.8.1
-        version: 3.8.1
+        specifier: 3.8.2
+        version: 3.8.2
       prettier-plugin-astro:
         specifier: 0.14.1
         version: 0.14.1
@@ -461,8 +461,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.2:
+    resolution: {integrity: sha512-8c3mgTe0ASwWAJK+78dpviD+A8EqhndQPUBpNUIPt6+xWlIigCwfN01lWr9MAede4uqXGTEKeQWTvzb3vjia0Q==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -820,7 +820,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.8.1)':
+  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.8.2)':
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
@@ -830,7 +830,7 @@ snapshots:
       lodash-es: 4.17.21
       minimatch: 9.0.5
       parse-imports-exports: 0.2.4
-      prettier: 3.8.1
+      prettier: 3.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -1052,12 +1052,12 @@ snapshots:
   prettier-plugin-astro@0.14.1:
     dependencies:
       '@astrojs/compiler': 2.10.4
-      prettier: 3.8.1
+      prettier: 3.8.2
       sass-formatter: 0.7.9
 
   prettier@2.8.8: {}
 
-  prettier@3.8.1: {}
+  prettier@3.8.2: {}
 
   queue-microtask@1.2.3: {}
 
