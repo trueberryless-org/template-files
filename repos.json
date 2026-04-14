@@ -2233,16 +2233,6 @@
           }
         },
         {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "blog-monorepo",
-            "homepage": "https://github.com/trueberryless-org/blog",
-            "repositoryName": "blog"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "package.json",
           "special": "package.json"
@@ -2262,7 +2252,7 @@
         },
         {
           "path": "template-files/package.json/definition.package.json",
-          "targetPath": "starlight/package.json",
+          "targetPath": "package.json",
           "special": "package.json",
           "props": {
             "packageName": "blog",
@@ -2935,7 +2925,7 @@
         },
         {
           "path": "template-files/package.json/definition.package.json",
-          "targetPath": "packages/starlight-subtle-top-level-items/package.json",
+          "targetPath": "starlight/package.json",
           "special": "package.json",
           "props": {
             "packageName": "starlight-subtle-top-level-items",
@@ -3214,16 +3204,6 @@
           }
         },
         {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "release-image-generator-monorepo",
-            "homepage": "https://github.com/trueberryless-org/release-image-generator",
-            "repositoryName": "release-image-generator"
-          }
-        },
-        {
           "path": "template-files/package.json/package.manager.package.json",
           "targetPath": "package.json",
           "special": "package.json"
@@ -3244,15 +3224,6 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "release-image-generator",
-            "repositoryName": "release-image-generator"
-          }
-        },
-        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
@@ -3262,7 +3233,7 @@
         },
         {
           "path": "template-files/package.json/definition.package.json",
-          "targetPath": "starlight/package.json",
+          "targetPath": "package.json",
           "special": "package.json",
           "props": {
             "packageName": "release-image-generator",
