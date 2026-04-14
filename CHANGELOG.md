@@ -1,5 +1,11 @@
 # template-files
 
+## 0.12.0
+
+### Minor Changes
+
+- [#289](https://github.com/trueberryless-org/template-files/pull/289) [`aa2af9d`](https://github.com/trueberryless-org/template-files/commit/aa2af9df2db3168d5debbfec220f04c538506ef2) Thanks [@trueberryless](https://github.com/trueberryless)! - Add support for package homepages
+
 ## 0.11.1
 
 ### Patch Changes
