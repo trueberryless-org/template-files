@@ -1,5 +1,11 @@
 # template-files
 
+## 0.12.1
+
+### Patch Changes
+
+- [`41d487e`](https://github.com/trueberryless-org/template-files/commit/41d487ec66402a94667ffff882d385a93ec290aa) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix definition mistakes in repos.json
+
 ## 0.12.0
 
 ### Minor Changes
