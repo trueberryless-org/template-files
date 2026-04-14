@@ -2243,14 +2243,6 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md",
-          "props": {
-            "repo": "blog"
-          }
-        },
-        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -2258,6 +2250,14 @@
             "packageName": "blog",
             "homepage": "https://blog.trueberryless.org",
             "repositoryName": "blog"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md",
+          "props": {
+            "repo": "blog"
           }
         }
       ]
@@ -2924,16 +2924,6 @@
           }
         },
         {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "starlight/package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "starlight-subtle-top-level-items",
-            "homepage": "https://starlight-subtle-top-level-items.trueberryless.org",
-            "repositoryName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "props": {
@@ -2946,6 +2936,16 @@
           "special": "README.md",
           "props": {
             "repo": "starlight-subtle-top-level-items"
+          }
+        },
+        {
+          "path": "template-files/package.json/definition.package.json",
+          "targetPath": "starlight/package.json",
+          "special": "package.json",
+          "props": {
+            "packageName": "starlight-subtle-top-level-items",
+            "homepage": "https://starlight-subtle-top-level-items.trueberryless.org",
+            "repositoryName": "starlight-subtle-top-level-items"
           }
         },
         {
@@ -3224,14 +3224,6 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/README.md",
-          "targetPath": "README.md",
-          "special": "README.md",
-          "props": {
-            "repo": "release-image-generator"
-          }
-        },
-        {
           "path": "template-files/package.json/definition.package.json",
           "targetPath": "package.json",
           "special": "package.json",
@@ -3239,6 +3231,14 @@
             "packageName": "release-image-generator",
             "homepage": "https://release-image-generator.trueberryless.org",
             "repositoryName": "release-image-generator"
+          }
+        },
+        {
+          "path": "template-files/README.md",
+          "targetPath": "README.md",
+          "special": "README.md",
+          "props": {
+            "repo": "release-image-generator"
           }
         }
       ]
