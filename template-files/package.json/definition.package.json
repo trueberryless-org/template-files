@@ -1,6 +1,6 @@
 {
   "name": "<%= packageName %>",
-  "homepage": "https://github.com/trueberryless-org/<%= repositoryName %>",
+  "homepage": "<%= homepage %>",
   "bugs": {
     "url": "https://github.com/trueberryless-org/<%= repositoryName %>/issues"
   },
