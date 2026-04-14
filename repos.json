@@ -74,6 +74,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "template-files",
+						"homepage": "https://github.com/trueberryless-org/template-files",
 						"repositoryName": "template-files"
 					}
 				},
@@ -197,6 +198,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-recipes-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-recipes",
 						"repositoryName": "starlight-recipes"
 					}
 				},
@@ -206,6 +208,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-recipes",
+						"homepage": "https://starlight-recipes.trueberryless.org",
+						"repositoryName": "starlight-recipes"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-recipes-docs",
+						"homepage": "https://starlight-recipes.trueberryless.org",
 						"repositoryName": "starlight-recipes"
 					}
 				},
@@ -336,6 +349,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-view-modes-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-view-modes",
 						"repositoryName": "starlight-view-modes"
 					}
 				},
@@ -345,6 +359,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-view-modes",
+						"homepage": "https://starlight-view-modes.trueberryless.org",
+						"repositoryName": "starlight-view-modes"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-view-modes-docs",
+						"homepage": "https://starlight-view-modes.trueberryless.org",
 						"repositoryName": "starlight-view-modes"
 					}
 				},
@@ -475,6 +500,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-cooler-credit-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-cooler-credit",
 						"repositoryName": "starlight-cooler-credit"
 					}
 				},
@@ -484,6 +510,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-cooler-credit",
+						"homepage": "https://starlight-cooler-credit.trueberryless.org",
+						"repositoryName": "starlight-cooler-credit"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-cooler-credit-docs",
+						"homepage": "https://starlight-cooler-credit.trueberryless.org",
 						"repositoryName": "starlight-cooler-credit"
 					}
 				},
@@ -614,6 +651,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-sidebar-topics-dropdown-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown",
 						"repositoryName": "starlight-sidebar-topics-dropdown"
 					}
 				},
@@ -623,6 +661,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-sidebar-topics-dropdown",
+						"homepage": "https://starlight-sidebar-topics-dropdown.trueberryless.org",
+						"repositoryName": "starlight-sidebar-topics-dropdown"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-sidebar-topics-dropdown-docs",
+						"homepage": "https://starlight-sidebar-topics-dropdown.trueberryless.org",
 						"repositoryName": "starlight-sidebar-topics-dropdown"
 					}
 				},
@@ -753,6 +802,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-sidebar-swipe-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-sidebar-swipe",
 						"repositoryName": "starlight-sidebar-swipe"
 					}
 				},
@@ -762,6 +812,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-sidebar-swipe",
+						"homepage": "https://starlight-sidebar-swipe.trueberryless.org",
+						"repositoryName": "starlight-sidebar-swipe"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-sidebar-swipe-docs",
+						"homepage": "https://starlight-sidebar-swipe.trueberryless.org",
 						"repositoryName": "starlight-sidebar-swipe"
 					}
 				},
@@ -892,6 +953,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "astro-contributors-monorepo",
+						"homepage": "https://github.com/trueberryless-org/astro-contributors",
 						"repositoryName": "astro-contributors"
 					}
 				},
@@ -901,6 +963,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "astro-contributors",
+						"homepage": "https://astro-contributors.trueberryless.org",
+						"repositoryName": "astro-contributors"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "astro-contributors-docs",
+						"homepage": "https://astro-contributors.trueberryless.org",
 						"repositoryName": "astro-contributors"
 					}
 				},
@@ -1031,6 +1104,27 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-automatic-overview-pages-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-automatic-overview-pages",
+						"repositoryName": "starlight-automatic-overview-pages"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "packages/starlight-automatic-overview-pages/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-automatic-overview-pages",
+						"homepage": "https://starlight-automatic-overview-pages.trueberryless.org",
+						"repositoryName": "starlight-automatic-overview-pages"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-automatic-overview-pages-docs",
+						"homepage": "https://starlight-automatic-overview-pages.trueberryless.org",
 						"repositoryName": "starlight-automatic-overview-pages"
 					}
 				},
@@ -1161,6 +1255,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-sidebar-clickable-groups-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-sidebar-clickable-groups",
 						"repositoryName": "starlight-sidebar-clickable-groups"
 					}
 				},
@@ -1170,6 +1265,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-sidebar-clickable-groups",
+						"homepage": "https://starlight-sidebar-clickable-groups.trueberryless.org",
+						"repositoryName": "starlight-sidebar-clickable-groups"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-sidebar-clickable-groups-docs",
+						"homepage": "https://starlight-sidebar-clickable-groups.trueberryless.org",
 						"repositoryName": "starlight-sidebar-clickable-groups"
 					}
 				},
@@ -1300,6 +1406,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-latest-version-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-latest-version",
 						"repositoryName": "starlight-latest-version"
 					}
 				},
@@ -1309,6 +1416,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-latest-version",
+						"homepage": "https://starlight-latest-version.trueberryless.org",
+						"repositoryName": "starlight-latest-version"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-latest-version-docs",
+						"homepage": "https://starlight-latest-version.trueberryless.org",
 						"repositoryName": "starlight-latest-version"
 					}
 				},
@@ -1452,6 +1570,36 @@
 					}
 				},
 				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-plugins-docs-components-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-plugins-docs-components",
+						"repositoryName": "starlight-plugins-docs-components"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "packages/starlight-plugins-docs-components/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-plugins-docs-components",
+						"homepage": "https://starlight-plugins-docs-components.trueberryless.org",
+						"repositoryName": "starlight-plugins-docs-components"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-plugins-docs-components-docs",
+						"homepage": "https://starlight-plugins-docs-components.trueberryless.org",
+						"repositoryName": "starlight-plugins-docs-components"
+					}
+				},
+				{
 					"path": "template-files/README.md",
 					"targetPath": "packages/starlight-plugins-docs-components/README.md",
 					"special": "README.md",
@@ -1578,6 +1726,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-theme-next-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-theme-next",
 						"repositoryName": "starlight-theme-next"
 					}
 				},
@@ -1587,6 +1736,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-theme-next",
+						"homepage": "https://starlight-theme-next.trueberryless.org",
+						"repositoryName": "starlight-theme-next"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-theme-next-docs",
+						"homepage": "https://starlight-theme-next.trueberryless.org",
 						"repositoryName": "starlight-theme-next"
 					}
 				},
@@ -1712,10 +1872,31 @@
 				},
 				{
 					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-theme-rose-pine-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-theme-rose-pine",
+						"repositoryName": "starlight-theme-rose-pine"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
 					"targetPath": "packages/starlight-theme-rose-pine/package.json",
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-theme-rose-pine",
+						"homepage": "https://starlight-theme-rose-pine.trueberryless.org",
+						"repositoryName": "starlight-theme-rose-pine"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-theme-rose-pine-docs",
+						"homepage": "https://starlight-theme-rose-pine.trueberryless.org",
 						"repositoryName": "starlight-theme-rose-pine"
 					}
 				},
@@ -1838,6 +2019,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-save-file-component-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-save-file-component",
 						"repositoryName": "starlight-save-file-component"
 					}
 				},
@@ -1847,6 +2029,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "starlight-save-file-component",
+						"homepage": "https://starlight-save-file-component.trueberryless.org",
+						"repositoryName": "starlight-save-file-component"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "docs/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-save-file-component-docs",
+						"homepage": "https://starlight-save-file-component.trueberryless.org",
 						"repositoryName": "starlight-save-file-component"
 					}
 				},
@@ -1933,6 +2126,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "mutanuq-monorepo",
+						"homepage": "https://github.com/trueberryless-org/mutanuq",
+						"repositoryName": "mutanuq"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "starlight/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "mutanuq",
+						"homepage": "https://mutanuq.trueberryless.org",
 						"repositoryName": "mutanuq"
 					}
 				},
@@ -2029,6 +2233,26 @@
 					}
 				},
 				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "blog-monorepo",
+						"homepage": "https://github.com/trueberryless-org/blog",
+						"repositoryName": "blog"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "starlight/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "blog",
+						"homepage": "https://blog.trueberryless.org",
+						"repositoryName": "blog"
+					}
+				},
+				{
 					"path": "template-files/package.json/package.manager.package.json",
 					"targetPath": "package.json",
 					"special": "package.json"
@@ -2114,6 +2338,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "videos-monorepo",
+						"homepage": "https://github.com/trueberryless-org/videos",
+						"repositoryName": "videos"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "starlight/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "videos",
+						"homepage": "https://videos.trueberryless.org",
 						"repositoryName": "videos"
 					}
 				},
@@ -2299,6 +2534,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "truzzles-monorepo",
+						"homepage": "https://truzzles.trueberryless.org",
 						"repositoryName": "truzzles"
 					}
 				},
@@ -2378,6 +2614,7 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "trueberryless",
+						"homepage": "https://trueberryless.org",
 						"repositoryName": "trueberryless"
 					}
 				},
@@ -2459,6 +2696,16 @@
 					"targetPath": "LICENSE",
 					"props": {
 						"year": "2024"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "true-tracker",
+						"homepage": "https://true-tracker.trueberryless.org",
+						"repositoryName": "true-tracker"
 					}
 				},
 				{
@@ -2547,6 +2794,17 @@
 					"special": "package.json",
 					"props": {
 						"packageName": "github-activity-monorepo",
+						"homepage": "https://github.com/trueberryless-org/github-activity",
+						"repositoryName": "github-activity"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "src/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "github-activity",
+						"homepage": "https://github-activity.trueberryless.org",
 						"repositoryName": "github-activity"
 					}
 				},
@@ -2665,6 +2923,27 @@
 						"repositoryName": "starlight-subtle-top-level-items"
 					}
 				},
+
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-subtle-top-level-items-monorepo",
+						"homepage": "https://github.com/trueberryless-org/starlight-subtle-top-level-items",
+						"repositoryName": "starlight-subtle-top-level-items"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "packages/starlight-subtle-top-level-items/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-subtle-top-level-items",
+						"homepage": "https://starlight-subtle-top-level-items.trueberryless.org",
+						"repositoryName": "starlight-subtle-top-level-items"
+					}
+				},
 				{
 					"path": "template-files/pnpm-workspace.yaml",
 					"targetPath": "pnpm-workspace.yaml",
@@ -2745,6 +3024,16 @@
 					"targetPath": "LICENSE",
 					"props": {
 						"year": "2025"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "recent-releases",
+						"homepage": "https://recent-releases.trueberryless.org",
+						"repositoryName": "recent-releases"
 					}
 				},
 				{
@@ -2842,6 +3131,16 @@
 					}
 				},
 				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "starlight-plugin-translations",
+						"homepage": "https://starlight-plugin-translations.trueberryless.org",
+						"repositoryName": "starlight-plugin-translations"
+					}
+				},
+				{
 					"path": "template-files/package.json/package.manager.package.json",
 					"targetPath": "package.json",
 					"special": "package.json"
@@ -2913,6 +3212,26 @@
 					"targetPath": "LICENSE",
 					"props": {
 						"year": "2025"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "release-image-generator-monorepo",
+						"homepage": "https://github.com/trueberryless-org/release-image-generator",
+						"repositoryName": "release-image-generator"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "starlight/package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "release-image-generator",
+						"homepage": "https://release-image-generator.trueberryless.org",
+						"repositoryName": "release-image-generator"
 					}
 				},
 				{
@@ -3015,6 +3334,16 @@
 					}
 				},
 				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "implications-trainer",
+						"homepage": "https://implications-trainer.trueberryless.org",
+						"repositoryName": "implications-trainer"
+					}
+				},
+				{
 					"path": "template-files/package.json/package.manager.package.json",
 					"targetPath": "package.json",
 					"special": "package.json"
@@ -3081,6 +3410,16 @@
 					}
 				},
 				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "npmx-digest",
+						"homepage": "https://npmx-digest.trueberryless.org",
+						"repositoryName": "npmx-digest"
+					}
+				},
+				{
 					"path": "template-files/package.json/package.manager.package.json",
 					"targetPath": "package.json",
 					"special": "package.json"
@@ -3144,6 +3483,16 @@
 					"targetPath": "LICENSE",
 					"props": {
 						"year": "2026"
+					}
+				},
+				{
+					"path": "template-files/package.json/definition.package.json",
+					"targetPath": "package.json",
+					"special": "package.json",
+					"props": {
+						"packageName": "nxjt",
+						"homepage": "https://nxjt.trueberryless.org",
+						"repositoryName": "nxjt"
 					}
 				},
 				{
