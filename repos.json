@@ -1567,15 +1567,6 @@
           "special": "package.json",
           "props": {
             "packageName": "@trueberryless-org/starlight-plugins-docs-components-monorepo",
-            "repositoryName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "starlight-plugins-docs-components-monorepo",
             "homepage": "https://github.com/trueberryless-org/starlight-plugins-docs-components",
             "repositoryName": "starlight-plugins-docs-components"
           }
@@ -1586,15 +1577,6 @@
           "special": "package.json",
           "props": {
             "packageName": "@trueberryless-org/starlight-plugins-docs-components",
-            "repositoryName": "starlight-plugins-docs-components"
-          }
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "packages/starlight-plugins-docs-components/package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "starlight-plugins-docs-components",
             "homepage": "https://starlight-plugins-docs-components.trueberryless.org",
             "repositoryName": "starlight-plugins-docs-components"
           }
@@ -1870,15 +1852,6 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "starlight-theme-rose-pine-monorepo",
-            "repositoryName": "starlight-theme-rose-pine"
-          }
         },
         {
           "path": "template-files/package.json/definition.package.json",
@@ -2910,15 +2883,6 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-subtle-top-level-items-monorepo",
-            "repositoryName": "starlight-subtle-top-level-items"
-          }
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "starlight-subtle-top-level-items-monorepo",
             "homepage": "https://github.com/trueberryless-org/starlight-subtle-top-level-items",
             "repositoryName": "starlight-subtle-top-level-items"
           }
@@ -3039,15 +3003,6 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "recent-releases",
-            "repositoryName": "recent-releases"
-          }
         },
         {
           "path": "template-files/README.md",
@@ -3322,15 +3277,6 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "implications-trainer",
-            "repositoryName": "implications-trainer"
-          }
         }
       ]
     },
@@ -3398,15 +3344,6 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "npmx-digest",
-            "repositoryName": "npmx-digest"
-          }
         }
       ]
     },
@@ -3474,15 +3411,6 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
-        },
-        {
-          "path": "template-files/package.json/definition.package.json",
-          "targetPath": "package.json",
-          "special": "package.json",
-          "props": {
-            "packageName": "nxjt",
-            "repositoryName": "nxjt"
-          }
         }
       ]
     }
