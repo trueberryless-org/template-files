@@ -13,7 +13,7 @@ env:
   REGISTRY: docker.io
   IMAGE_OWNER: trueberryless
   IMAGE_NAME: <%= repositoryName %>
-  NODE_VERSION: 24.10.0
+  NODE_VERSION: 24.14.1
 
 jobs:
   changesets:

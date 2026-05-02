@@ -5,7 +5,7 @@ on:
     branches: [<%= branchName %>]
 
 env:
-  NODE_VERSION: 24.10.0
+  NODE_VERSION: 24.14.1
 
 jobs:
   release:
