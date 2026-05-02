@@ -1,5 +1,15 @@
 # template-files
 
+## 0.13.0
+
+### Minor Changes
+
+- [#296](https://github.com/trueberryless-org/template-files/pull/296) [`6a1643d`](https://github.com/trueberryless-org/template-files/commit/6a1643d3df26233c0926c3ce1bbabd688c34962f) Thanks [@trueberryless](https://github.com/trueberryless)! - Add tangle.yaml workflow to sensible repos which mirrors them to tangled.org
+
+### Patch Changes
+
+- [#299](https://github.com/trueberryless-org/template-files/pull/299) [`27aad53`](https://github.com/trueberryless-org/template-files/commit/27aad531f300d3f5ca2cd24070123598cc3f70ea) Thanks [@trueberryless](https://github.com/trueberryless)! - Make Node versions consistent
+
 ## 0.12.1
 
 ### Patch Changes
