@@ -2836,13 +2836,6 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
-          "path": "template-files/.github/workflows/tangle.yaml",
-          "targetPath": ".github/workflows/tangle.yaml",
-          "props": {
-            "repositoryName": "template-files"
-          }
-        },
-        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
