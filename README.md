@@ -52,6 +52,7 @@ Provide single point of truth for template files.
     │       ├── publish.yaml
     │       ├── release.yaml
     │       ├── spell-checker.yaml
+    │       ├── tangle.yaml
     │       └── welcome-bot.yaml
     ├── .gitignore
     │   ├── DotNet.gitignore
