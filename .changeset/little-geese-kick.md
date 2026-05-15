@@ -2,4 +2,4 @@
 "template-files": patch
 ---
 
-Only run tangled mirror on main branch, errors otherwise.
+Limit tangled workflow trigger to main branch and tags.
