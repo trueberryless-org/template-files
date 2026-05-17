@@ -1,5 +1,11 @@
 # template-files
 
+## 0.13.1
+
+### Patch Changes
+
+- [#303](https://github.com/trueberryless-org/template-files/pull/303) [`75ffa4c`](https://github.com/trueberryless-org/template-files/commit/75ffa4cfc9455f18d84eaad4fa056ca036db0fe4) Thanks [@trueberryless](https://github.com/trueberryless)! - Limit tangled workflow trigger to main branch and tags.
+
 ## 0.13.0
 
 ### Minor Changes
