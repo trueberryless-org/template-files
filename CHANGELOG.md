@@ -1,5 +1,15 @@
 # template-files
 
+## 0.13.2
+
+### Patch Changes
+
+- [#306](https://github.com/trueberryless-org/template-files/pull/306) [`6e58f37`](https://github.com/trueberryless-org/template-files/commit/6e58f378fce1c80c16fa65529c5e083725d9249c) Thanks [@trueberryless](https://github.com/trueberryless)! - Upgrade to pnpm 11
+
+- [#301](https://github.com/trueberryless-org/template-files/pull/301) [`7cc5e48`](https://github.com/trueberryless-org/template-files/commit/7cc5e48d8af047f8c72d7ca0d501e4cc22788a68) Thanks [@trueberryless](https://github.com/trueberryless)! - Migrate to official GitHub App Token Action
+
+- [#301](https://github.com/trueberryless-org/template-files/pull/301) [`7cc5e48`](https://github.com/trueberryless-org/template-files/commit/7cc5e48d8af047f8c72d7ca0d501e4cc22788a68) Thanks [@trueberryless](https://github.com/trueberryless)! - Use bot token for checkouts
+
 ## 0.13.1
 
 ### Patch Changes
