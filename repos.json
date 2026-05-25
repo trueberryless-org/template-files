@@ -240,6 +240,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -398,6 +399,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -556,6 +558,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -714,6 +717,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -872,6 +876,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1030,6 +1035,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1181,6 +1187,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1332,6 +1339,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1490,6 +1498,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1648,6 +1657,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1806,6 +1816,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -1946,6 +1957,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -2104,6 +2116,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "docs"
           }
@@ -2200,6 +2213,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "starlight"
           }
@@ -2416,6 +2430,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "starlight"
           }
@@ -2886,6 +2901,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "src"
           }
@@ -3002,6 +3018,7 @@
         {
           "path": "template-files/pnpm-workspace.yaml",
           "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines",
           "props": {
             "documentationFolder": "starlight"
           }
