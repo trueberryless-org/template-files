@@ -1,5 +1,13 @@
 # template-files
 
+## 0.13.3
+
+### Patch Changes
+
+- [`f38ec59`](https://github.com/trueberryless-org/template-files/commit/f38ec594733ec87c73ae07d003c2c8994c03bcf3) Thanks [@trueberryless](https://github.com/trueberryless)! - Allow additional lines in pnpm workspace files per project
+
+- [`74d4bd4`](https://github.com/trueberryless-org/template-files/commit/74d4bd42a96aef81060395bc2a0c3ace1844ff6a) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix pnpm install command by adding common allowBuilds to pnpm workspace settings
+
 ## 0.13.2
 
 ### Patch Changes
