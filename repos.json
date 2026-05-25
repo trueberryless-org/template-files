@@ -3159,17 +3159,17 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "recent-releases"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
