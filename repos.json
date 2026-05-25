@@ -3165,6 +3165,11 @@
           "props": {
             "repo": "recent-releases"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
