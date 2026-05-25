@@ -1,5 +1,11 @@
 # template-files
 
+## 0.13.4
+
+### Patch Changes
+
+- [`4e63420`](https://github.com/trueberryless-org/template-files/commit/4e63420a711e0e393ede77c8c3da3290a69b98ac) Thanks [@trueberryless](https://github.com/trueberryless)! - Include pnpm workspace file in every repository, since pnpm v11 requires allowBuilds
+
 ## 0.13.3
 
 ### Patch Changes
