@@ -28,6 +28,7 @@ Provide single point of truth for template files.
 ├── README.md
 ├── package.json
 ├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
 ├── repos.json
 ├── sync_templates.sh
 └── template-files
@@ -80,7 +81,9 @@ Provide single point of truth for template files.
     │   ├── definition.package.json
     │   ├── package.manager.package.json
     │   └── prettier.package.json
-    └── pnpm-workspace.yaml
+    └── pnpm-workspace
+        ├── allow-builds.yaml
+        └── with-packages.yaml
 
 ```
 
