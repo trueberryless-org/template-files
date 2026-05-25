@@ -1,5 +1,11 @@
 # template-files
 
+## 0.13.5
+
+### Patch Changes
+
+- [`714ff11`](https://github.com/trueberryless-org/template-files/commit/714ff1117cf8a832b3575cbebf17d40e70306b0f) Thanks [@trueberryless](https://github.com/trueberryless)! - Add renovate automerge after 3 weeks
+
 ## 0.13.4
 
 ### Patch Changes
