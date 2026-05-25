@@ -24,6 +24,7 @@ jobs:
         with:
           token: ${{ steps.generate_token.outputs.token }}
           persist-credentials: false
+
       - name: Convert Repository Name to Title Case
         id: convert_repo_name
         run: |
