@@ -89,17 +89,17 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "template-files"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2336,17 +2336,17 @@
           }
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "blog"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2625,17 +2625,17 @@
           }
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "truzzles"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2727,17 +2727,17 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "trueberryless"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2829,17 +2829,17 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "true-tracker"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
@@ -3256,17 +3256,17 @@
           "special": "package.json"
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "starlight-plugin-translations"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
@@ -3362,17 +3362,17 @@
           }
         },
         {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
+        },
+        {
           "path": "template-files/README.md",
           "targetPath": "README.md",
           "special": "README.md",
           "props": {
             "repo": "release-image-generator"
           }
-        },
-        {
-          "path": "template-files/pnpm-workspace/allow-builds.yaml",
-          "targetPath": "pnpm-workspace.yaml",
-          "special": "allow-additional-lines"
         }
       ]
     },
