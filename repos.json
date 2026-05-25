@@ -95,6 +95,11 @@
           "props": {
             "repo": "template-files"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -238,7 +243,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -397,7 +402,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -556,7 +561,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -715,7 +720,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -874,7 +879,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1033,7 +1038,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1185,7 +1190,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1337,7 +1342,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1496,7 +1501,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1655,7 +1660,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1814,7 +1819,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -1955,7 +1960,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -2114,7 +2119,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -2211,7 +2216,7 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -2337,6 +2342,11 @@
           "props": {
             "repo": "blog"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2428,7 +2438,7 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -2621,6 +2631,11 @@
           "props": {
             "repo": "truzzles"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2718,6 +2733,11 @@
           "props": {
             "repo": "trueberryless"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2815,6 +2835,11 @@
           "props": {
             "repo": "true-tracker"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -2899,7 +2924,7 @@
           "special": "package.json"
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -3016,7 +3041,7 @@
           }
         },
         {
-          "path": "template-files/pnpm-workspace.yaml",
+          "path": "template-files/pnpm-workspace/with-packages.yaml",
           "targetPath": "pnpm-workspace.yaml",
           "special": "allow-additional-lines",
           "props": {
@@ -3237,6 +3262,11 @@
           "props": {
             "repo": "starlight-plugin-translations"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -3338,6 +3368,11 @@
           "props": {
             "repo": "release-image-generator"
           }
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -3427,6 +3462,11 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -3501,6 +3541,11 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     },
@@ -3575,6 +3620,11 @@
           "path": "template-files/package.json/prettier.package.json",
           "targetPath": "package.json",
           "special": "package.json"
+        },
+        {
+          "path": "template-files/pnpm-workspace/allow-builds.yaml",
+          "targetPath": "pnpm-workspace.yaml",
+          "special": "allow-additional-lines"
         }
       ]
     }
