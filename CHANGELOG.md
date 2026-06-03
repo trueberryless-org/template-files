@@ -1,5 +1,11 @@
 # template-files
 
+## 0.13.6
+
+### Patch Changes
+
+- [`6f706eb`](https://github.com/trueberryless-org/template-files/commit/6f706eb9ece51ca9e2fa3b10a516a37c6ce684f9) Thanks [@trueberryless](https://github.com/trueberryless)! - Allow sharp postscripts
+
 ## 0.13.5
 
 ### Patch Changes
