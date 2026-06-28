@@ -20,6 +20,7 @@ jobs:
         with:
           token: ${{ steps.generate_token.outputs.token }}
           persist-credentials: false
+
       - name: Ensure labels exist
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}

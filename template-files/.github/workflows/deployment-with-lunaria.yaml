@@ -77,7 +77,7 @@ jobs:
           commit: "ci: release"
           title: "ci: release [skip netlify]"
         env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token}}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
 
       - name: Get published version
         if: steps.changesets.outputs.hasChangesets == 'true'
