@@ -162,7 +162,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@f9f3042f7e2789586610d6e8b85c8f03e5195baf # v7.2.0
+        uses: docker/build-push-action@53b7df96c91f9c12dcc8a07bcb9ccacbed38856a # v7.3.0
         with:
           context: .
           push: true
@@ -175,7 +175,7 @@ jobs:
         run: |
           yq eval '.spec.template.spec.containers[0].image = "${{ env.IMAGE_OWNER }}/${{ env.IMAGE_NAME }}:${{ needs.image-tag.outputs.IMAGE_TAG }}"' -i manifest/deployment.yaml
 
-      - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
+      - uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
           commit_message: update deployment.json container image (automated)
 
