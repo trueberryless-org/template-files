@@ -152,6 +152,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-recipes"
           }
@@ -311,6 +312,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-view-modes"
           }
@@ -470,6 +472,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-cooler-credit"
           }
@@ -629,6 +632,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
@@ -788,6 +792,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-sidebar-swipe"
           }
@@ -947,6 +952,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "astro-contributors"
           }
@@ -1410,6 +1416,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-latest-version"
           }
@@ -1569,6 +1576,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-plugins-docs-components"
           }
@@ -1728,6 +1736,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-theme-next"
           }
@@ -1877,6 +1886,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-theme-rose-pine"
           }
@@ -2028,6 +2038,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-save-file-component"
           }
@@ -2163,6 +2174,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "mutanuq"
           }
@@ -2283,6 +2295,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "videos"
           }
@@ -2572,6 +2585,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "trueberryless"
           }
@@ -2674,6 +2688,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "true-tracker"
           }
@@ -3106,6 +3121,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "starlight-plugin-translations"
           }
@@ -3203,6 +3219,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "release-image-generator"
           }
@@ -3314,6 +3331,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "implications-trainer"
           }
@@ -3398,6 +3416,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "npmx-digest"
           }
@@ -3477,6 +3496,7 @@
         {
           "path": "template-files/.github/workflows/tangle.yaml",
           "targetPath": ".github/workflows/tangle.yaml",
+          "special": "delete",
           "props": {
             "repositoryName": "nxjt"
           }
