@@ -1,5 +1,11 @@
 # template-files
 
+## 0.14.1
+
+### Patch Changes
+
+- [`15adfa2`](https://github.com/trueberryless-org/template-files/commit/15adfa282e4bc1cdb2961300331aec7e4a315fc9) Thanks [@trueberryless](https://github.com/trueberryless)! - Force deletion of tangled.yaml workflow
+
 ## 0.14.0
 
 ### Minor Changes
