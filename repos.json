@@ -150,6 +150,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-recipes"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -299,6 +306,13 @@
             "branchName": "main",
             "repositoryName": "starlight-view-modes",
             "packageName": "starlight-view-modes"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-view-modes"
           }
         },
         {
@@ -454,6 +468,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-cooler-credit"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -603,6 +624,13 @@
             "branchName": "main",
             "repositoryName": "starlight-sidebar-topics-dropdown",
             "packageName": "starlight-sidebar-topics-dropdown"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-topics-dropdown"
           }
         },
         {
@@ -758,6 +786,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-sidebar-swipe"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -907,6 +942,13 @@
             "branchName": "main",
             "repositoryName": "astro-contributors",
             "packageName": "astro-contributors"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "astro-contributors"
           }
         },
         {
@@ -1366,6 +1408,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-latest-version"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -1515,6 +1564,13 @@
             "branchName": "main",
             "repositoryName": "starlight-plugins-docs-components",
             "packageName": "starlight-plugins-docs-components"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-plugins-docs-components"
           }
         },
         {
@@ -1670,6 +1726,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-theme-next"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -1809,6 +1872,13 @@
             "branchName": "main",
             "repositoryName": "starlight-theme-rose-pine",
             "packageName": "starlight-theme-rose-pine"
+          }
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-theme-rose-pine"
           }
         },
         {
@@ -1956,6 +2026,13 @@
           }
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-save-file-component"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -2084,6 +2161,13 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "mutanuq"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -2195,6 +2279,13 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "videos"
+          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
@@ -2479,6 +2570,13 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "trueberryless"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -2572,6 +2670,13 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "true-tracker"
+          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
@@ -2999,6 +3104,13 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "starlight-plugin-translations"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -3087,6 +3199,13 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "release-image-generator"
+          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
@@ -3193,6 +3312,13 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "implications-trainer"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -3270,6 +3396,13 @@
           "targetPath": ".github/workflows/labeler.yaml"
         },
         {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "npmx-digest"
+          }
+        },
+        {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
           "targetPath": ".github/workflows/welcome-bot.yaml",
           "props": {
@@ -3340,6 +3473,13 @@
         {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
+        },
+        {
+          "path": "template-files/.github/workflows/tangle.yaml",
+          "targetPath": ".github/workflows/tangle.yaml",
+          "props": {
+            "repositoryName": "nxjt"
+          }
         },
         {
           "path": "template-files/.github/workflows/welcome-bot.yaml",
