@@ -1,5 +1,11 @@
 # template-files
 
+## 0.14.0
+
+### Minor Changes
+
+- [`fa97f54`](https://github.com/trueberryless-org/template-files/commit/fa97f54e3eb67504f1a57bbf4588cbea9b33c912) Thanks [@trueberryless](https://github.com/trueberryless)! - Migrate tangled sync to synchub.to
+
 ## 0.13.6
 
 ### Patch Changes
