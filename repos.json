@@ -189,7 +189,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-recipes-docs",
-            "homepage": "https://starlight-recipes.trueberryless.org",
+            "homepage": "https://starlight-recipes.netlify.app/",
             "repositoryName": "starlight-recipes"
           }
         },
@@ -231,7 +231,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-recipes",
-            "homepage": "https://starlight-recipes.trueberryless.org",
+            "homepage": "https://starlight-recipes.netlify.app/",
             "repositoryName": "starlight-recipes"
           }
         },
@@ -349,7 +349,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-view-modes-docs",
-            "homepage": "https://starlight-view-modes.trueberryless.org",
+            "homepage": "https://starlight-view-modes.netlify.app/",
             "repositoryName": "starlight-view-modes"
           }
         },
@@ -391,7 +391,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-view-modes",
-            "homepage": "https://starlight-view-modes.trueberryless.org",
+            "homepage": "https://starlight-view-modes.netlify.app/",
             "repositoryName": "starlight-view-modes"
           }
         },
@@ -509,7 +509,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-cooler-credit-docs",
-            "homepage": "https://starlight-cooler-credit.trueberryless.org",
+            "homepage": "https://starlight-cooler-credit.netlify.app/",
             "repositoryName": "starlight-cooler-credit"
           }
         },
@@ -551,7 +551,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-cooler-credit",
-            "homepage": "https://starlight-cooler-credit.trueberryless.org",
+            "homepage": "https://starlight-cooler-credit.netlify.app/",
             "repositoryName": "starlight-cooler-credit"
           }
         },
@@ -669,7 +669,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-topics-dropdown-docs",
-            "homepage": "https://starlight-sidebar-topics-dropdown.trueberryless.org",
+            "homepage": "https://starlight-sidebar-topics-dropdown.netlify.app/",
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
         },
@@ -711,7 +711,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-topics-dropdown",
-            "homepage": "https://starlight-sidebar-topics-dropdown.trueberryless.org",
+            "homepage": "https://starlight-sidebar-topics-dropdown.netlify.app/",
             "repositoryName": "starlight-sidebar-topics-dropdown"
           }
         },
@@ -829,7 +829,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-swipe-docs",
-            "homepage": "https://starlight-sidebar-swipe.trueberryless.org",
+            "homepage": "https://starlight-sidebar-swipe.netlify.app/",
             "repositoryName": "starlight-sidebar-swipe"
           }
         },
@@ -871,7 +871,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-swipe",
-            "homepage": "https://starlight-sidebar-swipe.trueberryless.org",
+            "homepage": "https://starlight-sidebar-swipe.netlify.app/",
             "repositoryName": "starlight-sidebar-swipe"
           }
         },
@@ -989,7 +989,7 @@
           "special": "package.json",
           "props": {
             "packageName": "astro-contributors-docs",
-            "homepage": "https://astro-contributors.trueberryless.org",
+            "homepage": "https://astro-contributors.netlify.app/",
             "repositoryName": "astro-contributors"
           }
         },
@@ -1031,7 +1031,7 @@
           "special": "package.json",
           "props": {
             "packageName": "astro-contributors",
-            "homepage": "https://astro-contributors.trueberryless.org",
+            "homepage": "https://astro-contributors.netlify.app/",
             "repositoryName": "astro-contributors"
           }
         },
@@ -1141,7 +1141,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-automatic-overview-pages-docs",
-            "homepage": "https://starlight-automatic-overview-pages.trueberryless.org",
+            "homepage": "https://starlight-automatic-overview-pages.netlify.app/",
             "repositoryName": "starlight-automatic-overview-pages"
           }
         },
@@ -1183,7 +1183,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-automatic-overview-pages",
-            "homepage": "https://starlight-automatic-overview-pages.trueberryless.org",
+            "homepage": "https://starlight-automatic-overview-pages.netlify.app/",
             "repositoryName": "starlight-automatic-overview-pages"
           }
         },
@@ -1293,7 +1293,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-clickable-groups-docs",
-            "homepage": "https://starlight-sidebar-clickable-groups.trueberryless.org",
+            "homepage": "https://starlight-sidebar-clickable-groups.netlify.app/",
             "repositoryName": "starlight-sidebar-clickable-groups"
           }
         },
@@ -1335,7 +1335,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-sidebar-clickable-groups",
-            "homepage": "https://starlight-sidebar-clickable-groups.trueberryless.org",
+            "homepage": "https://starlight-sidebar-clickable-groups.netlify.app/",
             "repositoryName": "starlight-sidebar-clickable-groups"
           }
         },
@@ -1453,7 +1453,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-latest-version-docs",
-            "homepage": "https://starlight-latest-version.trueberryless.org",
+            "homepage": "https://starlight-latest-version.netlify.app/",
             "repositoryName": "starlight-latest-version"
           }
         },
@@ -1495,7 +1495,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-latest-version",
-            "homepage": "https://starlight-latest-version.trueberryless.org",
+            "homepage": "https://starlight-latest-version.netlify.app/",
             "repositoryName": "starlight-latest-version"
           }
         },
@@ -1613,7 +1613,7 @@
           "special": "package.json",
           "props": {
             "packageName": "@trueberryless-org/starlight-plugins-docs-components-docs",
-            "homepage": "https://starlight-plugins-docs-components.trueberryless.org",
+            "homepage": "https://starlight-plugins-docs-components.netlify.app/",
             "repositoryName": "starlight-plugins-docs-components"
           }
         },
@@ -1655,7 +1655,7 @@
           "special": "package.json",
           "props": {
             "packageName": "@trueberryless-org/starlight-plugins-docs-components",
-            "homepage": "https://starlight-plugins-docs-components.trueberryless.org",
+            "homepage": "https://starlight-plugins-docs-components.netlify.app/",
             "repositoryName": "starlight-plugins-docs-components"
           }
         },
@@ -1773,7 +1773,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-theme-next-docs",
-            "homepage": "https://starlight-theme-next.trueberryless.org",
+            "homepage": "https://starlight-theme-next.netlify.app/",
             "repositoryName": "starlight-theme-next"
           }
         },
@@ -1815,7 +1815,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-theme-next",
-            "homepage": "https://starlight-theme-next.trueberryless.org",
+            "homepage": "https://starlight-theme-next.netlify.app/",
             "repositoryName": "starlight-theme-next"
           }
         },
@@ -1923,7 +1923,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-theme-rose-pine-docs",
-            "homepage": "https://starlight-theme-rose-pine.trueberryless.org",
+            "homepage": "https://starlight-theme-rose-pine.netlify.app/",
             "repositoryName": "starlight-theme-rose-pine"
           }
         },
@@ -1965,7 +1965,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-theme-rose-pine",
-            "homepage": "https://starlight-theme-rose-pine.trueberryless.org",
+            "homepage": "https://starlight-theme-rose-pine.netlify.app/",
             "repositoryName": "starlight-theme-rose-pine"
           }
         },
@@ -2075,7 +2075,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-save-file-component-docs",
-            "homepage": "https://starlight-save-file-component.trueberryless.org",
+            "homepage": "https://starlight-save-file-component.netlify.app/",
             "repositoryName": "starlight-save-file-component"
           }
         },
@@ -2117,7 +2117,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-save-file-component",
-            "homepage": "https://starlight-save-file-component.trueberryless.org",
+            "homepage": "https://starlight-save-file-component.netlify.app/",
             "repositoryName": "starlight-save-file-component"
           }
         },
@@ -2249,7 +2249,7 @@
           "special": "package.json",
           "props": {
             "packageName": "mutanuq",
-            "homepage": "https://mutanuq.trueberryless.org",
+            "homepage": "https://mutanuq.felixs.dev",
             "repositoryName": "mutanuq"
           }
         },
@@ -2370,7 +2370,7 @@
           "special": "package.json",
           "props": {
             "packageName": "videos",
-            "homepage": "https://videos.trueberryless.org",
+            "homepage": "https://videos.felixs.dev",
             "repositoryName": "videos"
           }
         },
@@ -2531,7 +2531,7 @@
           "special": "package.json",
           "props": {
             "packageName": "truzzles-monorepo",
-            "homepage": "https://truzzles.trueberryless.org",
+            "homepage": "https://truzzles.felixs.dev",
             "repositoryName": "truzzles"
           }
         },
@@ -2624,7 +2624,7 @@
           "special": "package.json",
           "props": {
             "packageName": "trueberryless",
-            "homepage": "https://trueberryless.org",
+            "homepage": "https://felixs.dev",
             "repositoryName": "trueberryless"
           }
         },
@@ -2727,7 +2727,7 @@
           "special": "package.json",
           "props": {
             "packageName": "true-tracker",
-            "homepage": "https://true-tracker.trueberryless.org",
+            "homepage": "https://true-tracker.felixs.dev",
             "repositoryName": "true-tracker"
           }
         },
@@ -2858,7 +2858,7 @@
           "special": "package.json",
           "props": {
             "packageName": "github-activity",
-            "homepage": "https://github-activity.trueberryless.org",
+            "homepage": "https://recent-github-activity.netlify.app/",
             "repositoryName": "github-activity"
           }
         },
@@ -2975,7 +2975,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-subtle-top-level-items",
-            "homepage": "https://starlight-subtle-top-level-items.trueberryless.org",
+            "homepage": "https://starlight-subtle-top-level-items.netlify.app/",
             "repositoryName": "starlight-subtle-top-level-items"
           }
         },
@@ -3052,7 +3052,7 @@
           "special": "package.json",
           "props": {
             "packageName": "recent-releases",
-            "homepage": "https://recent-releases.trueberryless.org",
+            "homepage": "https://recent-releases.felixs.dev",
             "repositoryName": "recent-releases"
           }
         },
@@ -3160,7 +3160,7 @@
           "special": "package.json",
           "props": {
             "packageName": "starlight-plugin-translations",
-            "homepage": "https://starlight-plugin-translations.trueberryless.org",
+            "homepage": "https://starlight-plugin-translations.netlify.app/",
             "repositoryName": "starlight-plugin-translations"
           }
         },
@@ -3277,7 +3277,7 @@
           "special": "package.json",
           "props": {
             "packageName": "release-image-generator",
-            "homepage": "https://release-image-generator.trueberryless.org",
+            "homepage": "https://release-image-generator.netlify.app/",
             "repositoryName": "release-image-generator"
           }
         },
@@ -3370,7 +3370,7 @@
           "special": "package.json",
           "props": {
             "packageName": "implications-trainer",
-            "homepage": "https://implications-trainer.trueberryless.org",
+            "homepage": "https://implications-trainer.netlify.app/",
             "repositoryName": "implications-trainer"
           }
         },
@@ -3450,7 +3450,7 @@
           "special": "package.json",
           "props": {
             "packageName": "npmx-digest",
-            "homepage": "https://npmx-digest.trueberryless.org",
+            "homepage": "https://npmx-digest.netlify.app/",
             "repositoryName": "npmx-digest"
           }
         },
@@ -3530,7 +3530,7 @@
           "special": "package.json",
           "props": {
             "packageName": "nxjt",
-            "homepage": "https://nxjt.trueberryless.org",
+            "homepage": "https://nxjt.netlify.app/",
             "repositoryName": "nxjt"
           }
         },

@@ -9,5 +9,5 @@
     "url": "https://github.com/trueberryless-org/<%= repositoryName %>.git"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)"
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)"
 }

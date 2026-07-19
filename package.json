@@ -11,7 +11,7 @@
     "url": "https://github.com/trueberryless-org/template-files.git"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "scripts": {
     "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
