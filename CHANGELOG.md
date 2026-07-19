@@ -1,5 +1,11 @@
 # template-files
 
+## 0.15.0
+
+### Minor Changes
+
+- [`e6e02ba`](https://github.com/trueberryless-org/template-files/commit/e6e02bab748f97b96f26e81646f423880a2a9a38) Thanks [@trueberryless](https://github.com/trueberryless)! - Migrate domain names
+
 ## 0.14.1
 
 ### Patch Changes
