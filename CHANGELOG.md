@@ -1,5 +1,11 @@
 # template-files
 
+## 0.15.1
+
+### Patch Changes
+
+- [`1de39da`](https://github.com/trueberryless-org/template-files/commit/1de39dacb926fcb088fe77cde42d0ad691e456cf) Thanks [@trueberryless](https://github.com/trueberryless)! - Add `.netlify` to Node `.gitignore` for all projects.
+
 ## 0.15.0
 
 ### Minor Changes
