@@ -1,5 +1,11 @@
 # template-files
 
+## 0.16.1
+
+### Patch Changes
+
+- [`337d4ae`](https://github.com/trueberryless-org/template-files/commit/337d4ae3f5b5feafa043b92e856b0df7195baee0) Thanks [@trueberryless](https://github.com/trueberryless)! - Update these GitHub actions with major bump: `checkout`, `labeler`, `setup-node`
+
 ## 0.16.0
 
 ### Minor Changes
