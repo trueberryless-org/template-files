@@ -9,7 +9,6 @@ Provide single point of truth for template files.
 ├── .changeset
 │   ├── README.md
 │   └── config.json
-├── .dockerignore
 ├── .github
 │   ├── labeler.yaml
 │   ├── readmetreerc.yaml
@@ -35,7 +34,6 @@ Provide single point of truth for template files.
     ├── .changeset
     │   ├── README.md
     │   └── config.json
-    ├── .dockerignore
     ├── .github
     │   ├── CODEOWNERS
     │   ├── FUNDING.yaml
@@ -43,8 +41,6 @@ Provide single point of truth for template files.
     │   ├── readmetreerc.yaml
     │   ├── renovate.json
     │   └── workflows
-    │       ├── deployment-with-lunaria.yaml
-    │       ├── deployment.yaml
     │       ├── format.yaml
     │       ├── generate-readme-tree.yaml
     │       ├── labeler.yaml
@@ -57,16 +53,10 @@ Provide single point of truth for template files.
     ├── .prettierignore
     ├── .prettierrc
     │   └── .prettierrc
-    ├── Dockerfile
-    │   ├── Next.Dockerfile
-    │   ├── Node.Dockerfile
-    │   ├── httpd.Dockerfile
-    │   └── nginx.Dockerfile
     ├── LICENSE
     ├── README.md
     ├── manifest
     │   ├── certificate.yaml
-    │   ├── deployment.yaml
     │   ├── ingress.yaml
     │   ├── namespace.yaml
     │   └── service.yaml
