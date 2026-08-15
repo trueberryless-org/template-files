@@ -1,5 +1,13 @@
 # template-files
 
+## 0.16.0
+
+### Minor Changes
+
+- [#338](https://github.com/trueberryless-org/template-files/pull/338) [`33264c2`](https://github.com/trueberryless-org/template-files/commit/33264c2a25fb9be1f25203d326ded17d80fa5a51) Thanks [@renovate](https://github.com/apps/renovate)! - Migrate from Changesets v2 to v3
+
+- [`5cf3926`](https://github.com/trueberryless-org/template-files/commit/5cf39263ddb8294228cdf357af19b1a1f2aeb9d0) Thanks [@trueberryless](https://github.com/trueberryless)! - Migrate to shared Renovate config.
+
 ## 0.15.1
 
 ### Patch Changes
