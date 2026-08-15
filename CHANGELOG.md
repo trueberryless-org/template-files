@@ -1,5 +1,11 @@
 # template-files
 
+## 0.16.2
+
+### Patch Changes
+
+- [`e6cee7b`](https://github.com/trueberryless-org/template-files/commit/e6cee7b5c9b2c8d30a6b4785f9c8279c0287d251) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove unnecessary Changeset config
+
 ## 0.16.1
 
 ### Patch Changes
