@@ -1,1 +1,3 @@
 chapter: Project structure
+exclude:
+  - .changeset
