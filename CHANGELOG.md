@@ -1,5 +1,11 @@
 # template-files
 
+## 0.16.3
+
+### Patch Changes
+
+- [`ca33a81`](https://github.com/trueberryless-org/template-files/commit/ca33a81337e1afa98f9ffa5df2f9c42f67676917) Thanks [@trueberryless](https://github.com/trueberryless)! - Delete leftovers of readmetree synchronisation
+
 ## 0.16.2
 
 ### Patch Changes
