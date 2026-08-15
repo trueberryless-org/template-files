@@ -33,7 +33,6 @@ Provide single point of truth for template files.
 ├── sync_templates.sh
 └── template-files
     ├── .changeset
-    │   ├── DotNet.config.json
     │   ├── README.md
     │   └── config.json
     ├── .dockerignore
@@ -44,7 +43,6 @@ Provide single point of truth for template files.
     │   ├── readmetreerc.yaml
     │   ├── renovate.json
     │   └── workflows
-    │       ├── DotNet.deployment.yaml
     │       ├── deployment-with-lunaria.yaml
     │       ├── deployment.yaml
     │       ├── format.yaml
@@ -55,13 +53,11 @@ Provide single point of truth for template files.
     │       ├── tangle.yaml
     │       └── welcome-bot.yaml
     ├── .gitignore
-    │   ├── DotNet.gitignore
     │   └── Node.gitignore
     ├── .prettierignore
     ├── .prettierrc
     │   └── .prettierrc
     ├── Dockerfile
-    │   ├── DotNet.Dockerfile
     │   ├── Next.Dockerfile
     │   ├── Node.Dockerfile
     │   ├── httpd.Dockerfile
