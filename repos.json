@@ -7,8 +7,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "template-files",
-            "ignore": "[]"
+            "repositoryName": "template-files"
           }
         },
         {
@@ -110,8 +109,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-recipes",
-            "ignore": "[\"starlight-recipes-docs\"]"
+            "repositoryName": "starlight-recipes"
           }
         },
         {
@@ -260,8 +258,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-view-modes",
-            "ignore": "[\"starlight-view-modes-docs\",\"@starlight-view-modes-tests/*\"]"
+            "repositoryName": "starlight-view-modes"
           }
         },
         {
@@ -420,8 +417,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-cooler-credit",
-            "ignore": "[\"starlight-cooler-credit-docs\"]"
+            "repositoryName": "starlight-cooler-credit"
           }
         },
         {
@@ -580,8 +576,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-sidebar-topics-dropdown",
-            "ignore": "[\"starlight-sidebar-topics-dropdown-docs\"]"
+            "repositoryName": "starlight-sidebar-topics-dropdown"
           }
         },
         {
@@ -740,8 +735,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-sidebar-swipe",
-            "ignore": "[\"starlight-sidebar-swipe-docs\"]"
+            "repositoryName": "starlight-sidebar-swipe"
           }
         },
         {
@@ -900,8 +894,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "astro-contributors",
-            "ignore": "[\"astro-contributors-docs\"]"
+            "repositoryName": "astro-contributors"
           }
         },
         {
@@ -1060,8 +1053,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-automatic-overview-pages",
-            "ignore": "[\"starlight-automatic-overview-pages-docs\"]"
+            "repositoryName": "starlight-automatic-overview-pages"
           }
         },
         {
@@ -1212,8 +1204,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-sidebar-clickable-groups",
-            "ignore": "[\"starlight-sidebar-clickable-groups-docs\"]"
+            "repositoryName": "starlight-sidebar-clickable-groups"
           }
         },
         {
@@ -1364,8 +1355,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-latest-version",
-            "ignore": "[\"starlight-latest-version-docs\"]"
+            "repositoryName": "starlight-latest-version"
           }
         },
         {
@@ -1524,8 +1514,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-plugins-docs-components",
-            "ignore": "[\"@trueberryless-org/starlight-plugins-docs-components-docs\"]"
+            "repositoryName": "starlight-plugins-docs-components"
           }
         },
         {
@@ -1684,8 +1673,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-theme-next",
-            "ignore": "[\"starlight-theme-next-docs\",\"@fontsource/geist-mono\",\"@fontsource/geist-sans\"]"
+            "repositoryName": "starlight-theme-next"
           }
         },
         {
@@ -1844,8 +1832,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-theme-rose-pine",
-            "ignore": "[\"starlight-theme-rose-pine-docs\"]"
+            "repositoryName": "starlight-theme-rose-pine"
           }
         },
         {
@@ -1986,8 +1973,7 @@
           "path": "template-files/.changeset/config.json",
           "targetPath": ".changeset/config.json",
           "props": {
-            "repositoryName": "starlight-save-file-component",
-            "ignore": "[\"starlight-save-file-component-docs\"]"
+            "repositoryName": "starlight-save-file-component"
           }
         },
         {
