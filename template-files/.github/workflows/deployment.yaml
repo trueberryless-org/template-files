@@ -38,7 +38,7 @@ jobs:
     name: Changesets
     runs-on: ubuntu-latest
     outputs:
-      hasChangesets: ${{ steps.changesets.outputs.hasChangesets }}
+      has-changesets: ${{ steps.changesets.outputs.has-changesets }}
     permissions:
       contents: write
       pull-requests: write
@@ -69,17 +69,17 @@ jobs:
         run: pnpm i
 
       - name: Create Release Pull Request
-        uses: changesets/action@a45c4d594aa4e2c509dc14a9f2b3b67ba3780d0d # v1.9.0
+        uses: changesets/action@7545547fe488a27b3f26e807596ed000538f7ba7 # v2.1.0
         id: changesets
         with:
-          version: pnpm run version
-          commit: "ci: release"
-          title: "ci: release [skip netlify]"
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          version-script: pnpm run version
+          commit-message: "ci: release"
+          pr-title: "ci: release [skip netlify]"
+          github-token: ${{ steps.generate_token.outputs.token}}
+          push-with-git-cli: true
 
       - name: Get published version
-        if: steps.changesets.outputs.hasChangesets == 'true'
+        if: steps.changesets.outputs.has-changesets == 'true'
         run: |
           git checkout changeset-release/main
           VERSION=$(node -p "require('./<%= projectFolder %>/package.json').version")
@@ -108,7 +108,7 @@ jobs:
     needs: [changes, changesets, image-tag]
     if: >
       (
-        needs.changesets.outputs.hasChangesets == 'false' &&
+        needs.changesets.outputs.has-changesets == 'false' &&
         (
           contains(github.event.head_commit.message, 'deploy') ||
           contains(github.event.head_commit.message, 'release')
