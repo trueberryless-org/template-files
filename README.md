@@ -38,11 +38,9 @@ Provide single point of truth for template files.
     │   ├── CODEOWNERS
     │   ├── FUNDING.yaml
     │   ├── labeler.yaml
-    │   ├── readmetreerc.yaml
     │   ├── renovate.json
     │   └── workflows
     │       ├── format.yaml
-    │       ├── generate-readme-tree.yaml
     │       ├── labeler.yaml
     │       ├── publish.yaml
     │       ├── release.yaml

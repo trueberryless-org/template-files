@@ -27,10 +27,6 @@
           "targetPath": ".github/labeler.yaml"
         },
         {
-          "path": "template-files/.github/readmetreerc.yaml",
-          "targetPath": ".github/readmetreerc.yaml"
-        },
-        {
           "path": "template-files/.github/workflows/labeler.yaml",
           "targetPath": ".github/workflows/labeler.yaml"
         },
