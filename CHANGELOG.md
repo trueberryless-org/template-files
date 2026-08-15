@@ -1,5 +1,21 @@
 # template-files
 
+## 0.16.0
+
+### Minor Changes
+
+- [#338](https://github.com/trueberryless-org/template-files/pull/338) [`33264c2`](https://github.com/trueberryless-org/template-files/commit/33264c2a25fb9be1f25203d326ded17d80fa5a51) Thanks [@renovate](https://github.com/apps/renovate)! - Migrate from Changesets v2 to v3
+
+- [`5cf3926`](https://github.com/trueberryless-org/template-files/commit/5cf39263ddb8294228cdf357af19b1a1f2aeb9d0) Thanks [@trueberryless](https://github.com/trueberryless)! - Migrate to shared Renovate config.
+
+### Patch Changes
+
+- [#351](https://github.com/trueberryless-org/template-files/pull/351) [`deb8eeb`](https://github.com/trueberryless-org/template-files/commit/deb8eebe7732b9e8aac782918702aeb2de239276) Thanks [@trueberryless](https://github.com/trueberryless)! - Clean up Docker leafovers completely
+
+- [`cfd0463`](https://github.com/trueberryless-org/template-files/commit/cfd04638b626f9e77beea09d01d8ee458cadd893) Thanks [@trueberryless](https://github.com/trueberryless)! - Clean up DotNet leftovers completely
+
+- [#352](https://github.com/trueberryless-org/template-files/pull/352) [`c81e8d2`](https://github.com/trueberryless-org/template-files/commit/c81e8d24c98db280c870b7ec434d8cbb02ee07e9) Thanks [@trueberryless](https://github.com/trueberryless)! - Clean up manifest files completely
+
 ## 0.15.1
 
 ### Patch Changes
