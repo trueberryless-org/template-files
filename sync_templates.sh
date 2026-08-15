@@ -129,45 +129,6 @@ for file_config in $(echo "$FILES" | jq -c '.[]'); do
     modified_package_jsons+=("$dest_file")
 
 
-  elif [ "$special" == "manifest" ]; then
-    echo "Special handling for manifest file"
-
-    # Prepare the destination directory
-    mkdir -p "$(dirname "$dest_file")"
-
-    # Resolve placeholders in the source file using props
-    props=$(echo "$file_config" | jq -c '.props // empty')
-    temp_file=$(mktemp)
-    cp "$src_file" "$temp_file"
-
-    if [ -n "$props" ]; then
-      for key in $(echo "$props" | jq -r 'keys[]'); do
-        value=$(echo "$props" | jq -r --arg key "$key" '.[$key]')
-        placeholder="<%= $key %>"
-        echo "Replacing $placeholder with $value in $src_file..."
-        sed -i "s|$placeholder|$value|g" "$temp_file"
-      done
-    fi
-
-    # Check if the destination file exists
-    if [ -f "$dest_file" ]; then
-      # Exclude the image line from comparison
-      echo "Comparing $dest_file with $temp_file..."
-      if ! diff -q <(grep -Ev 'image:|ports:|containerPort:|targetPort:' "$temp_file") <(grep -Ev 'image:|ports:|containerPort:|targetPort:' "$dest_file") > /dev/null; then
-        echo "Significant changes detected. Updating $dest_file..."
-      else
-        echo "No significant changes detected in $dest_file. Skipping update."
-        rm -f "$temp_file"
-        continue
-      fi
-    else
-      echo "Destination file $dest_file does not exist. Creating it..."
-    fi
-
-    # Move the processed file to the target location
-    mv "$temp_file" "$dest_file"
-
-
   elif [ "$special" == "allow-additional-lines" ]; then
     # This logic cannot handle cases where a line is changed in the dest_file
     echo "Special handling for file where additional lines are allowed"

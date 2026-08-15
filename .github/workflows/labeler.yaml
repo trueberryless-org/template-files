@@ -34,7 +34,6 @@ jobs:
           gh label delete "invalid" --yes || true
           gh label delete "question" --yes || true
           gh label delete "wontfix" --yes || true
-          gh label delete "🚀 manifest" --yes || true
 
           gh label create "🚨 action" --description "Changes in GitHub workflows or actions" --color "A75AD5" --force
           gh label create "🤖 bot" --description "Automatically generated pull request" --color "0075CA" --force

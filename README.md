@@ -55,11 +55,6 @@ Provide single point of truth for template files.
     │   └── .prettierrc
     ├── LICENSE
     ├── README.md
-    ├── manifest
-    │   ├── certificate.yaml
-    │   ├── ingress.yaml
-    │   ├── namespace.yaml
-    │   └── service.yaml
     ├── nginx.conf
     ├── package.json
     │   ├── changeset.package.json
