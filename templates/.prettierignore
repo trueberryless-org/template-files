@@ -23,8 +23,8 @@ __generated__/
 
 # Test and coverage files
 coverage/
-*.spec.*
-*.test.*
+playwright-report/
+test-results/
 
 # Editor-specific files
 .vscode/
