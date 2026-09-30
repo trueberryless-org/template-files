@@ -137,7 +137,8 @@
       "name": "trueberryless/ai-disclosure",
       "preset": "site",
       "year": 2026,
-      "ci": true
+      "ci": true,
+      "homepage": "https://ai-disclosure.trueberryless.org/"
     }
   ]
 }
