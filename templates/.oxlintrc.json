@@ -16,6 +16,8 @@
   ],
   "rules": {
     "no-unused-vars": "warn",
+    "eslint/no-await-in-loop": "off",
+    "unicorn/no-array-sort": "off",
     "unicorn/consistent-function-scoping": "off"
   }
 }

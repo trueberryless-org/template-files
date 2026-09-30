@@ -104,6 +104,12 @@
       "preset": "site",
       "ci": true,
       "homepage": "https://ai-disclosure.netlify.app/"
+    },
+    {
+      "name": "trueberryless/felixs.dev",
+      "preset": "site",
+      "homepage": "https://felixs.dev",
+      "ci": true
     }
   ]
 }
