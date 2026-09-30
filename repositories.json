@@ -115,11 +115,15 @@
       "name": "trueberryless/the-thinking-hub",
       "preset": "site",
       "ci": true,
-      "skip": [
-        ".prettierrc",
-        "package.json/prettier.package.json"
-      ],
-      "homepage": "https://the-thinking-hub.netlify.app/"
+      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "homepage": "https://the-thinking-hub.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/mindspace",
+      "preset": "site",
+      "ci": true,
+      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "homepage": "https://mindspace.felixs.dev/"
     }
   ]
 }
