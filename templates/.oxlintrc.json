@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "ignorePatterns": [
+    ".astro/**",
+    ".nuxt/**",
+    ".output/**",
+    "dist/**",
+    "node_modules/**",
+    "public/**"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "unicorn/consistent-function-scoping": "off"
+  }
+}

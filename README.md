@@ -2,6 +2,46 @@
 
 Provide single point of truth for template files.
 
+## How it works
+
+Every repository listed in [`repositories.json`](./repositories.json) receives the files of its **preset** from [`templates/`](./templates). The sync opens (or updates) one `update-template-files` pull request per repository.
+
+| Preset      | For                                                                  |
+| ----------- | -------------------------------------------------------------------- |
+| `site`      | A single package at the repository root                              |
+| `workspace` | A root package plus one project folder (`projectFolder`)              |
+| `plugin`    | A pnpm workspace with `docs/` and `packages/<package>/` and changesets |
+| `tooling`   | Internal tooling repositories like this one                          |
+
+A repository entry only needs `name`, `preset` and `year`. Everything else is optional:
+
+| Property        | Default                          | Meaning                                                    |
+| --------------- | -------------------------------- | ---------------------------------------------------------- |
+| `package`       | the repository name              | npm package name, may be scoped                            |
+| `homepage`      | `https://<repository>.netlify.app/` | `homepage` in every synced `package.json`               |
+| `projectFolder` | `docs`                           | Project folder of the `workspace` preset                   |
+| `branch`        | `main`                           | Default branch                                             |
+| `ci`            | `false`                          | Also sync the CI workflow, oxlint config and test tooling  |
+
+Templates use `<%= property %>` placeholders. Besides the properties above, `owner`, `repositoryName`, `repositoryUrl`, `packageDirectory` and `branchName` are available, so moving a repository to another account only requires changing its `name`.
+
+Files are synced in one of these ways:
+
+- **copy**: the file is replaced.
+- **merge-json**: the template is deep-merged into the existing file, its values win (`package.json`).
+- **merge-yaml**: the template provides defaults, existing values win and lists are unioned (`pnpm-workspace.yaml`).
+- **add-missing-lines**: missing patterns are appended, existing lines are kept (`.gitignore`, `.prettierignore`).
+- **replace-license**: only the `## License` section of a README is replaced.
+- **delete**: obsolete files are removed.
+
+## Commands
+
+```shell
+pnpm check   # typecheck the sync scripts
+pnpm test    # unit tests
+pnpm sync    # sync one repository, needs GH_TOKEN and REPOSITORY (owner/name)
+```
+
 ## Project structure
 
 ```

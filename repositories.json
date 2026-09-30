@@ -1,0 +1,143 @@
+{
+  "repositories": [
+    {
+      "name": "trueberryless-org/template-files",
+      "preset": "tooling",
+      "year": 2024,
+      "homepage": "https://github.com/trueberryless-org/template-files"
+    },
+    {
+      "name": "trueberryless-org/starlight-recipes",
+      "preset": "plugin",
+      "year": 2026
+    },
+    {
+      "name": "trueberryless-org/starlight-view-modes",
+      "preset": "plugin",
+      "year": 2024
+    },
+    {
+      "name": "trueberryless-org/starlight-cooler-credit",
+      "preset": "plugin",
+      "year": 2024
+    },
+    {
+      "name": "trueberryless-org/starlight-sidebar-topics-dropdown",
+      "preset": "plugin",
+      "year": 2024
+    },
+    {
+      "name": "trueberryless-org/starlight-sidebar-swipe",
+      "preset": "plugin",
+      "year": 2024
+    },
+    {
+      "name": "trueberryless-org/astro-contributors",
+      "preset": "plugin",
+      "year": 2024
+    },
+    {
+      "name": "trueberryless-org/starlight-group-pages",
+      "preset": "plugin",
+      "year": 2025
+    },
+    {
+      "name": "trueberryless-org/starlight-latest-version",
+      "preset": "plugin",
+      "year": 2024
+    },
+    {
+      "name": "trueberryless-org/starlight-plugins-docs-components",
+      "preset": "plugin",
+      "year": 2024,
+      "package": "@trueberryless-org/starlight-plugins-docs-components"
+    },
+    {
+      "name": "trueberryless-org/starlight-theme-next",
+      "preset": "plugin",
+      "year": 2025
+    },
+    {
+      "name": "trueberryless-org/starlight-theme-rose-pine",
+      "preset": "plugin",
+      "year": 2026
+    },
+    {
+      "name": "trueberryless-org/starlight-save-file-component",
+      "preset": "plugin",
+      "year": 2025
+    },
+    {
+      "name": "trueberryless-org/mutanuq",
+      "preset": "workspace",
+      "year": 2024,
+      "homepage": "https://mutanuq.felixs.dev",
+      "projectFolder": "starlight"
+    },
+    {
+      "name": "trueberryless-org/videos",
+      "preset": "workspace",
+      "year": 2024,
+      "homepage": "https://videos.felixs.dev",
+      "projectFolder": "starlight"
+    },
+    {
+      "name": "trueberryless-org/true-tracker",
+      "preset": "site",
+      "year": 2024,
+      "homepage": "https://true-tracker.felixs.dev"
+    },
+    {
+      "name": "trueberryless-org/recent-github-activity",
+      "preset": "workspace",
+      "year": 2025,
+      "projectFolder": "src"
+    },
+    {
+      "name": "trueberryless-org/starlight-subtle-top-level-items",
+      "preset": "workspace",
+      "year": 2025,
+      "projectFolder": "starlight"
+    },
+    {
+      "name": "trueberryless-org/releases",
+      "preset": "site",
+      "year": 2025,
+      "package": "@trueberryless-org/releases",
+      "homepage": "https://releases.felixs.dev"
+    },
+    {
+      "name": "trueberryless-org/starlight-plugin-translations",
+      "preset": "site",
+      "year": 2025
+    },
+    {
+      "name": "trueberryless-org/release-image-generator",
+      "preset": "site",
+      "year": 2025
+    },
+    {
+      "name": "trueberryless-org/implications-trainer",
+      "preset": "site",
+      "year": 2025
+    },
+    {
+      "name": "trueberryless-org/nxjt",
+      "preset": "site",
+      "year": 2026
+    },
+    {
+      "name": "trueberryless/austria-atmosphe.re",
+      "preset": "site",
+      "year": 2026,
+      "homepage": "https://austria-atmosphe.re/",
+      "ci": true
+    },
+    {
+      "name": "trueberryless/ai-disclosure",
+      "preset": "site",
+      "year": 2026,
+      "ci": true
+    }
+  ]
+}
