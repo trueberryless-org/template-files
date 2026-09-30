@@ -110,6 +110,16 @@
       "preset": "site",
       "homepage": "https://felixs.dev",
       "ci": true
+    },
+    {
+      "name": "trueberryless/the-thinking-hub",
+      "preset": "site",
+      "ci": true,
+      "skip": [
+        ".prettierrc",
+        "package.json/prettier.package.json"
+      ],
+      "homepage": "https://the-thinking-hub.netlify.app/"
     }
   ]
 }

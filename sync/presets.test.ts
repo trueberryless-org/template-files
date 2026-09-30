@@ -12,7 +12,7 @@ const repositories = parseConfig(JSON.parse(readFileSync(resolve(import.meta.dir
 
 describe('getRepositoryProps', () => {
   test('derives the defaults from the repository name', () => {
-    expect(getRepositoryProps({ branch: 'main', ci: false, name: 'owner/repo', preset: 'site' })).toMatchObject({
+    expect(getRepositoryProps({ branch: 'main', ci: false, skip: [], name: 'owner/repo', preset: 'site' })).toMatchObject({
       homepage: 'https://repo.netlify.app/',
       owner: 'owner',
       packageDirectory: 'repo',
@@ -23,7 +23,7 @@ describe('getRepositoryProps', () => {
   })
 
   test('strips the scope from the package directory', () => {
-    const props = getRepositoryProps({ branch: 'main', ci: false, name: 'owner/repo', package: '@owner/repo', preset: 'plugin' })
+    const props = getRepositoryProps({ branch: 'main', ci: false, skip: [], name: 'owner/repo', package: '@owner/repo', preset: 'plugin' })
 
     expect(props.packageName).toBe('@owner/repo')
     expect(props.packageDirectory).toBe('repo')
@@ -56,8 +56,18 @@ describe('getOperations', () => {
     }
   })
 
+  test('skips operations by target or source', () => {
+    const base = { branch: 'main', ci: false, name: 'owner/repo', preset: 'site' } as const
+    const skip = ['.prettierrc', 'package.json/prettier.package.json']
+    const operations = getOperations({ ...base, skip })
+
+    expect(operations.map(({ target }) => target)).not.toContain('.prettierrc')
+    expect(operations.map(({ target }) => target)).toContain('LICENSE')
+    expect(operations.some((operation) => 'source' in operation && operation.source === skip[1])).toBe(false)
+  })
+
   test('only adds CI files when requested', () => {
-    const base = { branch: 'main', name: 'owner/repo', preset: 'site' } as const
+    const base = { branch: 'main', name: 'owner/repo', preset: 'site', skip: [] as string[] } as const
     const targets = (ci: boolean) => getOperations({ ...base, ci }).map(({ target }) => target)
 
     expect(targets(false)).not.toContain('.github/workflows/ci.yaml')
@@ -65,7 +75,7 @@ describe('getOperations', () => {
   })
 
   test('places plugin files in the package directory', () => {
-    const targets = getOperations({ branch: 'main', ci: false, name: 'owner/repo', package: '@owner/repo', preset: 'plugin' }).map(
+    const targets = getOperations({ branch: 'main', ci: false, skip: [], name: 'owner/repo', package: '@owner/repo', preset: 'plugin' }).map(
       ({ target }) => target,
     )
 

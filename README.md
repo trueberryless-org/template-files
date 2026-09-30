@@ -20,6 +20,7 @@ A repository entry only needs `name` and `preset`. Everything else is optional:
 | `homepage`      | `https://<repository>.netlify.app/` | `homepage` in every synced `package.json`               |
 | `branch`        | `main`                           | Default branch                                             |
 | `ci`            | `false`                          | Also sync the CI workflow, oxlint config and test tooling  |
+| `skip`          | `[]`                             | Template targets or sources to leave alone, e.g. `.prettierrc` |
 
 Templates use `<%= property %>` placeholders. Besides the properties above, `owner`, `repositoryName`, `repositoryUrl`, `packageDirectory` and `branchName` are available, so moving a repository to another account only requires changing its `name`.
 

@@ -9,7 +9,7 @@ const entry = { name: 'owner/repo', preset: 'site' }
 
 describe('parseConfig', () => {
   test('applies defaults', () => {
-    expect(parseConfig({ repositories: [entry] })).toEqual([{ ...entry, branch: 'main', ci: false }])
+    expect(parseConfig({ repositories: [entry] })).toEqual([{ ...entry, branch: 'main', ci: false, skip: [] }])
   })
 
   test('rejects duplicated repositories', () => {

@@ -10,7 +10,14 @@ export function getOperations(repository: Repository): Operation[] {
   return [
     ...getCommonOperations(props),
     ...getPresetOperations(repository, props),
-  ];
+  ].filter((operation) => !isSkipped(operation, repository.skip));
+}
+
+function isSkipped(operation: Operation, skip: string[]) {
+  return (
+    skip.includes(operation.target) ||
+    ("source" in operation && skip.includes(operation.source))
+  );
 }
 
 function getCommonOperations(props: Props): Operation[] {
