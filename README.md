@@ -9,17 +9,15 @@ Every repository listed in [`repositories.json`](./repositories.json) receives t
 | Preset      | For                                                                  |
 | ----------- | -------------------------------------------------------------------- |
 | `site`      | A single package at the repository root                              |
-| `workspace` | A root package plus one project folder (`projectFolder`)              |
 | `plugin`    | A pnpm workspace with `docs/` and `packages/<package>/` and changesets |
 | `tooling`   | Internal tooling repositories like this one                          |
 
-A repository entry only needs `name`, `preset` and `year`. Everything else is optional:
+A repository entry only needs `name` and `preset`. Everything else is optional:
 
 | Property        | Default                          | Meaning                                                    |
 | --------------- | -------------------------------- | ---------------------------------------------------------- |
 | `package`       | the repository name              | npm package name, may be scoped                            |
 | `homepage`      | `https://<repository>.netlify.app/` | `homepage` in every synced `package.json`               |
-| `projectFolder` | `docs`                           | Project folder of the `workspace` preset                   |
 | `branch`        | `main`                           | Default branch                                             |
 | `ci`            | `false`                          | Also sync the CI workflow, oxlint config and test tooling  |
 

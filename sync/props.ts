@@ -16,10 +16,8 @@ export function getRepositoryProps(repository: Repository): Props {
     owner,
     packageDirectory: packageName.split("/").at(-1) as string,
     packageName,
-    projectFolder: repository.projectFolder ?? "docs",
     repositoryName,
     repositoryUrl: `https://github.com/${repository.name}`,
-    year: String(repository.year),
   };
 }
 

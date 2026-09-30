@@ -56,31 +56,6 @@ function getPresetOperations(
         replaceLicense("README.md", "README.md", props),
       ];
     }
-    case "workspace": {
-      const projectPackageJson = `${props.projectFolder}/package.json`;
-
-      return [
-        ...getSiteOperations(repository, props),
-        mergeJson("package.json/definition.package.json", PACKAGE_JSON, {
-          ...props,
-          homepage: props.repositoryUrl!,
-          packageName: `${props.packageName}-monorepo`,
-        }),
-        ...getRootPackageOperations(props),
-        mergeJson(
-          "package.json/definition.package.json",
-          projectPackageJson,
-          props
-        ),
-        ...getPackageManagerOperations(projectPackageJson, props),
-        mergeYaml(
-          "pnpm-workspace/workspace.yaml",
-          "pnpm-workspace.yaml",
-          props
-        ),
-        replaceLicense("README.md", "README.md", props),
-      ];
-    }
     case "plugin": {
       const packagePath = `packages/${props.packageDirectory}`;
 

@@ -9,9 +9,7 @@ const RepositorySchema = z.object({
   homepage: z.url().optional(),
   name: RepositoryNameSchema,
   package: z.string().optional(),
-  preset: z.enum(["site", "workspace", "plugin", "tooling"]),
-  projectFolder: z.string().optional(),
-  year: z.number().int().min(2020),
+  preset: z.enum(["site", "plugin", "tooling"]),
 });
 
 const ConfigSchema = z.object({

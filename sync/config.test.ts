@@ -5,7 +5,7 @@ import { describe, expect, test } from 'vitest'
 
 import { findRepository, parseConfig } from './config.ts'
 
-const entry = { name: 'owner/repo', preset: 'site', year: 2026 }
+const entry = { name: 'owner/repo', preset: 'site' }
 
 describe('parseConfig', () => {
   test('applies defaults', () => {

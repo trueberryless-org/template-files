@@ -1,4 +1,4 @@
-export type Preset = "site" | "workspace" | "plugin" | "tooling";
+export type Preset = "site" | "plugin" | "tooling";
 
 export type Props = Record<string, string>;
 
