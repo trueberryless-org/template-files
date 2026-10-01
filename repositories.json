@@ -140,6 +140,16 @@
       "preset": "site",
       "ci": true,
       "homepage": "https://nxjt.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/trueberryless-org",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://trueberryless-org.netlify.app/",
+      "skip": [
+        ".prettierrc",
+        "package.json/prettier.package.json"
+      ]
     }
   ]
 }
