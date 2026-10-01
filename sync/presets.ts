@@ -8,7 +8,7 @@ export function getOperations(repository: Repository): Operation[] {
   const props = getRepositoryProps(repository);
 
   return [
-    ...getCommonOperations(props),
+    ...getCommonOperations(repository, props),
     ...getPresetOperations(repository, props),
   ].filter((operation) => !isSkipped(operation, repository.skip));
 }
@@ -20,12 +20,19 @@ function isSkipped(operation: Operation, skip: string[]) {
   );
 }
 
-function getCommonOperations(props: Props): Operation[] {
+function getCommonOperations(
+  repository: Repository,
+  props: Props
+): Operation[] {
+  const isOxfmt = repository.formatter === "oxfmt";
+
   return [
     copy(".github/labeler.yaml", ".github/labeler.yaml", props),
     copy(".github/renovate.json", ".github/renovate.json", props),
     copy(
-      ".github/workflows/format.yaml",
+      isOxfmt
+        ? ".github/workflows/format.oxfmt.yaml"
+        : ".github/workflows/format.yaml",
       ".github/workflows/format.yaml",
       props
     ),
@@ -39,10 +46,18 @@ function getCommonOperations(props: Props): Operation[] {
       ".github/workflows/welcome-bot.yaml",
       props
     ),
-    copy(".prettierrc/.prettierrc", ".prettierrc", props),
     copy("LICENSE", "LICENSE", props),
     addMissingLines(".gitignore/Node.gitignore", ".gitignore", props),
-    addMissingLines(".prettierignore", ".prettierignore", props),
+    ...(isOxfmt
+      ? [
+          copy("oxfmt/.oxfmtrc.json", ".oxfmtrc.json", props),
+          remove(".prettierrc"),
+          remove(".prettierignore"),
+        ]
+      : [
+          copy(".prettierrc/.prettierrc", ".prettierrc", props),
+          addMissingLines(".prettierignore", ".prettierignore", props),
+        ]),
     remove(".github/CODEOWNERS"),
     remove(".github/renovate.json5"),
     remove(".github/workflows/tangle.yaml"),
@@ -58,7 +73,7 @@ function getPresetOperations(
       return [
         ...getSiteOperations(repository, props),
         mergeJson("package.json/definition.package.json", PACKAGE_JSON, props),
-        ...getRootPackageOperations(props),
+        ...getRootPackageOperations(repository, props),
         mergeYaml("pnpm-workspace/site.yaml", "pnpm-workspace.yaml", props),
         replaceLicense("README.md", "README.md", props),
       ];
@@ -80,7 +95,7 @@ function getPresetOperations(
           packageName: `${props.packageName}-monorepo`,
         }),
         mergeJson("package.json/changeset.package.json", PACKAGE_JSON, props),
-        ...getRootPackageOperations(props),
+        ...getRootPackageOperations(repository, props),
         mergeJson("package.json/definition.package.json", "docs/package.json", {
           ...props,
           packageName: `${props.packageName}-docs`,
@@ -101,7 +116,7 @@ function getPresetOperations(
         copy(".changeset/README.md", ".changeset/README.md", props),
         mergeJson("package.json/definition.package.json", PACKAGE_JSON, props),
         mergeJson("package.json/changeset.package.json", PACKAGE_JSON, props),
-        ...getRootPackageOperations(props),
+        ...getRootPackageOperations(repository, props),
         mergeYaml("pnpm-workspace/site.yaml", "pnpm-workspace.yaml", props),
         replaceLicense("README.md", "README.md", props),
       ];
@@ -117,7 +132,13 @@ function getSiteOperations(repository: Repository, props: Props): Operation[] {
   return [
     copy(".github/workflows/ci.yaml", ".github/workflows/ci.yaml", props),
     copy(".oxlintrc.json", ".oxlintrc.json", props),
-    mergeJson("package.json/testing.package.json", PACKAGE_JSON, props),
+    mergeJson(
+      repository.formatter === "oxfmt"
+        ? "package.json/testing.oxfmt.package.json"
+        : "package.json/testing.package.json",
+      PACKAGE_JSON,
+      props
+    ),
   ];
 }
 
@@ -130,10 +151,18 @@ function getPackageManagerOperations(
   ];
 }
 
-function getRootPackageOperations(props: Props): Operation[] {
+function getRootPackageOperations(
+  repository: Repository,
+  props: Props
+): Operation[] {
+  const formatterFragment =
+    repository.formatter === "oxfmt"
+      ? "package.json/oxfmt.package.json"
+      : "package.json/prettier.package.json";
+
   return [
     ...getPackageManagerOperations(PACKAGE_JSON, props),
-    mergeJson("package.json/prettier.package.json", PACKAGE_JSON, props),
+    mergeJson(formatterFragment, PACKAGE_JSON, props),
   ];
 }
 

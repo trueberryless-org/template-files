@@ -107,20 +107,14 @@
       "name": "trueberryless/the-thinking-hub",
       "preset": "site",
       "ci": true,
-      "skip": [
-        ".prettierrc",
-        "package.json/prettier.package.json"
-      ],
+      "skip": [".prettierrc", "package.json/prettier.package.json"],
       "homepage": "https://the-thinking-hub.felixs.dev/"
     },
     {
       "name": "trueberryless-org/mindspace",
       "preset": "site",
       "ci": true,
-      "skip": [
-        ".prettierrc",
-        "package.json/prettier.package.json"
-      ],
+      "skip": [".prettierrc", "package.json/prettier.package.json"],
       "homepage": "https://mindspace.felixs.dev/"
     },
     {
@@ -146,10 +140,7 @@
       "preset": "site",
       "ci": true,
       "homepage": "https://trueberryless-org.netlify.app/",
-      "skip": [
-        ".prettierrc",
-        "package.json/prettier.package.json"
-      ]
+      "skip": [".prettierrc", "package.json/prettier.package.json"]
     }
   ]
 }

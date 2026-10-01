@@ -6,6 +6,7 @@ const RepositoryNameSchema = z.string().regex(/^[\w.-]+\/[\w.-]+$/);
 const RepositorySchema = z.object({
   branch: z.string().default("main"),
   ci: z.boolean().default(false),
+  formatter: z.enum(["prettier", "oxfmt"]).default("prettier"),
   skip: z.array(z.string()).default([]),
   homepage: z.url().optional(),
   name: RepositoryNameSchema,
