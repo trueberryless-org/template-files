@@ -148,6 +148,13 @@
       "ci": true,
       "homepage": "https://npmxers.netlify.app/",
       "formatter": "oxfmt"
+    },
+    {
+      "name": "trueberryless/correlation-vs-causation-quiz",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://correlation-vs-causation-quiz.felixs.dev/",
+      "formatter": "oxfmt"
     }
   ]
 }
