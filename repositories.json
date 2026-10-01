@@ -87,14 +87,6 @@
       "preset": "site"
     },
     {
-      "name": "trueberryless-org/implications-trainer",
-      "preset": "site"
-    },
-    {
-      "name": "trueberryless-org/nxjt",
-      "preset": "site"
-    },
-    {
       "name": "trueberryless/austria-atmosphe.re",
       "preset": "site",
       "homepage": "https://austria-atmosphe.re/"
@@ -115,15 +107,39 @@
       "name": "trueberryless/the-thinking-hub",
       "preset": "site",
       "ci": true,
-      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "skip": [
+        ".prettierrc",
+        "package.json/prettier.package.json"
+      ],
       "homepage": "https://the-thinking-hub.felixs.dev/"
     },
     {
       "name": "trueberryless-org/mindspace",
       "preset": "site",
       "ci": true,
-      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "skip": [
+        ".prettierrc",
+        "package.json/prettier.package.json"
+      ],
       "homepage": "https://mindspace.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/photos",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://photos.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/implications-trainer",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://implications-trainer.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/nxjt",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://nxjt.netlify.app/"
     }
   ]
 }
