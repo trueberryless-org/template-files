@@ -55,22 +55,9 @@
       "preset": "plugin"
     },
     {
-      "name": "trueberryless-org/videos",
-      "preset": "site",
-      "homepage": "https://videos.felixs.dev"
-    },
-    {
       "name": "trueberryless-org/true-tracker",
       "preset": "site",
       "homepage": "https://true-tracker.felixs.dev"
-    },
-    {
-      "name": "trueberryless-org/recent-github-activity",
-      "preset": "site"
-    },
-    {
-      "name": "trueberryless-org/starlight-subtle-top-level-items",
-      "preset": "site"
     },
     {
       "name": "trueberryless-org/releases",
@@ -155,6 +142,24 @@
       "ci": true,
       "homepage": "https://correlation-vs-causation-quiz.felixs.dev/",
       "formatter": "oxfmt"
+    },
+    {
+      "name": "trueberryless-org/videos",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://videos.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/starlight-subtle-top-level-items",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://starlight-subtle-top-level-items.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/recent-github-activity",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://recent-github-activity.netlify.app/"
     }
   ]
 }
