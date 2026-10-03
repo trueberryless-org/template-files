@@ -1,0 +1,165 @@
+{
+  "repositories": [
+    {
+      "name": "trueberryless-org/template-files",
+      "preset": "tooling",
+      "homepage": "https://github.com/trueberryless-org/template-files"
+    },
+    {
+      "name": "trueberryless-org/starlight-recipes",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-view-modes",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-cooler-credit",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-sidebar-topics-dropdown",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-sidebar-swipe",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/astro-contributors",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-group-pages",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-latest-version",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-plugins-docs-components",
+      "preset": "plugin",
+      "package": "@trueberryless-org/starlight-plugins-docs-components"
+    },
+    {
+      "name": "trueberryless-org/starlight-theme-next",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-theme-rose-pine",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/starlight-save-file-component",
+      "preset": "plugin"
+    },
+    {
+      "name": "trueberryless-org/true-tracker",
+      "preset": "site",
+      "homepage": "https://true-tracker.felixs.dev"
+    },
+    {
+      "name": "trueberryless-org/releases",
+      "preset": "site",
+      "package": "@trueberryless-org/releases",
+      "homepage": "https://releases.felixs.dev"
+    },
+    {
+      "name": "trueberryless-org/starlight-plugin-translations",
+      "preset": "site"
+    },
+    {
+      "name": "trueberryless-org/release-image-generator",
+      "preset": "site"
+    },
+    {
+      "name": "trueberryless/austria-atmosphe.re",
+      "preset": "site",
+      "homepage": "https://austria-atmosphe.re/"
+    },
+    {
+      "name": "trueberryless/ai-disclosure",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://ai-disclosure.netlify.app/"
+    },
+    {
+      "name": "trueberryless/felixs.dev",
+      "preset": "site",
+      "homepage": "https://felixs.dev",
+      "ci": true
+    },
+    {
+      "name": "trueberryless/the-thinking-hub",
+      "preset": "site",
+      "ci": true,
+      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "homepage": "https://the-thinking-hub.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/mindspace",
+      "preset": "site",
+      "ci": true,
+      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "homepage": "https://mindspace.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/photos",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://photos.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/implications-trainer",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://implications-trainer.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/nxjt",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://nxjt.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/trueberryless-org",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://trueberryless-org.netlify.app/",
+      "skip": [".prettierrc", "package.json/prettier.package.json"]
+    },
+    {
+      "name": "trueberryless-org/npmxers",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://npmxers.netlify.app/",
+      "formatter": "oxfmt"
+    },
+    {
+      "name": "trueberryless/correlation-vs-causation-quiz",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://correlation-vs-causation-quiz.felixs.dev/",
+      "formatter": "oxfmt"
+    },
+    {
+      "name": "trueberryless-org/videos",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://videos.felixs.dev/"
+    },
+    {
+      "name": "trueberryless-org/starlight-subtle-top-level-items",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://starlight-subtle-top-level-items.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/gh-activity",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://gh-activity.netlify.app/"
+    }
+  ]
+}
