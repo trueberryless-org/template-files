@@ -156,7 +156,7 @@
       "homepage": "https://starlight-subtle-top-level-items.netlify.app/"
     },
     {
-      "name": "trueberryless-org/recent-github-activity",
+      "name": "trueberryless-org/gh-activity",
       "preset": "site",
       "ci": true,
       "homepage": "https://recent-github-activity.netlify.app/"
