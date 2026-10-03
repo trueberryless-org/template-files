@@ -159,7 +159,7 @@
       "name": "trueberryless-org/gh-activity",
       "preset": "site",
       "ci": true,
-      "homepage": "https://recent-github-activity.netlify.app/"
+      "homepage": "https://gh-activity.netlify.app/"
     }
   ]
 }
