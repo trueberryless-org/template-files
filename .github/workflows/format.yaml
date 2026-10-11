@@ -37,27 +37,6 @@ jobs:
       - name: Run pngquant
         run: |
           shopt -s globstar
-          find . -name '*.png' -exec pngquant --ext .png --force 256 {} \;
-
-      - name: Sort Files
-        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
-        with:
-          script: |
-            const { readFileSync, writeFileSync } = require('node:fs');
-            const data = JSON.parse(readFileSync('repos.json', 'utf8'));
-            if (!data.repositories) process.exit(1);
-
-            const gk = o => (o.targetPath || '').toLowerCase().split('/').map((s, i, a) => [s, i === a.length - 1 && s.includes('.')]);
-
-            data.repositories.forEach(r => r.files?.sort((a, b) => {
-              const ka = gk(a), kb = gk(b);
-              for (let i = 0; i < Math.min(ka.length, kb.length); i++) {
-                if (ka[i][0] !== kb[i][0]) return ka[i][0] < kb[i][0] ? -1 : 1;
-                if (ka[i][1] !== kb[i][1]) return ka[i][1] ? 1 : -1;
-              }
-              return ka.length - kb.length;
-            }));
-
-            writeFileSync('repos.json', JSON.stringify(data, null, 2) + '\n');
+          find . -type d \( -name node_modules -o -name dist \) -prune -o -type f -name '*.png' -exec pngquant --force --skip-if-larger --ext .png 256 {} \;
 
       - uses: autofix-ci/action@7a166d7532b277f34e16238930461bf77f9d7ed8

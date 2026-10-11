@@ -68,7 +68,7 @@ pnpm sync    # sync one repository, needs GH_TOKEN and REPOSITORY (owner/name)
 ├── package.json
 ├── pnpm-lock.yaml
 ├── pnpm-workspace.yaml
-├── repos.json
+├── repositories.json
 ├── sync_templates.sh
 └── template-files
     ├── .changeset
