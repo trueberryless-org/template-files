@@ -70,10 +70,6 @@
       "preset": "site"
     },
     {
-      "name": "trueberryless-org/release-image-generator",
-      "preset": "site"
-    },
-    {
       "name": "trueberryless/austria-atmosphe.re",
       "preset": "site",
       "homepage": "https://austria-atmosphe.re/"
@@ -160,6 +156,12 @@
       "preset": "site",
       "ci": true,
       "homepage": "https://gh-activity.netlify.app/"
+    },
+    {
+      "name": "trueberryless-org/release-image-generator",
+      "preset": "site",
+      "ci": true,
+      "homepage": "https://release-image-generator.netlify.app/"
     }
   ]
 }

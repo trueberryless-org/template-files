@@ -32,13 +32,20 @@ export function syncRepository(
   const checkout = join(workspace, "target");
 
   try {
-    run("git", [
-      "clone",
-      "--depth",
-      "1",
-      `https://x-access-token:${token}@github.com/${repository.name}.git`,
-      checkout,
-    ]);
+    const gitEnvironment = getGitAuthentication(token);
+
+    run(
+      "git",
+      [
+        "clone",
+        "--depth",
+        "1",
+        `https://github.com/${repository.name}.git`,
+        checkout,
+      ],
+      undefined,
+      gitEnvironment
+    );
     run("git", ["checkout", "-B", getBranchName()], checkout);
 
     const operations = getOperations(repository);
@@ -92,7 +99,12 @@ export function syncRepository(
 
     ensureLabel(repository.name);
     run("git", ["commit", "-m", "ci: update GitHub template files"], checkout);
-    run("git", ["push", "--force", "origin", getBranchName()], checkout);
+    run(
+      "git",
+      ["push", "--force", "origin", getBranchName()],
+      checkout,
+      gitEnvironment
+    );
 
     const pullRequestUrl = upsertPullRequest(
       repository.name,
@@ -113,6 +125,16 @@ export function writeSummary(summary: SyncSummary, directory: string) {
     join(directory, `${summary.repository.replace("/", "-")}.json`),
     JSON.stringify(summary)
   );
+}
+
+function getGitAuthentication(token: string) {
+  const credentials = Buffer.from(`x-access-token:${token}`).toString("base64");
+
+  return {
+    GIT_CONFIG_COUNT: "1",
+    GIT_CONFIG_KEY_0: "http.https://github.com/.extraheader",
+    GIT_CONFIG_VALUE_0: `Authorization: Basic ${credentials}`,
+  };
 }
 
 function isPackageJsonChanged(cwd: string) {
