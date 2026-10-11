@@ -10,6 +10,16 @@ import { join, resolve } from "node:path";
 import sortPackageJson from "sort-package-json";
 
 import type { Repository } from "./config.ts";
+import {
+  cloneRepository,
+  commitChanges,
+  createBranch,
+  forcePushBranch,
+  getAuthentication,
+  getRepositoryUrl,
+  hasChangedFile,
+  stageChanges,
+} from "./git.ts";
 import { applyOperation } from "./operations.ts";
 import { getOperations } from "./presets.ts";
 import {
@@ -30,23 +40,15 @@ export function syncRepository(
 ): SyncSummary {
   const workspace = mkdtempSync(join(tmpdir(), "sync-"));
   const checkout = join(workspace, "target");
+  const authentication = getAuthentication(token);
 
   try {
-    const gitEnvironment = getGitAuthentication(token);
-
-    run(
-      "git",
-      [
-        "clone",
-        "--depth",
-        "1",
-        `https://github.com/${repository.name}.git`,
-        checkout,
-      ],
-      undefined,
-      gitEnvironment
+    cloneRepository(
+      getRepositoryUrl(repository.name),
+      checkout,
+      authentication
     );
-    run("git", ["checkout", "-B", getBranchName()], checkout);
+    createBranch(checkout, getBranchName());
 
     const operations = getOperations(repository);
 
@@ -65,7 +67,7 @@ export function syncRepository(
       writeFileSync(path, sortPackageJson(readFileSync(path, "utf8")));
     }
 
-    if (isPackageJsonChanged(checkout)) {
+    if (hasChangedFile(checkout, "package.json")) {
       run(
         "pnpm",
         ["install", "--no-frozen-lockfile", "--ignore-scripts"],
@@ -73,15 +75,7 @@ export function syncRepository(
       );
     }
 
-    run("git", ["add", "."], checkout);
-
-    const changedFiles = run(
-      "git",
-      ["diff", "--cached", "--name-only"],
-      checkout
-    )
-      .split("\n")
-      .filter(Boolean).length;
+    const changedFiles = stageChanges(checkout).length;
 
     if (changedFiles === 0) {
       const open = findOpenPullRequest(repository.name, checkout);
@@ -98,18 +92,15 @@ export function syncRepository(
     }
 
     ensureLabel(repository.name);
-    run("git", ["commit", "-m", "ci: update GitHub template files"], checkout);
-    run(
-      "git",
-      ["push", "--force", "origin", getBranchName()],
-      checkout,
-      gitEnvironment
-    );
+
+    const hash = commitChanges(checkout, "ci: update GitHub template files");
+
+    forcePushBranch(checkout, getBranchName(), authentication);
 
     const pullRequestUrl = upsertPullRequest(
       repository.name,
       repository.branch,
-      getChangelogEntry(checkout),
+      getChangelogEntry(hash),
       checkout
     );
 
@@ -127,24 +118,7 @@ export function writeSummary(summary: SyncSummary, directory: string) {
   );
 }
 
-function getGitAuthentication(token: string) {
-  const credentials = Buffer.from(`x-access-token:${token}`).toString("base64");
-
-  return {
-    GIT_CONFIG_COUNT: "1",
-    GIT_CONFIG_KEY_0: "http.https://github.com/.extraheader",
-    GIT_CONFIG_VALUE_0: `Authorization: Basic ${credentials}`,
-  };
-}
-
-function isPackageJsonChanged(cwd: string) {
-  return run("git", ["status", "--porcelain"], cwd)
-    .split("\n")
-    .some((line) => line.endsWith("package.json"));
-}
-
-function getChangelogEntry(cwd: string) {
-  const hash = run("git", ["rev-parse", "--short", "HEAD"], cwd);
+function getChangelogEntry(hash: string) {
   const repository =
     process.env["GITHUB_REPOSITORY"] ?? "trueberryless-org/template-files";
 
