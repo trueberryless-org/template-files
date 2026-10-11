@@ -1,5 +1,13 @@
 # template-files
 
+## 0.17.0
+
+### Minor Changes
+
+- [#363](https://github.com/trueberryless-org/template-files/pull/363) [`f7b00f9`](https://github.com/trueberryless-org/template-files/commit/f7b00f9e9b508cfd77cc94904cefaaed7dadec4b) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Adds a “Merge sync pull requests” workflow that merges every open sync pull request with no conflicts and no failing or running checks (with a dry run option), and a “Sync one repository” workflow to re-run the sync for a single repository, for example after a merge conflict. The release notes link to both workflows.
+
+- [#363](https://github.com/trueberryless-org/template-files/pull/363) [`f7b00f9`](https://github.com/trueberryless-org/template-files/commit/f7b00f9e9b508cfd77cc94904cefaaed7dadec4b) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Replaces the shell-based sync with a typed and tested TypeScript implementation. `repositories.json` now only lists a preset and a few properties per repository instead of every file, the `owner` is a template property so repositories can move to another account, and there is a new `ci` option that syncs a CI workflow with lint, format, typecheck, unit, coverage and Playwright end-to-end jobs. The repository list follows the renamed repositories (`releases`, `gh-activity`, `starlight-group-pages`) and no longer contains the archived `npmx-digest`.
+
 ## 0.16.3
 
 ### Patch Changes
