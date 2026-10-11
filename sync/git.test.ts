@@ -4,12 +4,12 @@ import { join } from "node:path";
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 
 import {
+  BOT_IDENTITY,
   cloneRepository,
   commitChanges,
   createBranch,
   forcePushBranch,
   getAuthentication,
-  getIdentity,
   getRepositoryUrl,
   hasChangedFile,
   stageChanges,
@@ -84,25 +84,31 @@ describe("getAuthentication with existing git config entries", () => {
   });
 });
 
-describe("getIdentity", () => {
-  test("defaults to the GitHub Actions bot", () => {
-    expect(getIdentity({})).toEqual({
+describe("BOT_IDENTITY", () => {
+  test("is the GitHub Actions bot, never a personal account", () => {
+    expect(BOT_IDENTITY).toEqual({
       GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com",
       GIT_AUTHOR_NAME: "github-actions[bot]",
       GIT_COMMITTER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com",
       GIT_COMMITTER_NAME: "github-actions[bot]",
     });
   });
-
-  test("uses the author from the environment", () => {
-    expect(getIdentity({ GIT_AUTHOR_EMAIL: "me@example.com", GIT_AUTHOR_NAME: "Me" })).toMatchObject({
-      GIT_COMMITTER_EMAIL: "me@example.com",
-      GIT_COMMITTER_NAME: "Me",
-    });
-  });
 });
 
 describe("sync git flow", () => {
+  test("commits as the bot even when the environment names a person", () => {
+    vi.stubEnv("GIT_AUTHOR_NAME", "A Person");
+    vi.stubEnv("GIT_AUTHOR_EMAIL", "person@example.com");
+    vi.stubEnv("GIT_COMMITTER_NAME", "A Person");
+    vi.stubEnv("GIT_COMMITTER_EMAIL", "person@example.com");
+    cloneRepository(remote, checkout);
+    writeFileSync(join(checkout, "README.md"), "# Changed\n");
+    stageChanges(checkout);
+    commitChanges(checkout, "change");
+
+    expect(run("git", ["log", "-1", "--format=%an %ae %cn %ce"], checkout)).not.toContain("person");
+  });
+
   test("clones, commits on a new branch and pushes it", () => {
     cloneRepository(remote, checkout);
     createBranch(checkout, "update-template-files");
@@ -119,7 +125,11 @@ describe("sync git flow", () => {
     const remoteHead = run("git", ["rev-parse", "--short", "update-template-files"], remote);
 
     expect(remoteHead).toBe(hash);
-    expect(run("git", ["log", "-1", "--format=%an", "update-template-files"], remote)).toBe("github-actions[bot]");
+    expect(
+      run("git", ["log", "-1", "--format=%an <%ae> | %cn <%ce>", "update-template-files"], remote)
+    ).toBe(
+      "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> | github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    );
   });
 
   test("reports no changes when the templates are already applied", () => {

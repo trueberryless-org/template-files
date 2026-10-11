@@ -22,19 +22,12 @@ export function getAuthentication(
   };
 }
 
-export function getIdentity(
-  environment: NodeJS.ProcessEnv = process.env
-): NodeJS.ProcessEnv {
-  const name = environment["GIT_AUTHOR_NAME"] ?? BOT_NAME;
-  const email = environment["GIT_AUTHOR_EMAIL"] ?? BOT_EMAIL;
-
-  return {
-    GIT_AUTHOR_EMAIL: email,
-    GIT_AUTHOR_NAME: name,
-    GIT_COMMITTER_EMAIL: environment["GIT_COMMITTER_EMAIL"] ?? email,
-    GIT_COMMITTER_NAME: environment["GIT_COMMITTER_NAME"] ?? name,
-  };
-}
+export const BOT_IDENTITY = {
+  GIT_AUTHOR_EMAIL: BOT_EMAIL,
+  GIT_AUTHOR_NAME: BOT_NAME,
+  GIT_COMMITTER_EMAIL: BOT_EMAIL,
+  GIT_COMMITTER_NAME: BOT_NAME,
+} as const;
 
 export function cloneRepository(
   url: string,
@@ -73,7 +66,7 @@ export function hasChangedFile(directory: string, fileName: string) {
 }
 
 export function commitChanges(directory: string, message: string) {
-  run("git", ["commit", "--message", message], directory, getIdentity());
+  run("git", ["commit", "--message", message], directory, BOT_IDENTITY);
 
   return run("git", ["rev-parse", "--short", "HEAD"], directory);
 }
