@@ -101,7 +101,7 @@
       "name": "trueberryless-org/mindspace",
       "preset": "site",
       "ci": true,
-      "skip": [".prettierrc", "package.json/prettier.package.json"],
+      "skip": [".prettierrc", "package.json/prettier.package.json", "LICENSE"],
       "homepage": "https://mindspace.felixs.dev/"
     },
     {
