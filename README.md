@@ -63,12 +63,16 @@ pnpm merge   # merge the open sync pull requests, needs GH_TOKEN; OWNER, DRY_RUN
 │   ├── readmetreerc.yaml
 │   ├── renovate.json
 │   └── workflows
+│       ├── ci.yaml
 │       ├── format.yaml
 │       ├── generate-readme-tree.yaml
 │       ├── labeler.yaml
+│       ├── merge-sync-prs.yaml
+│       ├── sync-repository.yaml
 │       ├── sync.yaml
 │       └── welcome-bot.yaml
 ├── .gitignore
+├── .oxlintrc.json
 ├── .prettierignore
 ├── .prettierrc
 ├── CHANGELOG.md
@@ -78,39 +82,65 @@ pnpm merge   # merge the open sync pull requests, needs GH_TOKEN; OWNER, DRY_RUN
 ├── pnpm-lock.yaml
 ├── pnpm-workspace.yaml
 ├── repositories.json
-├── sync_templates.sh
-└── template-files
-    ├── .changeset
-    │   ├── README.md
-    │   └── config.json
-    ├── .github
-    │   ├── CODEOWNERS
-    │   ├── FUNDING.yaml
-    │   ├── labeler.yaml
-    │   ├── renovate.json
-    │   └── workflows
-    │       ├── format.yaml
-    │       ├── labeler.yaml
-    │       ├── publish.yaml
-    │       ├── release.yaml
-    │       ├── tangle.yaml
-    │       └── welcome-bot.yaml
-    ├── .gitignore
-    │   └── Node.gitignore
-    ├── .prettierignore
-    ├── .prettierrc
-    │   └── .prettierrc
-    ├── LICENSE
-    ├── README.md
-    ├── nginx.conf
-    ├── package.json
-    │   ├── changeset.package.json
-    │   ├── definition.package.json
-    │   ├── package.manager.package.json
-    │   └── prettier.package.json
-    └── pnpm-workspace
-        ├── allow-builds.yaml
-        └── with-packages.yaml
+├── sync
+│   ├── config.test.ts
+│   ├── config.ts
+│   ├── content.test.ts
+│   ├── content.ts
+│   ├── git.test.ts
+│   ├── git.ts
+│   ├── index.ts
+│   ├── merge-all.ts
+│   ├── merge.test.ts
+│   ├── merge.ts
+│   ├── operations.ts
+│   ├── presets.test.ts
+│   ├── presets.ts
+│   ├── props.ts
+│   ├── pull-request.ts
+│   ├── report.ts
+│   ├── repository.ts
+│   ├── shell.ts
+│   ├── summary.test.ts
+│   ├── summary.ts
+│   └── types.ts
+├── templates
+│   ├── .changeset
+│   │   ├── README.md
+│   │   └── config.json
+│   ├── .github
+│   │   ├── FUNDING.yaml
+│   │   ├── labeler.yaml
+│   │   ├── renovate.json
+│   │   └── workflows
+│   │       ├── ci.yaml
+│   │       ├── format.oxfmt.yaml
+│   │       ├── format.yaml
+│   │       ├── labeler.yaml
+│   │       ├── publish.yaml
+│   │       └── welcome-bot.yaml
+│   ├── .gitignore
+│   │   └── Node.gitignore
+│   ├── .oxlintrc.json
+│   ├── .prettierignore
+│   ├── .prettierrc
+│   │   └── .prettierrc
+│   ├── LICENSE
+│   ├── README.md
+│   ├── oxfmt
+│   │   └── .oxfmtrc.json
+│   ├── package.json
+│   │   ├── changeset.package.json
+│   │   ├── definition.package.json
+│   │   ├── oxfmt.package.json
+│   │   ├── package.manager.package.json
+│   │   ├── prettier.package.json
+│   │   ├── testing.oxfmt.package.json
+│   │   └── testing.package.json
+│   └── pnpm-workspace
+│       ├── plugin.yaml
+│       └── site.yaml
+└── tsconfig.json
 
 ```
 
