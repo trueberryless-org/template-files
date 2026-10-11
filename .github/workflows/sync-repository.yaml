@@ -1,0 +1,72 @@
+name: Sync one repository
+
+on:
+  workflow_call:
+    inputs:
+      repository:
+        description: Repository from repositories.json (owner/name)
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: Repository from repositories.json (owner/name)
+        required: true
+        type: string
+
+env:
+  NODE_VERSION: 24.14.1
+
+jobs:
+  sync:
+    name: Sync ${{ inputs.repository }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Split repository name
+        id: repository
+        env:
+          REPOSITORY: ${{ inputs.repository }}
+        run: |
+          {
+            echo "owner=${REPOSITORY%%/*}"
+            echo "name=${REPOSITORY#*/}"
+            echo "sanitized=${REPOSITORY//\//-}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          owner: ${{ steps.repository.outputs.owner }}
+          repositories: ${{ steps.repository.outputs.name }}
+          client-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
+      - name: Checkout current repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "pnpm"
+
+      - name: Install Dependencies
+        run: pnpm i
+
+      - name: Sync template files
+        env:
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          REPOSITORY: ${{ inputs.repository }}
+        run: pnpm sync
+
+      - name: Upload summary
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: summary-${{ steps.repository.outputs.sanitized }}
+          path: summary/*.json

@@ -34,12 +34,21 @@ Files are synced in one of these ways:
 - **replace-license**: only the `## License` section of a README is replaced.
 - **delete**: obsolete files are removed.
 
+## Workflows
+
+| Workflow                                                           | Trigger                                                   | What it does                                                                                                                                                              |
+| ------------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Update Template Files Across Repos](./.github/workflows/sync.yaml) | a release commit on `main`, or by hand                    | Syncs every repository, writes a report and publishes a GitHub release that links to the two workflows below                                                             |
+| [Sync one repository](./.github/workflows/sync-repository.yaml)    | by hand, with the repository (`owner/name`)               | Syncs a single repository again, for example after a merge conflict. The pull request is recreated from the current default branch                                    |
+| [Merge sync pull requests](./.github/workflows/merge-sync-prs.yaml) | by hand, optionally as a dry run and with a merge method | Merges every open sync pull request that is mergeable and has no failing or running checks, and lists why the others were skipped                                       |
+
 ## Commands
 
 ```shell
 pnpm check   # typecheck the sync scripts
 pnpm test    # unit tests
 pnpm sync    # sync one repository, needs GH_TOKEN and REPOSITORY (owner/name)
+pnpm merge   # merge the open sync pull requests, needs GH_TOKEN; OWNER, DRY_RUN=true and MERGE_METHOD are optional
 ```
 
 ## Project structure

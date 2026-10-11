@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
+import { formatList, formatTable, formatWorkflowLinks } from "./summary.ts";
 import type { SyncSummary } from "./types.ts";
 
 const directory = resolve(process.argv[2] ?? "summary");
@@ -13,33 +14,16 @@ const summaries = readdirSync(directory)
   )
   .toSorted((a, b) => a.repository.localeCompare(b.repository));
 
-writeFileSync(join(directory, "final_summary.md"), formatTable(summaries));
-writeFileSync(join(directory, "discord_summary.md"), formatList(summaries));
+const links = formatWorkflowLinks(
+  process.env["GITHUB_SERVER_URL"],
+  process.env["GITHUB_REPOSITORY"]
+);
 
-function formatTable(items: SyncSummary[]) {
-  const rows = items.map(
-    ({ changedFiles, pullRequestUrl, repository }) =>
-      `| ${repository} | ${pullRequestUrl ? `[PR Link](${pullRequestUrl})` : "No PR"} | ${changedFiles} |`
-  );
-
-  return [
-    "### Summary of Changes",
-    "",
-    "| Repository | PR Link | Files Changed |",
-    "|------------|---------|---------------|",
-    ...rows,
-    "",
-  ].join("\n");
-}
-
-function formatList(items: SyncSummary[]) {
-  const lines = items.map(({ changedFiles, pullRequestUrl, repository }) => {
-    if (changedFiles === 0) {
-      return `- ${repository} -- No files changed`;
-    }
-
-    return `- ${repository} -- ${changedFiles} ${changedFiles === 1 ? "file" : "files"} changed: ([PR Link](${pullRequestUrl}))`;
-  });
-
-  return ["### Summary of Changes", "", ...lines, ""].join("\n");
-}
+writeFileSync(
+  join(directory, "final_summary.md"),
+  formatTable(summaries, links)
+);
+writeFileSync(
+  join(directory, "discord_summary.md"),
+  formatList(summaries, links)
+);
