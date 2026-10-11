@@ -168,7 +168,9 @@ jobs:
           merge-multiple: true
 
       - name: Generate reports
-        run: pnpm report summary
+        run: |
+          mkdir -p summary
+          pnpm report summary
 
       - name: Upload final summary
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
