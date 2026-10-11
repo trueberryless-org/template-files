@@ -18,11 +18,11 @@
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "oxlint",
+    "merge": "node sync/merge-all.ts",
     "report": "node sync/report.ts",
     "sync": "node sync/index.ts",
     "test": "vitest run",
-    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile",
-    "merge": "node sync/merge-all.ts"
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
   "dependencies": {
     "sort-package-json": "^4.0.0",
