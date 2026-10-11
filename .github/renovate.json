@@ -1,8 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>trueberryless/renovate-config"],
-  "npm": {
-    "managerFilePatterns": ["/(^|/)[^/]*\\.package\\.json$/"]
-  },
-  "commitMessageSuffix": "[skip ci]"
+  "extends": ["github>trueberryless/renovate-config"]
 }
